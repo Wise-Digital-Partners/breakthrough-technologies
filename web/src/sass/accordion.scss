@@ -1,0 +1,54 @@
+.accordion-item {
+  @apply relative;
+  &:not(:last-of-type) {
+    @apply mb-8 md:mb-10;
+  }
+}
+
+.accordion-button {
+  @apply flex flex-col items-start text-left ml-22 focus:outline-none cursor-pointer;
+  &:before {
+    content: "";
+    @apply block absolute left-0 bg-gray-200 h-1 w-16 mt-3 transition-all duration-300 ease-linear;
+  }
+  &[aria-expanded="true"],
+  &[aria-selected="true"] {
+    &:before {
+      @apply bg-primary-400;
+    }
+    p {
+      @apply text-primary-400 text-opacity-100;
+    }
+  }
+}
+
+.accordion-panel {
+  animation: fadein 0.5s ease-in;
+  @apply ml-22;
+  p {
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+  //   &[hidden] {
+  //     @apply block md:hidden;
+  //   }
+}
+
+.accordion-image {
+  animation: fadein 0.5s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

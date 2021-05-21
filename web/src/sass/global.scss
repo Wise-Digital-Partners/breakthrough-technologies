@@ -1,0 +1,46 @@
+.tl-edges {
+  overflow-x: initial !important;
+}
+
+a {
+  @apply cursor-pointer transition-all duration-300 ease-linear;
+}
+
+.text-link {
+  @apply text-gray-700 relative;
+  &:after {
+    content: "";
+    @apply w-0 h-px block bg-gray-700 absolute -bottom-0.5 left-auto right-0 transition-all duration-300 ease-linear;
+  }
+  &:hover {
+    @apply text-gray-700;
+    &:after {
+      @apply w-full left-0 right-auto;
+    }
+  }
+  &.text-white {
+    &:after {
+      content: "";
+      @apply bg-white;
+    }
+  }
+}
+
+.link-overlay {
+  @apply absolute top-0 left-0 h-full w-full z-10;
+}
+
+.styled-list {
+  @apply list-none;
+  li {
+    @apply flex items-baseline;
+    &:not(:last-child) {
+      @apply mb-2;
+    }
+    &:before {
+      content: "\f0c8";
+      font-family: "Font Awesome 5 Pro";
+      @apply text-primary-400 text-sm font-bold mr-3;
+    }
+  }
+}

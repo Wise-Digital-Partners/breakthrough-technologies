@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import "./src/sass/styles.scss";
 
-// You can delete this file if you're not using it
+import "./node_modules/@fortawesome/fontawesome-pro/css/all.min.css";
+
+import "@fontsource/roboto/900.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto";
+import "@fontsource/roboto/300.css";

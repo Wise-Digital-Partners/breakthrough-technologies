@@ -1,13 +1,26 @@
-import Layout from "../components/layout";
 import React from "react";
-import SEO from "../components/seo";
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-);
+import Layout from "../components/Layout";
+import ButtonSolid from "../components/Button/ButtonSolid";
 
-export default NotFoundPage;
+const ErrorPage = () => {
+  return (
+    <Layout>
+      <section className="py-32 bg-gray-50">
+        <div className="container">
+          <header className="max-w-2xl">
+            <h1>That page can’t be found.</h1>
+            <p>
+              The page you were looking for appears to have been moved, deleted
+              or does not exist. Please use the navigation above or return to
+              the home page.
+            </p>
+            <ButtonSolid href="/" text="Back To Homepage" />
+          </header>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default ErrorPage;
