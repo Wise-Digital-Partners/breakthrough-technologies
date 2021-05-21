@@ -10,7 +10,6 @@
     "fix": "npm run fix:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""

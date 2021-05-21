@@ -350,6 +350,7 @@ const Page = ({ data }) => {
           <div className="relative">
             <img
               src={data.blueTriangle.publicURL}
+              alt="Brand triangle"
               width="26"
               className="hidden md:block left-0 right-0 mx-auto z-10 sticky top-56 -mb-5"
             />

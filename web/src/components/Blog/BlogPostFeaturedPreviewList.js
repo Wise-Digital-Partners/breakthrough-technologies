@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { getBlogUrl } from "../../lib/helpers";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import AniLink from "gatsby-plugin-transition-link/AniLink";
 import PortableText from "./portableText";
 // import { format } from "date-fns";
 import ButtonWithIcon from "../Button/ButtonWithIcon";
