@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
@@ -24,6 +24,11 @@ const Page = ({ data }) => {
       repeatType: "mirror",
       ease: "easeInOut",
     },
+  };
+
+  const videoRef = useRef();
+  const setPlayBack = () => {
+    videoRef.current.playbackRate = 2.0;
   };
 
   useLayoutEffect(() => {
@@ -64,7 +69,7 @@ const Page = ({ data }) => {
               transition={bounceTransition}
               animate={{ y: animated }}
               width="26px"
-              className="sticky lg:top-[90vh] mx-auto hidden md:block z-10"
+              className="sticky lg:top-[90vh] mx-auto hidden lg:block z-10"
             />
           </div>
 
@@ -76,6 +81,8 @@ const Page = ({ data }) => {
             }}
           ></div>
           <video
+            ref={videoRef}
+            onCanPlay={() => setPlayBack()}
             width="100%"
             autoPlay
             muted
@@ -122,10 +129,10 @@ const Page = ({ data }) => {
             transition={bounceTransition}
             animate={{ y: animatedMobile }}
             width="26px"
-            className="sticky top-72 mx-auto md:hidden z-10"
+            className="sticky top-72 mx-auto lg:hidden z-10"
           />
         </ParallaxProvider>
-        <div className="bg-white h-44"></div>
+        <div className="bg-white h-72"></div>
       </section>
 
       <section className="bg-white mb-44 md:mb-32 relative">
@@ -341,11 +348,6 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    cloud2: file(relativePath: { eq: "home/1.2 Smoke - desktop.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
-      }
-    }
     cloud3: file(relativePath: { eq: "home/1.3 Smoke - desktop.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
@@ -356,6 +358,23 @@ export const query = graphql`
         gatsbyImageData(
           layout: FIXED
           width: 301
+          placeholder: BLURRED
+          quality: 100
+        )
+      }
+    }
+    cloud1Mobile: file(relativePath: { eq: "home/1.1 clouds - mobile.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    cloud2Mobile: file(
+      relativePath: { eq: "home/1.2 single cloud - mobile.png" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 191
           placeholder: BLURRED
           quality: 100
         )

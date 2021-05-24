@@ -20,11 +20,11 @@ const StyledContent = styled.div`
 function BlogPost(props) {
   const {
     _rawBody,
-    authors,
+    // authors,
     categories,
     title,
     mainImage,
-    publishedAt,
+    // publishedAt,
   } = props;
   return (
     <article className="pt-12 md:pt-18">
@@ -50,7 +50,7 @@ function BlogPost(props) {
           </header>
 
           {mainImage && mainImage.asset && (
-            <div className="text-center mb-12 md:mb-24">
+            <div className="text-center mb-12 md:mb-20">
               <GatsbyImage
                 image={props.mainImage.asset.gatsbyImageData}
                 alt={props.mainImage.alt}
