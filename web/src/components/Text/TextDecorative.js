@@ -15,7 +15,7 @@ const Button = ({
     ${mobileAlignment === "center" ? "justify-center" : "justify-start"}`}
   >
     <p
-      className={` md:text-lg uppercase tracking-[0.3em] font-light block mb-7 
+      className={` md:text-lg uppercase tracking-[0.3em] font-light block mb-6 md:mb-7 
     ${darkmode ? `text-white` : `text-secondary-400 `} ${className}`}
     >
       <img

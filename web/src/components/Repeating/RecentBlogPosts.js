@@ -4,7 +4,7 @@ import BlogPostPreviewGrid from "../Blog/BlogPostGrid";
 import GraphQLErrorList from "../Blog/graphql-error-list";
 import { mapEdgesToNodes } from "../../lib/helpers";
 
-const RecentBlogPosts = ({ props, className }) => {
+const RecentBlogPosts = ({ props, heading, className }) => {
   const data = useStaticQuery(graphql`
     {
       posts: allSanityPost(
@@ -47,9 +47,11 @@ const RecentBlogPosts = ({ props, className }) => {
   return (
     <section className={`bg-white ${className || ""}`}>
       <div className="container">
-        <header className="mb-18 text-center">
-          <h2>News & Resources</h2>
-        </header>
+        {heading === false ? null : (
+          <header className="mb-18 text-center">
+            <h2>News & Resources</h2>
+          </header>
+        )}
         {postNodes && postNodes.length > 0 && (
           <BlogPostPreviewGrid nodes={postNodes} />
         )}

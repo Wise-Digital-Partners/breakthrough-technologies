@@ -164,7 +164,6 @@ const Page = ({ data }) => {
                   image={data.introMobile.childImageSharp.gatsbyImageData}
                   className="lg:hidden -mx-4"
                 />
-                <div className="bg-white w-52 transform rotate-45"></div>
               </div>
             </div>
             <div className="lg:text-center">
@@ -198,32 +197,40 @@ const Page = ({ data }) => {
           <div className="relative mb-7 md:mb-20">
             <GatsbyImage
               image={data.aliVideo.childImageSharp.gatsbyImageData}
+              className="hidden md:block"
             />
-            <header className="absolute top-0 right-0 left-0 bottom-0 m-auto text-center flex items-center justify-center flex-col px-4">
-              <h2 className="text-white mb-10">
+            <header className="md:absolute md:top-0 md:right-0 md:left-0 md:bottom-0 md:m-auto text-center md:flex md:items-center md:justify-center md:flex-col md:px-4">
+              <h2 className="md:text-white mb-8 md:mb-10">
                 ALI: A Water Recovery Solution for Cooling Towers
               </h2>
 
-              <button className="group flex justify-center items-center space-x-3 focus:outline-none">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 48 48"
-                  className="w-11 h-11"
-                >
-                  <path
-                    className="group-hover:fill-current text-primary-400 transition-colors duration-300 ease-linear"
-                    d="M3.5,24C3.5,12.7,12.7,3.5,24,3.5S44.5,12.7,44.5,24S35.3,44.5,24,44.5S3.5,35.3,3.5,24z M20.2,16.3
+              <div className="relative">
+                <GatsbyImage
+                  image={data.aliVideo.childImageSharp.gatsbyImageData}
+                  className="md:hidden -mx-4"
+                />
+
+                <button className="group flex justify-center items-center space-x-3 focus:outline-none absolute md:relative top-0 right-0 left-0 bottom-0 m-auto z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 48 48"
+                    className="w-11 h-11"
+                  >
+                    <path
+                      className="group-hover:fill-current text-primary-400 transition-colors duration-300 ease-linear"
+                      d="M3.5,24C3.5,12.7,12.7,3.5,24,3.5S44.5,12.7,44.5,24S35.3,44.5,24,44.5S3.5,35.3,3.5,24z M20.2,16.3
 	c-0.1,0-0.2,0-0.3,0.1c-0.1,0-0.4,0.2-0.4,0.6v14.7c0,0.4,0.3,0.6,0.4,0.6c0.1,0,0.5,0.2,0.8-0.2l10.6-7.3c0.1-0.1,0.2-0.3,0.2-0.5
 	c0-0.2-0.1-0.4-0.2-0.5l-10.6-7.3C20.5,16.3,20.4,16.3,20.2,16.3z"
-                    stroke="#FFF"
-                    fill="transparent"
-                  />
-                </svg>
+                      stroke="#FFF"
+                      fill="transparent"
+                    />
+                  </svg>
 
-                <div className="text-white font-semibold">Play Video</div>
-              </button>
+                  <div className="text-white font-semibold">Play Video</div>
+                </button>
+              </div>
             </header>
           </div>
 
