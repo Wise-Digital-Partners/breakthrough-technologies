@@ -1,9 +1,0 @@
-[build]
-  publish = "web/public
-"
-
-[[plugins]]
-  package = "netlify-plugin-gatsby-cache"
-
-[[plugins]]
-  package = "netlify-plugin-inline-critical-css"
