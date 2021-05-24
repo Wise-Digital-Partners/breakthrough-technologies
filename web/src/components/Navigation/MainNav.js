@@ -163,7 +163,7 @@ const MainNav = ({
     className = null;
 
   if (headerStyle === "overlap") {
-    initialLogo = data.logoDark.publicURL;
+    initialLogo = data.logoLight.publicURL;
     stickyLogo = data.logoDark.publicURL;
     className = "absolute";
   } else {

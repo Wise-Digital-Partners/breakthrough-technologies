@@ -11,7 +11,7 @@ import TextDecorative from "../Text/TextDecorative";
 function BlogPostPreviewGrid(props) {
   return (
     <>
-      <div className="grid md:grid-cols-2 md:space-x-10 lg:space-x-20 items-center group">
+      <div className="grid md:grid-cols-2 md:space-x-10 lg:space-x-20 items-center">
         <div>
           {props.mainImage && props.mainImage.asset && (
             <GatsbyImage

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
-import HeroFullWidth from "../components/Hero/HeroFullWidth";
 import TextDecorative from "../components/Text/TextDecorative";
 import OurTeam from "../components/Repeating/OurTeam";
 import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
@@ -13,13 +14,37 @@ import CallToAction from "../components/Repeating/CTA";
 import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 
 const Page = ({ data }) => {
-  // const heroFullWidthImages = [
-  //   getImage(data.heroDesktop.childImageSharp.gatsbyImageData),
-  //   {
-  //     ...getImage(data.heroMobile.childImageSharp.gatsbyImageData),
-  //     media: `(max-width: 767px)`,
-  //   },
-  // ];
+  const [animated, setAnimated] = useState(["0px", "-16px"]);
+  const [animatedMobile, setAnimatedMobile] = useState(["0px", "-16px"]);
+
+  const bounceTransition = {
+    y: {
+      duration: 1,
+      repeat: Infinity,
+      repeatType: "mirror",
+      ease: "easeInOut",
+    },
+  };
+
+  useLayoutEffect(() => {
+    const handleScroll = () => {
+      let scrolled = window.scrollY > 0;
+
+      if (scrolled) {
+        setAnimated(["0px", "0px"]);
+        setAnimatedMobile(["0px", "0px"]);
+      } else {
+        setAnimated(["0px", "-16px"]);
+        setAnimatedMobile(["0px", "-16px"]);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [animated, animatedMobile]);
 
   return (
     <Layout headerStyle="overlap" headerLinkColor="white">
@@ -30,20 +55,83 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <HeroFullWidth
-        // backgroundImages={heroFullWidthImages}
-        padding="pt-52 md:pt-60 pb-20 md:pb-104"
-        textMaxWidth="max-w-4xl mx-auto text-center"
-      >
-        <p className="font-heading text-mobile-8xl md:text-8xl font-bold text-white uppercase mb-6 md:mb-2">
-          Improve Sustainability.
-          <br /> Drive Better Business Performance.
-        </p>
-      </HeroFullWidth>
+      <section className="relative">
+        <ParallaxProvider>
+          <div className="absolute w-full h-full">
+            <motion.img
+              src={data.scrollArrow.publicURL}
+              alt="Scroll arrow"
+              transition={bounceTransition}
+              animate={{ y: animated }}
+              width="26px"
+              className="sticky lg:top-[90vh] mx-auto hidden md:block z-10"
+            />
+          </div>
 
-      <section className="bg-white mb-44 md:mb-32">
+          <div
+            className="absolute h-full w-full"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
+            }}
+          ></div>
+          <video
+            width="100%"
+            autoPlay
+            muted
+            loop
+            className="max-w-none min-h:[746px] w-[1023px] lg:w-[100vw]"
+          >
+            <source
+              src="https://player.vimeo.com/external/553558824.hd.mp4?s=bb947885e9d7f245075a2ca6e7d334a4643abb39&profile_id=175"
+              type="video/mp4"
+            />
+          </video>
+
+          <Parallax
+            y={[30, 0]}
+            className="hidden lg:block absolute top-0 left-0 w-full h-full"
+          >
+            <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
+          </Parallax>
+
+          <Parallax
+            y={[25, 25]}
+            className="hidden lg:block absolute top-0 left-0 w-full h-full"
+          >
+            <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
+          </Parallax>
+
+          <Parallax
+            y={[50, -50]}
+            className="hidden lg:block absolute top-[35%] left-[20vw]"
+          >
+            <GatsbyImage image={data.cloud4.childImageSharp.gatsbyImageData} />
+          </Parallax>
+
+          <header className="absolute top-44 lg:top-[30%] left-0 right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full">
+            <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 lg:mb-6">
+              Improve Sustainability.
+              <br />
+              Drive Better Business Performance.
+            </p>
+          </header>
+          <motion.img
+            src={data.scrollArrow.publicURL}
+            alt="Scroll arrow"
+            transition={bounceTransition}
+            animate={{ y: animatedMobile }}
+            width="26px"
+            className="sticky top-72 mx-auto md:hidden z-10"
+          />
+        </ParallaxProvider>
+        <div className="bg-white h-44"></div>
+      </section>
+
+      <section className="bg-white mb-44 md:mb-32 relative">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
+            <div className="bg-gray-800 w-5 h-px mx-auto"></div>
             <TextDecorative
               text="Our Mission"
               desktopAlignment="center"
@@ -238,14 +326,32 @@ export const query = graphql`
     ) {
       publicURL
     }
-    heroDesktop: file(relativePath: { eq: "home/1.0 Hero Desktop.jpg" }) {
+    scrollArrow: file(relativePath: { eq: "home/scroll arrow.svg" }) {
+      publicURL
+    }
+    cloud1: file(relativePath: { eq: "home/1.1 Clouds - desktop.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    heroMobile: file(relativePath: { eq: "home/1.0 Hero Mobile.jpg" }) {
+    cloud2: file(relativePath: { eq: "home/1.2 Smoke - desktop.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    cloud3: file(relativePath: { eq: "home/1.3 Smoke - desktop.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    cloud4: file(relativePath: { eq: "home/1.4 single cloud - desktop.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 301
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     introDesktop: file(relativePath: { eq: "home/02 Home - desktop.jpg" }) {

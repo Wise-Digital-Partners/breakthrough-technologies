@@ -9,7 +9,7 @@ import ButtonWithIcon from "../Button/ButtonWithIcon";
 
 function BlogPostPreviewGrid(props) {
   return (
-    <div className="grid md:grid-cols-12 md:space-x-8 items-center group mb-14">
+    <div className="grid md:grid-cols-12 md:space-x-8 items-center mb-14">
       <div className="md:col-start-1 md:col-span-4">
         {props.mainImage && props.mainImage.asset && (
           <GatsbyImage
