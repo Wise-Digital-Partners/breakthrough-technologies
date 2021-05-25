@@ -19,7 +19,7 @@ const Button = ({
   text,
 }) => (
   <StyledButton
-    className={`font-body font-medium text-white hover:text-white bg-primary-400 hover:bg-primary-500 px-8 py-3 min-w-[160px] inline-flex items-center justify-center text-center no-underline focus:outline-none transition-colors duration-300 ease-in-out ${
+    className={`group relative font-body font-medium text-white hover:text-white bg-primary-400 hover:bg-primary-500 px-8 py-3 min-w-[160px] inline-flex items-center justify-center text-center no-underline focus:outline-none transition-colors duration-300 ease-in-out ${
       className || ""
     }`}
     href={href}
@@ -31,7 +31,12 @@ const Button = ({
     type={type}
     darkmode={darkmode}
   >
-    {text}
+    <div className="relative">
+      {text}
+      <span
+        className={`absolute bottom-0 left-auto group-hover:left-0 right-0 group-hover:right-auto bg-white h-[3px] w-0  group-hover:w-full transition-all duration-500 ease-in-out`}
+      ></span>
+    </div>
   </StyledButton>
 );
 

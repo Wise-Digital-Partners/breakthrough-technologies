@@ -40,7 +40,6 @@ const Button = ({
         darkmode ? `bg-white` : `bg-primary-400`
       }`}
     ></span>
-    <span></span>
   </a>
 );
 
