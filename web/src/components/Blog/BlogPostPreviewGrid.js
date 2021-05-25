@@ -9,12 +9,12 @@ function BlogPostPreviewGrid(props) {
   return (
     <AniLink fade to={getBlogUrl(props.publishedAt, props.slug.current)}>
       <div className="group">
-        <div className="overflow-hidden mb-2.5">
+        <div className="overflow-hidden mb-5">
           {props.mainImage && props.mainImage.asset && (
             <GatsbyImage
               image={props.mainImage.asset.gatsbyImageData}
               alt={props.mainImage.alt}
-              className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+              className="block transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
             />
           )}
         </div>

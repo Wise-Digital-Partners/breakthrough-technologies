@@ -124,7 +124,7 @@ const Page = ({ data }) => {
 
         <div className="container relative">
           <header className="md:max-w-2xl mb-7">
-            <h1 class="md:text-white">
+            <h1 className="md:text-white">
               ALI: A Water Recovery Solution for Cooling Towers
             </h1>
           </header>
