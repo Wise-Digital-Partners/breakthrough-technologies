@@ -60,7 +60,18 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="relative">
+      <section className="relative pt-32 md:pt-0">
+        <BgImage
+          className="lg:hidden h-full w-full left-0 top-0"
+          image={data.heroMobile.childImageSharp.gatsbyImageData}
+          style={{
+            backgroundSize: "cover",
+            backgroundPosition: "50% 50%",
+            backgroundRepeat: "no-repeat",
+            position: "absolute",
+          }}
+        />
+
         <ParallaxProvider>
           <div className="absolute w-full h-full">
             <motion.img
@@ -74,7 +85,7 @@ const Page = ({ data }) => {
           </div>
 
           <div
-            className="absolute h-full w-full"
+            className="hidden lg:block absolute h-full w-full"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
@@ -87,7 +98,7 @@ const Page = ({ data }) => {
             autoPlay
             muted
             loop
-            className="max-w-none min-h:[746px] w-[1023px] lg:w-[100vw]"
+            className="hidden lg:block max-w-none min-h:[746px] w-[1023px] lg:w-[100vw]"
           >
             <source
               src="https://player.vimeo.com/external/553558824.hd.mp4?s=bb947885e9d7f245075a2ca6e7d334a4643abb39&profile_id=175"
@@ -106,23 +117,24 @@ const Page = ({ data }) => {
             y={[25, 25]}
             className="hidden lg:block absolute top-0 left-0 w-full h-full"
           >
-            <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={data.cloud2.childImageSharp.gatsbyImageData} />
           </Parallax>
 
           <Parallax
             y={[50, -50]}
             className="hidden lg:block absolute top-[35%] left-[20vw]"
           >
-            <GatsbyImage image={data.cloud4.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
           </Parallax>
 
-          <header className="absolute top-44 lg:top-[30%] left-0 right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full">
+          <header className="lg:absolute lg:top-[30%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full z-10">
             <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 lg:mb-6">
               Improve Sustainability.
               <br />
               Drive Better Business Performance.
             </p>
           </header>
+
           <motion.img
             src={data.scrollArrow.publicURL}
             alt="Scroll arrow"
@@ -340,36 +352,41 @@ export const query = graphql`
     ) {
       publicURL
     }
+    heroMobile: file(relativePath: { eq: "home/1.0 Hero mobile.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
     scrollArrow: file(relativePath: { eq: "home/scroll arrow.svg" }) {
       publicURL
     }
     cloud1: file(relativePath: { eq: "home/1.1 Clouds - desktop.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE, quality: 100)
       }
     }
-    cloud3: file(relativePath: { eq: "home/1.3 Smoke - desktop.png" }) {
+    cloud2: file(relativePath: { eq: "home/1.3 Smoke - desktop.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE, quality: 100)
       }
     }
-    cloud4: file(relativePath: { eq: "home/1.4 single cloud - desktop.png" }) {
+    cloud3: file(relativePath: { eq: "home/1.4 single cloud - desktop.png" }) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
           width: 301
-          placeholder: BLURRED
+          placeholder: NONE
           quality: 100
         )
       }
     }
     cloud1Mobile: file(relativePath: { eq: "home/1.1 clouds - mobile.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE, quality: 100)
       }
     }
     cloud2Mobile: file(
-      relativePath: { eq: "home/1.2 single cloud - mobile.png" }
+      relativePath: { eq: "home/1.2 single cloud - NONE.png" }
     ) {
       childImageSharp {
         gatsbyImageData(
