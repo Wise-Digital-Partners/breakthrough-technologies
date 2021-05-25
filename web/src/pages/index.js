@@ -60,7 +60,7 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="relative pt-32 md:pt-0">
+      <section className="relative pt-44 lg:pt-0">
         <BgImage
           className="lg:hidden h-full w-full left-0 top-0"
           image={data.heroMobile.childImageSharp.gatsbyImageData}
@@ -127,7 +127,25 @@ const Page = ({ data }) => {
             <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
           </Parallax>
 
-          <header className="lg:absolute lg:top-[30%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full z-10">
+          <Parallax
+            y={[50, 15]}
+            className="lg:hidden absolute bottom-0 w-full h-full"
+          >
+            <GatsbyImage
+              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
+            />
+          </Parallax>
+
+          <Parallax
+            y={[50, 0]}
+            className="lg:hidden absolute bottom-[45%] right-[8vw]"
+          >
+            <GatsbyImage
+              image={data.cloud2Mobile.childImageSharp.gatsbyImageData}
+            />
+          </Parallax>
+
+          <header className="relative lg:absolute lg:top-[30%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full px-4 z-10">
             <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 lg:mb-6">
               Improve Sustainability.
               <br />
@@ -386,13 +404,13 @@ export const query = graphql`
       }
     }
     cloud2Mobile: file(
-      relativePath: { eq: "home/1.2 single cloud - NONE.png" }
+      relativePath: { eq: "home/1.2 single cloud - mobile.png" }
     ) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
           width: 191
-          placeholder: BLURRED
+          placeholder: NONE
           quality: 100
         )
       }
