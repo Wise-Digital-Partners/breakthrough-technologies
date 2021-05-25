@@ -107,7 +107,7 @@ const Page = ({ data }) => {
           </video>
 
           <Parallax
-            y={[30, 0]}
+            y={[25, 0]}
             className="hidden lg:block absolute top-0 left-0 w-full h-full"
           >
             <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
@@ -122,7 +122,7 @@ const Page = ({ data }) => {
 
           <Parallax
             y={[50, -50]}
-            className="hidden lg:block absolute top-[35%] left-[20vw]"
+            className="hidden lg:block absolute top-[25%] left-[20vw]"
           >
             <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
           </Parallax>
@@ -145,7 +145,7 @@ const Page = ({ data }) => {
             />
           </Parallax>
 
-          <header className="relative lg:absolute lg:top-[30%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full px-4 z-10">
+          <header className="relative lg:absolute lg:top-[18%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full px-4 z-10">
             <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 lg:mb-6">
               Improve Sustainability.
               <br />
