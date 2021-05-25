@@ -12,6 +12,7 @@ import OurTeam from "../components/Repeating/OurTeam";
 import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonWithIcon from "../components/Button/ButtonWithIcon";
+import ModalVideo from "../components/Modal/ModalVideo";
 
 const Page = ({ data }) => {
   const [animated, setAnimated] = useState(["0px", "-16px"]);
@@ -60,9 +61,9 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="relative pt-44 lg:pt-0">
+      <section className="relative pt-44 md:pt-0">
         <BgImage
-          className="lg:hidden h-full w-full left-0 top-0"
+          className="md:hidden h-full w-full left-0 top-0"
           image={data.heroMobile.childImageSharp.gatsbyImageData}
           style={{
             backgroundSize: "cover",
@@ -80,12 +81,12 @@ const Page = ({ data }) => {
               transition={bounceTransition}
               animate={{ y: animated }}
               width="26px"
-              className="sticky lg:top-[90vh] mx-auto hidden lg:block z-10"
+              className="sticky md:top-[90vh] mx-auto hidden md:block z-10"
             />
           </div>
 
           <div
-            className="hidden lg:block absolute h-full w-full"
+            className="hidden md:block absolute h-full w-full"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
@@ -98,7 +99,7 @@ const Page = ({ data }) => {
             autoPlay
             muted
             loop
-            className="hidden lg:block max-w-none min-h:[746px] w-[1023px] lg:w-[100vw]"
+            className="hidden md:block"
           >
             <source
               src="https://player.vimeo.com/external/553558824.hd.mp4?s=bb947885e9d7f245075a2ca6e7d334a4643abb39&profile_id=175"
@@ -108,29 +109,41 @@ const Page = ({ data }) => {
 
           <Parallax
             y={[25, 0]}
-            className="hidden lg:block absolute top-0 left-0 w-full h-full"
+            className="hidden md:block absolute top-0 left-0 w-full h-full"
           >
             <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
           </Parallax>
 
           <Parallax
             y={[25, 25]}
-            className="hidden lg:block absolute top-0 left-0 w-full h-full"
+            className="hidden md:block absolute top-0 left-0 w-full h-full"
           >
             <GatsbyImage image={data.cloud2.childImageSharp.gatsbyImageData} />
           </Parallax>
 
           <Parallax
             y={[50, -50]}
-            className="hidden lg:block absolute top-[25%] left-[20vw]"
+            className="hidden md:block absolute top-[25%] left-[20vw]"
           >
             <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
           </Parallax>
 
           <Parallax
-            y={[50, 15]}
-            className="lg:hidden absolute bottom-0 w-full h-full"
+            y={[50, 0]}
+            className="hidden sm:block md:hidden absolute bottom-0 w-full"
           >
+            <GatsbyImage
+              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
+            />
+          </Parallax>
+
+          <Parallax y={[15, 0]} className="sm:hidden absolute bottom-0 w-full">
+            <GatsbyImage
+              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
+            />
+          </Parallax>
+
+          <Parallax y={[0, 0]} className="xs:hidden absolute bottom-0 w-full">
             <GatsbyImage
               image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
             />
@@ -138,15 +151,15 @@ const Page = ({ data }) => {
 
           <Parallax
             y={[50, 0]}
-            className="lg:hidden absolute bottom-[45%] right-[8vw]"
+            className="md:hidden absolute bottom-[43%] right-[8vw]"
           >
             <GatsbyImage
               image={data.cloud2Mobile.childImageSharp.gatsbyImageData}
             />
           </Parallax>
 
-          <header className="relative lg:absolute lg:top-[18%] lg:left-0 lg:right-0 m-auto text-center max-w-4xl lg:max-w-5xl mx-auto h-full px-4 z-10">
-            <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 lg:mb-6">
+          <header className="relative md:absolute md:top-[18%] md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full px-4 z-10">
+            <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 md:mb-6">
               Improve Sustainability.
               <br />
               Drive Better Business Performance.
@@ -159,7 +172,7 @@ const Page = ({ data }) => {
             transition={bounceTransition}
             animate={{ y: animatedMobile }}
             width="26px"
-            className="sticky top-72 mx-auto lg:hidden z-10"
+            className="sticky top-72 mx-auto md:hidden z-10"
           />
         </ParallaxProvider>
         <div className="bg-white h-72"></div>
@@ -247,7 +260,10 @@ const Page = ({ data }) => {
                   className="md:hidden -mx-4"
                 />
 
-                <button className="group flex justify-center items-center space-x-3 focus:outline-none absolute md:relative top-0 right-0 left-0 bottom-0 m-auto z-10">
+                <button
+                  className="group flex justify-center items-center space-x-3 focus:outline-none absolute md:relative top-0 right-0 left-0 bottom-0 m-auto z-10"
+                  data-modal-open="modal-video"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -354,6 +370,8 @@ const Page = ({ data }) => {
       <RecentBlogPosts className="mb-20 md:mb-32" />
 
       <CallToAction headingLevel="h2" />
+
+      <ModalVideo />
     </Layout>
   );
 };

@@ -19,6 +19,7 @@ import TextDecorative from "../components/Text/TextDecorative";
 import OurTeam from "../components/Repeating/OurTeam";
 import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
+import ModalVideo from "../components/Modal/ModalVideo";
 
 const Page = ({ data }) => {
   const [accordionOpen1, setAccordionOpen1] = useState("block"),
@@ -136,7 +137,10 @@ const Page = ({ data }) => {
             />
 
             <div className="absolute md:relative top-0 right-0 left-0 bottom-0 text-center flex justify-center md:justify-start">
-              <button className="group flex justify-center items-center space-x-3 focus:outline-none">
+              <button
+                className="group flex justify-center items-center space-x-3 focus:outline-none"
+                data-modal-open="modal-video"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -707,6 +711,8 @@ const Page = ({ data }) => {
       <RecentBlogPosts className="mb-20 md:mb-32" />
 
       <CallToAction headingLevel="h2" />
+
+      <ModalVideo />
     </Layout>
   );
 };

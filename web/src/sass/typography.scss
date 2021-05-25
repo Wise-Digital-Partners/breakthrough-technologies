@@ -71,3 +71,9 @@ p {
     @apply mb-6;
   }
 }
+
+.text-mobile-8xl {
+  @media (max-width: 380px) {
+    @apply text-[2rem] leading-10 #{!important};
+  }
+}

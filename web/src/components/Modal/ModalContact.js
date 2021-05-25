@@ -3,7 +3,7 @@ import MicroModal from "micromodal";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
 // import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+// import "react-tabs/style/react-tabs.css";
 
 import Contact from "../Form/Contact";
 
