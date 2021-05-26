@@ -89,7 +89,7 @@ const Page = ({ data }) => {
           />
           <header className="max-w-3xl mx-auto text-center">
             <h2 className="mb-0">
-              To build innovative industrial products that improve water and
+              We build innovative industrial products that improve water and
               energy sustainability and drive better business performance.
             </h2>
           </header>

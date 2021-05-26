@@ -67,10 +67,10 @@ const About = ({ className, headingLevel }) => {
           Boston-based Breakthrough Technologies is led by a world-class
           engineering team managed by one of the Massachusetts Institute of
           Technology’s brightest engineers. Unlike any other sustainability
-          technology company, Breakthrough Technologies’ engineers utilize
-          physics to solve sustainability problems with industrial production
-          processes. This unique approach ultimately leads to cleaner,
-          chemical-less and cost-saving sustainable solutions.
+          technology company, our engineers utilize physics to solve
+          sustainability problems with industrial production processes. This
+          unique approach ultimately leads to cleaner, chemical-less, and
+          cost-saving sustainable solutions.
         </p>
         <div className="text-center">
           <ButtonWithIcon darkmode={true} href="/about/" text="Learn More" />

@@ -297,7 +297,7 @@ const Page = ({ data }) => {
                   <p className="mb-0">
                     ALI’s patented duct system increases the efficiency of
                     cooling tower system fans. This allows each fan to pull with
-                    less energy.
+                    less energy, which reduces operating costs.
                   </p>
                 </div>
               </div>

@@ -108,18 +108,22 @@ const Page = ({ data }) => {
           </video>
 
           <Parallax
-            y={[25, 0]}
+            y={[35, -25]}
             className="hidden md:block absolute top-0 left-0 w-full h-full"
           >
             <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
           </Parallax>
 
           <Parallax
-            y={[25, 25]}
+            y={[50, 0]}
             className="hidden md:block absolute top-0 left-0 w-full h-full"
           >
             <GatsbyImage image={data.cloud2.childImageSharp.gatsbyImageData} />
           </Parallax>
+
+          <div className="hidden md:block absolute -bottom-80 left-0 w-full h-full">
+            <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
+          </div>
 
           <Parallax
             y={[50, -50]}
@@ -137,7 +141,7 @@ const Page = ({ data }) => {
             />
           </Parallax>
 
-          <Parallax y={[15, 0]} className="sm:hidden absolute bottom-0 w-full">
+          <Parallax y={[25, 0]} className="sm:hidden absolute bottom-0 w-full">
             <GatsbyImage
               image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
             />
@@ -159,11 +163,16 @@ const Page = ({ data }) => {
           </Parallax>
 
           <header className="relative md:absolute md:top-[18%] md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full px-4 z-10">
-            <p className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 md:mb-6">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.75 }}
+              className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 md:mb-6 opacity-0"
+            >
               Improve Sustainability.
               <br />
               Drive Better Business Performance.
-            </p>
+            </motion.p>
           </header>
 
           <motion.img
@@ -175,7 +184,7 @@ const Page = ({ data }) => {
             className="sticky top-72 mx-auto md:hidden z-10"
           />
         </ParallaxProvider>
-        <div className="bg-white h-72"></div>
+        <div className="bg-white h-72 relative -top-12"></div>
       </section>
 
       <section className="bg-white mb-44 md:mb-32 relative">
@@ -295,14 +304,14 @@ const Page = ({ data }) => {
               </p>
               <p>
                 ALI, Aqua Liquefaction with Ionization, is our leading
-                proprietary technology for cooling towers. ALI uses
+                proprietary technology that improves cooling towers. ALI uses
                 specially-designed ductwork over cooling towers to capture
                 evaporating water. Without using heat or chemicals, ALI
-                condenses and recovers at least 90 percent of your escaping
-                water and eliminates the concentration of dissolved solids in
-                your system. Our proprietary and patented technology only
-                requires one day for installation and involves no moving parts,
-                which means minimal maintenance and operating expenses.
+                condenses and recovers 90 percent of your evaporating water and
+                eliminates the concentration of dissolved solids in your system.
+                Our proprietary and patented technology only requires one day
+                for installation and involves no moving parts, which means
+                minimal maintenance and operating expenses.
               </p>
               <ButtonWithIcon
                 href="/how-to-improve-cooling-tower-efficiency/"
