@@ -90,13 +90,13 @@ const Page = ({ data }) => {
             </AnchorLink>
           </div>
 
-          <div
+          {/* <div
             className="hidden md:block absolute h-full w-full"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
             }}
-          ></div>
+          ></div> */}
 
           <video
             ref={videoRef}
@@ -108,67 +108,12 @@ const Page = ({ data }) => {
             className="hidden md:block"
           >
             <source
-              src="https://player.vimeo.com/external/553558824.hd.mp4?s=bb947885e9d7f245075a2ca6e7d334a4643abb39&profile_id=175"
+              src="https://player.vimeo.com/external/558654682.sd.mp4?s=04303febae045c33865ea607235df2631fe760ce&profile_id=165"
               type="video/mp4"
             />
           </video>
 
-          <Parallax
-            y={[35, -25]}
-            className="hidden md:block absolute top-0 left-0 w-full h-full"
-          >
-            <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
-          </Parallax>
-
-          <Parallax
-            y={[50, 0]}
-            className="hidden md:block absolute top-0 left-0 w-full h-full"
-          >
-            <GatsbyImage image={data.cloud2.childImageSharp.gatsbyImageData} />
-          </Parallax>
-
-          <div className="hidden md:block absolute -bottom-80 left-0 w-full h-full">
-            <GatsbyImage image={data.cloud1.childImageSharp.gatsbyImageData} />
-          </div>
-
-          <Parallax
-            y={[50, -50]}
-            className="hidden md:block absolute top-[25%] left-[20vw]"
-          >
-            <GatsbyImage image={data.cloud3.childImageSharp.gatsbyImageData} />
-          </Parallax>
-
-          <Parallax
-            y={[50, 0]}
-            className="hidden sm:block md:hidden absolute bottom-0 w-full"
-          >
-            <GatsbyImage
-              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
-            />
-          </Parallax>
-
-          <Parallax y={[25, 0]} className="sm:hidden absolute bottom-0 w-full">
-            <GatsbyImage
-              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
-            />
-          </Parallax>
-
-          <Parallax y={[0, 0]} className="xs:hidden absolute bottom-0 w-full">
-            <GatsbyImage
-              image={data.cloud1Mobile.childImageSharp.gatsbyImageData}
-            />
-          </Parallax>
-
-          <Parallax
-            y={[50, 0]}
-            className="md:hidden absolute bottom-[43%] right-[8vw]"
-          >
-            <GatsbyImage
-              image={data.cloud2Mobile.childImageSharp.gatsbyImageData}
-            />
-          </Parallax>
-
-          <header className="relative md:absolute md:top-[18%] md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full px-4 z-10">
+          <header className="relative md:absolute md:top-[24%] md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full px-4 z-10">
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               animate={{ y: 0, opacity: 1 }}

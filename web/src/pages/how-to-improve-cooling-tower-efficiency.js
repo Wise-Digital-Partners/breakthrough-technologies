@@ -4,14 +4,14 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-// import {
-//   Accordion,
-//   AccordionItem,
-//   AccordionItemHeading,
-//   AccordionItemButton,
-//   AccordionItemPanel,
-//   AccordionItemState,
-// } from "react-accessible-accordion";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+  AccordionItemState,
+} from "react-accessible-accordion";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
@@ -22,6 +22,33 @@ import CallToAction from "../components/Repeating/CTA";
 import ModalVideo from "../components/Modal/ModalVideo";
 
 const Page = ({ data }) => {
+  const questionsAnswers = [
+    {
+      question: "Does ALI interfere with normal cooling tower operations?",
+      answer:
+        "No, ALI does not interfere with cooling tower operations and operates independently from existing systems. It fits over the top of the cooling tower with its own steel support structure and maintains existing access points.",
+    },
+    {
+      question: "Does ALI inhibit air flow from the cooling tower exhaust?",
+      answer:
+        "No, ALI’s patented design improves air flow by removing moisture, straightening the air flow and creating a venturi effect, which increases airflow towards the exhaust.",
+    },
+    {
+      question: "Is ALI patented?",
+      answer:
+        "Yes, Breakthrough Technologies filed patents in the U.S. and additional jurisdictions abroad.",
+    },
+    {
+      question: "Does ALI require a lot of maintenance?",
+      answer:
+        "Due to the fact that ALI does not involve any moving parts, ALI only requires one inspection and cleaning per year.",
+    },
+    {
+      question: "Does using ALI affect the cooling tower chemicals?",
+      answer:
+        "Since ALI returns evaporated water to the cooling tower, the concentration of impurities at the basin or sump is reduced. Depending upon the quality of the water used, this may result in fewer blowdowns or the removal of solid and liquid impurities. The combination of chemicals for treating water does not change.",
+    },
+  ];
   // const [accordionOpen1, setAccordionOpen1] = useState("block"),
   //   [accordionOpen2, setAccordionOpen2] = useState("hidden"),
   //   [accordionOpen3, setAccordionOpen3] = useState("hidden");
@@ -541,161 +568,72 @@ const Page = ({ data }) => {
       <section className="bg-white relative mb-20 md:mb-24">
         <div className="container">
           <TextDecorative
-            text="The Benefits"
+            text="Our Partners"
+            desktopAlignment="center"
+            mobileAlignment="center"
+          />
+
+          <div className="flex items-center justify-center space-x-10 lg:space-x-20">
+            <GatsbyImage
+              image={data.fortistar.childImageSharp.gatsbyImageData}
+            />
+            <GatsbyImage image={data.cti.childImageSharp.gatsbyImageData} />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white relative mb-20 md:mb-24">
+        <div className="container">
+          <TextDecorative
+            text="FAQs"
             desktopAlignment="left"
             mobileAlignment="center"
           />
-          {/* <header className="mb-12 md:mb-18 text-center md:text-left">
-            <h2>How Your Company Benefits</h2>
+          <header className="mb-10 md:mb-14 text-center md:text-left">
+            <h2>Lorem Ipsum</h2>
           </header>
 
-          <div className="grid md:grid-cols-2 gap-y-4 md:gap-x-12 lg:gap-x-20 gap-y-7 md:items-center">
-            <div className="order-2 md:order-1">
-              <Accordion preExpanded={["1"]}>
-                <AccordionItem className="accordion-item" uuid="1">
-                  <AccordionItemHeading className="accordion-heading">
-                    <AccordionItemButton className="accordion-button">
-                      <AccordionItemState>
-                        {({ expanded }) => {
-                          const state = expanded ? "expanded" : "collapsed";
-                          setAccordionOpen1(
-                            state === "expanded" ? "block" : "hidden"
-                          );
-                        }}
-                      </AccordionItemState>
-                      <p className="md:text-lg text-gray-900 text-opacity-30 uppercase tracking-[0.3em] font-light mb-0 transition-colors duration-300 ease-linear">
-                        Sustainability
-                      </p>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel className="accordion-panel">
-                    <p className="font-heading text-gray-900 text-xl font-bold mb-4">
-                      Increase Your Company’s Sustainability Culture
-                    </p>
-                    <p className="mb-0">
-                      ALI technology recovers water and increases the efficiency
-                      of cooling tower system fans. This saves water and reduces
-                      energy use, which can significantly contribute to your
-                      company’s sustainability efforts and initiatives.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
+          {/* <div className="grid md:grid-cols-12 gap-y-4 md:gap-x-12 lg:gap-x-20 gap-y-7 md:items-center"> */}
+          <div className="max-w-2xl">
+            <Accordion
+              allowZeroExpanded={true}
+              className="border-t border-solid border-black border-opacity-30"
+            >
+              {questionsAnswers.map((faq, i) => {
+                return (
+                  <div key={i}>
+                    <AccordionItem
+                      className="border-b border-solid border-black border-opacity-30 pt-6 pb-5"
+                      uuid={i}
+                    >
+                      <AccordionItemButton className="flex items-center focus:outline-none">
+                        <AccordionItemState>
+                          {(state) => {
+                            const icon = state.expanded
+                              ? "fa-minus"
+                              : "fa-plus";
+                            return (
+                              <i
+                                className={`fal ${icon} text-xl text-black mr-6`}
+                              ></i>
+                            );
+                          }}
+                        </AccordionItemState>
 
-                <AccordionItem className="accordion-item" uuid="2">
-                  <AccordionItemHeading className="accordion-heading">
-                    <AccordionItemButton className="accordion-button">
-                      <AccordionItemState>
-                        {({ expanded }) => {
-                          const state = expanded ? "expanded" : "collapsed";
-                          setAccordionOpen2(
-                            state === "expanded" ? "block" : "hidden"
-                          );
-                        }}
-                      </AccordionItemState>
-                      <p className="md:text-lg text-gray-900 text-opacity-30 uppercase tracking-[0.3em] font-light mb-0 transition-colors duration-300 ease-linear">
-                        Economics
-                      </p>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel className="accordion-panel">
-                    <p className="font-heading text-gray-900 text-xl font-bold mb-4">
-                      Companies that Use Large Amounts of Water
-                    </p>
-                    <p className="mb-0">
-                      The typical mid-size cooling tower system consumes about 100 million gallons of water every year. By helping your company reduce water lost from evaporation and blowdown, ALI is a great investment that will proivde a return on your investment in as little as two to three years.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem className="accordion-item" uuid="3">
-                  <AccordionItemHeading className="accordion-heading">
-                    <AccordionItemButton className="accordion-button">
-                      <AccordionItemState>
-                        {({ expanded }) => {
-                          const state = expanded ? "expanded" : "collapsed";
-                          setAccordionOpen3(
-                            state === "expanded" ? "block" : "hidden"
-                          );
-                        }}
-                      </AccordionItemState>
-                      <p className="md:text-lg text-gray-900 text-opacity-30 uppercase tracking-[0.3em] font-light mb-0 transition-colors duration-300 ease-linear">
-                        Availability
-                      </p>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel className="accordion-panel">
-                    <p className="font-heading text-gray-900 text-xl font-bold mb-4">
-                      Operate in Regions Facing Water Stress or Scarcity
-                    </p>
-                    <p className="mb-0">
-                      For companies operating in a region where there is
-                      significant water stress or scarcity issues, our water
-                      recovery technology is extremely valuable. Your company
-                      can make the most of limited resources with ALI
-                      technology.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-              </Accordion>
-            </div>
-
-            <div className="order-1 md:order-2">
-              <div className="hidden md:block">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsDesktop1.childImageSharp.gatsbyImageData
-                  }
-                  alt="Increase Your Company’s Sustainability Culture"
-                  className={`accordion-image ${accordionOpen1}`}
-                />
-              </div>
-              <div className="md:hidden">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsMobile1.childImageSharp.gatsbyImageData
-                  }
-                  alt="Increase Your Company’s Sustainability Culture"
-                  className={`accordion-image ${accordionOpen1}`}
-                />
-              </div>
-              <div className="hidden md:block">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsDesktop2.childImageSharp.gatsbyImageData
-                  }
-                  alt="Companies that Use Large Amounts of Water"
-                  className={`accordion-image ${accordionOpen2}`}
-                />
-              </div>
-              <div className="md:hidden">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsMobile2.childImageSharp.gatsbyImageData
-                  }
-                  alt="Companies that Use Large Amounts of Water"
-                  className={`accordion-image ${accordionOpen2}`}
-                />
-              </div>
-              <div className="hidden md:block">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsDesktop3.childImageSharp.gatsbyImageData
-                  }
-                  alt="Operate in Regions Facing Water Stress or Scarcity"
-                  className={`accordion-image ${accordionOpen3}`}
-                />
-              </div>
-              <div className="md:hidden">
-                <GatsbyImage
-                  image={
-                    data.companyBenefitsMobile3.childImageSharp.gatsbyImageData
-                  }
-                  alt="Operate in Regions Facing Water Stress or Scarcity"
-                  className={`accordion-image ${accordionOpen3}`}
-                />
-              </div>
-            </div>
-          </div> */}
+                        <p className="font-heading text-lg font-bold text-gray-800 mb-0">
+                          {faq.question}
+                        </p>
+                      </AccordionItemButton>
+                      <AccordionItemPanel className="pt-4 pl-10 animate-fadeIn">
+                        <p className="mb-0">{faq.answer}</p>
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </div>
+                );
+              })}
+            </Accordion>
+          </div>
+          {/* </div> */}
         </div>
       </section>
 
@@ -854,6 +792,26 @@ export const query = graphql`
     ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    fortistar: file(relativePath: { eq: "ALI/fortistar-logo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 200
+          placeholder: BLURRED
+          quality: 100
+        )
+      }
+    }
+    cti: file(relativePath: { eq: "ALI/cti-logo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 115
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
   }
