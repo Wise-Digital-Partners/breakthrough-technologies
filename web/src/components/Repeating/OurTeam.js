@@ -10,7 +10,7 @@ const About = ({ className, headingLevel }) => {
   const data = useStaticQuery(graphql`
     {
       backgroundDesktop: file(
-        relativePath: { eq: "repeating/our-team/Our team - desktop.jpg" }
+        relativePath: { eq: "repeating/our-team/Our team - desktop (1).jpg" }
       ) {
         childImageSharp {
           gatsbyImageData(
@@ -21,7 +21,7 @@ const About = ({ className, headingLevel }) => {
         }
       }
       backgroundMobile: file(
-        relativePath: { eq: "repeating/our-team/Our Team - mobile.jpg" }
+        relativePath: { eq: "repeating/our-team/Our Team - mobile (1).jpg" }
       ) {
         childImageSharp {
           gatsbyImageData(
@@ -61,12 +61,12 @@ const About = ({ className, headingLevel }) => {
         />
 
         <HeadingTag className="text-center text-white mb-8">
-          Our Team
+          Who We Are
         </HeadingTag>
         <p className="text-left md:text-center text-white mb-5">
           Boston-based Breakthrough Technologies is led by a world-class
           engineering team managed by one of the Massachusetts Institute of
-          Technology’s brightest engineers. Unlike any other sustainability
+          Technology’s brightest engineers. Unlike any other sustainable
           technology company, our engineers utilize physics to solve
           sustainability problems with industrial production processes. This
           unique approach ultimately leads to cleaner, chemical-less, and

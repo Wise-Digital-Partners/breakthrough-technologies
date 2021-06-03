@@ -176,7 +176,7 @@ const Page = ({ data }) => {
                   mobileAlignment="center"
                 />
                 <h2 className="lg:mb-12">
-                  How to Improve Cooling Tower Efficiency
+                  Improve Your Cooling Tower Efficiency
                 </h2>
                 <p className="mb-0">
                   ALI, Aqua Liquefaction with Ionization, is our leading
@@ -209,7 +209,7 @@ const Page = ({ data }) => {
       <section className="bg-white relative mb-20 md:mb-52">
         <div className="container">
           <TextDecorative
-            text="Benefits"
+            text="What You'll Gain"
             desktopAlignment="left"
             mobileAlignment="center"
           />
@@ -398,7 +398,7 @@ const Page = ({ data }) => {
                   towers also utilize a sump, or basin, that collects water and
                   impurities that over time lead to corrosion and bacteria
                   growth. Many cooling tower systems control these issues by
-                  adding more water, and chemicals.
+                  adding more water and chemicals.
                 </p>
               </motion.div>
             </div>
@@ -483,10 +483,10 @@ const Page = ({ data }) => {
                   Coalesce and Condense
                 </p>
                 <p className="mb-0">
-                  This air flow is then directed to an ionization and cloud
-                  chamber, where a carefully controlled electric field causes
-                  the water molecules to coalesce and condense into larger
-                  droplets.
+                  The duct system's airflow is then directed to an ionization
+                  and cloud chamber, where a carefully controlled electric field
+                  causes the water molecules to coalesce and condense into
+                  larger droplets.
                 </p>
               </motion.div>
             </div>

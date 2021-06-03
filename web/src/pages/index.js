@@ -245,7 +245,7 @@ const Page = ({ data }) => {
                 resources around the world. To overcome these challenges,
                 industrial processes must become more efficient. Breakthrough
                 Technologies is a Boston-based company that builds innovative
-                industrial products that improve water and energy sustainability
+                industrial products to improve water and energy sustainability
                 and drive better business performance.
               </p>
             </div>
@@ -308,7 +308,7 @@ const Page = ({ data }) => {
 
           <div className="flex justify-between flex-col lg:flex-row space-y-1 lg:space-y-0 lg:space-x-10">
             <div className="lg:max-w-xl">
-              <h2 className="mb-1">ALI: A Water Recovery Solution</h2>
+              <h3 className="mb-1">Improving Cooling Tower Efficiency</h3>
               <p className="uppercase text-gray-300">
                 AQUA LIQUEFACTION WITH IONIZATION
               </p>
@@ -336,18 +336,15 @@ const Page = ({ data }) => {
               </p>
 
               <ul className="list-disc ml-6 flex flex-col space-y-1 mb-7 md:mb-0">
+                <li className="font-medium">Recover 90% of water loss</li>
                 <li className="font-medium">
-                  Recover at least 90 percent of water loss
+                  Reduce water treatment chemicals
                 </li>
-                <li className="font-medium">
-                  Eliminate chemical water treatments
-                </li>
-                <li className="font-medium">Eliminate blow down</li>
+                <li className="font-medium">Reduce blowdown </li>
                 <li className="font-medium">Eliminate plume rise</li>
                 <li className="font-medium">Lower operating costs</li>
                 <li className="font-medium">Increase sustainability</li>
-                <li className="font-medium">Create peace of mind</li>
-                <li className="font-medium">Ease of installation</li>
+                <li className="font-medium">Easy installation</li>
               </ul>
 
               <ButtonWithIcon
