@@ -602,12 +602,7 @@ const Page = ({ data }) => {
                       Companies that Use Large Amounts of Water
                     </p>
                     <p className="mb-0">
-                      The typical mid-size cooling tower system consumes about
-                      100 million gallons of water per year, which could cost
-                      nearly half a million dollars. By helping your company
-                      reduce water lost from evaporation and blowdown, ALI is a
-                      great investment that will provide a return on your
-                      investment in as little as two to three years.
+                      The typical mid-size cooling tower system consumes about 100 million gallons of water every year. By helping your company reduce water lost from evaporation and blowdown, ALI is a great investment that will proivde a return on your investment in as little as two to three years.
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
