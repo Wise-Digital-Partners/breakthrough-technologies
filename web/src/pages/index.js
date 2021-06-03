@@ -119,6 +119,7 @@ const Page = ({ data }) => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.75 }}
               className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 md:mb-6 opacity-0"
+              style={{ textShadow: "0px 2px 40px rgba(0, 0, 0, 0.4)" }}
             >
               Improve Sustainability.
               <br />
