@@ -4,14 +4,14 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-  AccordionItemState,
-} from "react-accessible-accordion";
+// import {
+//   Accordion,
+//   AccordionItem,
+//   AccordionItemHeading,
+//   AccordionItemButton,
+//   AccordionItemPanel,
+//   AccordionItemState,
+// } from "react-accessible-accordion";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
@@ -22,9 +22,9 @@ import CallToAction from "../components/Repeating/CTA";
 import ModalVideo from "../components/Modal/ModalVideo";
 
 const Page = ({ data }) => {
-  const [accordionOpen1, setAccordionOpen1] = useState("block"),
-    [accordionOpen2, setAccordionOpen2] = useState("hidden"),
-    [accordionOpen3, setAccordionOpen3] = useState("hidden");
+  // const [accordionOpen1, setAccordionOpen1] = useState("block"),
+  //   [accordionOpen2, setAccordionOpen2] = useState("hidden"),
+  //   [accordionOpen3, setAccordionOpen3] = useState("hidden");
 
   const [refStep1, inViewStep1] = useInView({ threshold: 0.5 }),
     [refStep2, inViewStep2] = useInView({ threshold: 0.5 }),
@@ -183,11 +183,11 @@ const Page = ({ data }) => {
                   proprietary technology for cooling towers. ALI uses
                   specially-designed ductwork over cooling towers to capture
                   evaporating water. Without using heat or chemicals, ALI
-                  condenses and recovers 90 percent of your escaping water and
-                  eliminates the concentration of dissolved solids in your
-                  system. Our proprietary and patented technology only requires
-                  one day for installation and involves no moving parts, which
-                  means minimal maintenance and operating expenses.
+                  condenses and recovers 90% of your evaporating water and
+                  eliminates the concentration of impurities in your system. Our
+                  proprietary and patented technology only requires one day for
+                  installation and involves no moving parts, which means minimal
+                  maintenance and operating expenses.
                 </p>
               </header>
             </div>
@@ -229,9 +229,9 @@ const Page = ({ data }) => {
                     Recover at least 90% of water loss.
                   </p>
                   <p className="mb-0">
-                    ALI captures and recovers more than 90 percent of
-                    evaporative water, which may save you millions of dollars in
-                    operating expenses.
+                    ALI captures and recovers more than 90% of evaporative
+                    water, which may save you millions of dollars in operating
+                    expenses.
                   </p>
                 </div>
               </div>
@@ -275,10 +275,8 @@ const Page = ({ data }) => {
                     Eliminate plume rise.
                   </p>
                   <p className="mb-0">
-                    ALI contains and redirects the plume, which often dissolves
-                    and spreads into the atmosphere. ALI’s technology can help
-                    stop the spread of these particles, which can spread
-                    bacteria and diseases.
+                    ALI contains and redirects the plume, which can spread
+                    bacteria and diseases into the atmosphere.
                   </p>
                 </div>
               </div>
@@ -543,11 +541,11 @@ const Page = ({ data }) => {
       <section className="bg-white relative mb-20 md:mb-24">
         <div className="container">
           <TextDecorative
-            text="THE BENEFACTORS"
+            text="The Benefits"
             desktopAlignment="left"
             mobileAlignment="center"
           />
-          <header className="mb-12 md:mb-18 text-center md:text-left">
+          {/* <header className="mb-12 md:mb-18 text-center md:text-left">
             <h2>How Your Company Benefits</h2>
           </header>
 
@@ -702,7 +700,7 @@ const Page = ({ data }) => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

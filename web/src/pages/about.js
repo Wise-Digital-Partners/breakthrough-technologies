@@ -40,12 +40,16 @@ const Page = ({ data }) => {
                 />
                 <h1>About Breakthrough Technologies</h1>
                 <p className="mb-0">
-                  At Breakthrough Technologies, our talented engineers believe
-                  in the power of innovation to change the world. Natural
-                  resources such as water and energy are precious, and we create
-                  industrial solutions that establish sustainability. Our team
-                  transforms vision into reality and gets results that make a
-                  difference.
+                  Born from a small group of visionary engineers, physicists and
+                  business leaders near the Massachusetts Institute of
+                  Technology in Cambridge, our founders created Breakthrough
+                  Technologies to produce innovative products that provide
+                  significant cost savings to businesses and solve global
+                  environmental and sustainability problems. With each
+                  breakthrough solution, we seek to partner with world-class
+                  companies to dramatically transform industrial processes and
+                  deliver positive social and environmental change around the
+                  world.
                 </p>
               </header>
             </div>

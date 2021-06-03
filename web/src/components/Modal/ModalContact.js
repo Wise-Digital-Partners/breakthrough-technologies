@@ -136,14 +136,6 @@ const Modal = () => {
                   </a>
                   .
                 </p>
-
-                <a
-                  href="tel:#"
-                  className="flex items-center space-x-2.5 text-primary-400"
-                >
-                  <i className="fas fa-phone-alt"></i>
-                  <span>123-456-7890</span>
-                </a>
               </header>
 
               <Contact />

@@ -219,13 +219,13 @@ const MainNav = ({
             className="hidden lg:flex lg:items-center lg:justify-end lg:mr-10"
           >
             <li>
-              <AniLink fade to="/how-to-improve-cooling-tower-efficiency/">
-                ALI: Water Recovery
+              <AniLink fade to="/about/">
+                About
               </AniLink>
             </li>
             <li>
-              <AniLink fade to="/about/">
-                About
+              <AniLink fade to="/how-to-improve-cooling-tower-efficiency/">
+                ALI: Water Recovery
               </AniLink>
             </li>
             <li>
@@ -251,21 +251,21 @@ const MainNav = ({
                 <li className="mb-8">
                   <AniLink
                     fade
-                    to="/how-to-improve-cooling-tower-efficiency/"
-                    onKeyDown={clickHandler}
-                    onClick={clickHandler}
-                  >
-                    ALI: Water Recovery
-                  </AniLink>
-                </li>
-                <li className="mb-8">
-                  <AniLink
-                    fade
                     to="/about/"
                     onKeyDown={clickHandler}
                     onClick={clickHandler}
                   >
                     About
+                  </AniLink>
+                </li>
+                <li className="mb-8">
+                  <AniLink
+                    fade
+                    to="/how-to-improve-cooling-tower-efficiency/"
+                    onKeyDown={clickHandler}
+                    onClick={clickHandler}
+                  >
+                    ALI: Water Recovery
                   </AniLink>
                 </li>
                 <li className="mb-8">

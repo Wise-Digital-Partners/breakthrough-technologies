@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
@@ -61,6 +62,8 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
+      {/* start animated hero section */}
+
       <section className="relative pt-44 md:pt-0">
         <BgImage
           className="md:hidden h-full w-full left-0 top-0"
@@ -75,14 +78,16 @@ const Page = ({ data }) => {
 
         <ParallaxProvider>
           <div className="absolute w-full h-full">
-            <motion.img
-              src={data.scrollArrow.publicURL}
-              alt="Scroll arrow"
-              transition={bounceTransition}
-              animate={{ y: animated }}
-              width="26px"
-              className="sticky md:top-[90vh] mx-auto hidden md:block z-10"
-            />
+            <AnchorLink to="/#our-mission">
+              <motion.img
+                src={data.scrollArrow.publicURL}
+                alt="Scroll arrow"
+                transition={bounceTransition}
+                animate={{ y: animated }}
+                width="26px"
+                className="sticky md:top-[90vh] mx-auto hidden md:block z-10"
+              />
+            </AnchorLink>
           </div>
 
           <div
@@ -92,6 +97,7 @@ const Page = ({ data }) => {
                 "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
             }}
           ></div>
+
           <video
             ref={videoRef}
             onCanPlay={() => setPlayBack()}
@@ -175,19 +181,23 @@ const Page = ({ data }) => {
             </motion.p>
           </header>
 
-          <motion.img
-            src={data.scrollArrow.publicURL}
-            alt="Scroll arrow"
-            transition={bounceTransition}
-            animate={{ y: animatedMobile }}
-            width="26px"
-            className="sticky top-72 mx-auto md:hidden z-10"
-          />
+          <AnchorLink to="/#our-mission">
+            <motion.img
+              src={data.scrollArrow.publicURL}
+              alt="Scroll arrow"
+              transition={bounceTransition}
+              animate={{ y: animatedMobile }}
+              width="26px"
+              className="sticky top-72 mx-auto md:hidden"
+            />
+          </AnchorLink>
         </ParallaxProvider>
-        <div className="bg-white h-72 relative -top-12"></div>
+        <div className="bg-white h-72 md:h-72 md:relative md:-top-12"></div>
       </section>
 
-      <section className="bg-white mb-44 md:mb-32 relative">
+      {/* end animated hero section */}
+
+      <section id="our-mission" className="bg-white mb-44 md:mb-32 relative">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
             <div className="bg-gray-800 w-5 h-px mx-auto"></div>
@@ -325,43 +335,19 @@ const Page = ({ data }) => {
                 The Benefits
               </p>
 
-              <ul className="flex flex-col space-y-1 mb-7 md:mb-0">
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">
-                    recover at least 90 percent of water loss
-                  </span>
+              <ul className="list-disc ml-6 flex flex-col space-y-1 mb-7 md:mb-0">
+                <li className="font-medium">
+                  Recover at least 90 percent of water loss
                 </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">
-                    eliminate chemical water treatments
-                  </span>
+                <li className="font-medium">
+                  Eliminate chemical water treatments
                 </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">eliminate blow down </span>
-                </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">eliminate plume rise</span>
-                </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">lower operating costs</span>
-                </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">increase sustainability</span>
-                </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">create peace of mind</span>
-                </li>
-                <li className="flex items-center space-x-2.5">
-                  <i className="fal fa-chevron-double-right text-primary-400 text-sm"></i>
-                  <span className="font-medium">ease of installation</span>
-                </li>
+                <li className="font-medium">Eliminate blow down</li>
+                <li className="font-medium">Eliminate plume rise</li>
+                <li className="font-medium">Lower operating costs</li>
+                <li className="font-medium">Increase sustainability</li>
+                <li className="font-medium">Create peace of mind</li>
+                <li className="font-medium">Ease of installation</li>
               </ul>
 
               <ButtonWithIcon

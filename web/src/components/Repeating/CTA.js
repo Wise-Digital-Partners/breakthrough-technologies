@@ -60,8 +60,8 @@ const CTA = ({ heading, headingLevel }) => {
               {heading || "Partner With Us"}
             </HeadingTag>
             <p className="text-xl text-white">
-              To learn more about Breakthrough Technologies and our innovative
-              industrial products, we invite you to contact us.
+              Learn more about Breakthrough Technologies and our innovative
+              industrial products.
             </p>
           </div>
           <ButtonSolid
