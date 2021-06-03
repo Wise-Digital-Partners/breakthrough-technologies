@@ -85,7 +85,7 @@ const Page = ({ data }) => {
                 transition={bounceTransition}
                 animate={{ y: animated }}
                 width="26px"
-                className="sticky md:top-[90vh] mx-auto hidden md:block z-10"
+                className="sticky md:top-[90vh] mx-auto hidden md:block z-20"
               />
             </AnchorLink>
           </div>
