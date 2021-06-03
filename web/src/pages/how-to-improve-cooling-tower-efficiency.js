@@ -167,7 +167,7 @@ const Page = ({ data }) => {
 
       <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-32">
         <div className="container">
-          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center">
+          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-12 gap-y-10 md:items-center">
             <div>
               <header>
                 <TextDecorative
@@ -732,12 +732,12 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    introDesktop: file(relativePath: { eq: "ALI/2.0 ali - desktop.jpg" }) {
+    introDesktop: file(relativePath: { eq: "ALI/2.0 About - desktop.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    introMobile: file(relativePath: { eq: "ALI/2.1 ali - mobile.jpg" }) {
+    introMobile: file(relativePath: { eq: "ALI/2.0 About - mobile.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }

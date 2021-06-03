@@ -28,7 +28,7 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="bg-white relative pt-4 mb-10 lg:mb-14">
+      <section className="bg-white relative pt-4">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-x-4 lg:items-center">
             <div className="order-2 lg:order-1">
