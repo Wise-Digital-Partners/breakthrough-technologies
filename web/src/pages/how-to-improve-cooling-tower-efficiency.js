@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 import {
   Accordion,
   AccordionItem,
-  AccordionItemHeading,
+  // AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
   AccordionItemState,
@@ -31,7 +31,7 @@ const Page = ({ data }) => {
     {
       question: "Does ALI inhibit air flow from the cooling tower exhaust?",
       answer:
-        "No, ALI’s patented design improves air flow by removing moisture, straightening the air flow and creating a venturi effect, which increases airflow towards the exhaust.",
+        "No, ALI’s patented design improves air flow by removing moisture, straightening the air flow and creating a venturi effect, which increases airflow toward the exhaust.",
     },
     {
       question: "Is ALI patented?",
@@ -236,7 +236,7 @@ const Page = ({ data }) => {
       <section className="bg-white relative mb-20 md:mb-52">
         <div className="container">
           <TextDecorative
-            text="What You'll Gain"
+            text="Features"
             desktopAlignment="left"
             mobileAlignment="center"
           />
@@ -365,7 +365,15 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative mb-20 md:mb-48">
+      <section className="bg-white relative">
+        <div className="absolute w-full h-full mt-48">
+          <img
+            src={data.blueTriangle.publicURL}
+            alt="Brand triangle"
+            width="26"
+            className="hidden md:block left-0 right-0 mx-auto z-10 sticky top-56"
+          />
+        </div>
         <div className="container">
           <TextDecorative
             text="The Science"
@@ -377,12 +385,6 @@ const Page = ({ data }) => {
           </header>
 
           <div className="relative">
-            <img
-              src={data.blueTriangle.publicURL}
-              alt="Brand triangle"
-              width="26"
-              className="hidden md:block left-0 right-0 mx-auto z-10 sticky top-56 -mb-5"
-            />
             <div className="hidden md:block w-px bg-black bg-opacity-30 h-full absolute left-0 right-0 mx-auto"></div>
             <div className="relative grid md:grid-cols-2 md:gap-x-24 gap-y-14 items-center mb-14 md:mb-20">
               <motion.div
@@ -566,7 +568,9 @@ const Page = ({ data }) => {
       </section>
 
       <section className="bg-white relative mb-20 md:mb-24">
+        <div className="bg-white h-20 md:h-48"></div>
         <div className="container">
+          <div className="bg-gray-800 w-5 h-px mx-auto hidden md:block"></div>
           <TextDecorative
             text="Our Partners"
             desktopAlignment="center"
@@ -586,15 +590,14 @@ const Page = ({ data }) => {
         <div className="container">
           <TextDecorative
             text="FAQs"
-            desktopAlignment="left"
+            desktopAlignment="center"
             mobileAlignment="center"
           />
-          <header className="mb-10 md:mb-14 text-center md:text-left">
-            <h2>Lorem Ipsum</h2>
-          </header>
+          {/* <header className="mb-10 md:mb-14 text-center">
+            <h2>Frequently Asked Questions</h2>
+          </header> */}
 
-          {/* <div className="grid md:grid-cols-12 gap-y-4 md:gap-x-12 lg:gap-x-20 gap-y-7 md:items-center"> */}
-          <div className="max-w-2xl">
+          <div className="max-w-3xl mx-auto">
             <Accordion
               allowZeroExpanded={true}
               className="border-t border-solid border-black border-opacity-30"
@@ -614,7 +617,7 @@ const Page = ({ data }) => {
                               : "fa-plus";
                             return (
                               <i
-                                className={`fal ${icon} text-xl text-black mr-6`}
+                                className={`fal ${icon} text-xl text-primary-400 mr-6`}
                               ></i>
                             );
                           }}

@@ -10,6 +10,7 @@ const StyledBurger = styled.button`
       ${({ headerStyle }) =>
         headerStyle === "overlap" ? tw`text-white` : tw`text-black`};
       ${({ offcanvasOpen }) => (offcanvasOpen ? tw`text-white` : null)};
+      ${({ scrolled }) => (scrolled ? tw`text-black` : null)};
     }
   }
   .line {

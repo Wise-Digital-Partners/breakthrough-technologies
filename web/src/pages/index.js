@@ -2,7 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
-import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { ParallaxProvider } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
@@ -77,7 +77,7 @@ const Page = ({ data }) => {
         />
 
         <ParallaxProvider>
-          <div className="absolute w-full h-full">
+          <div className="hidden md:block absolute w-full h-full">
             <AnchorLink to="/#our-mission">
               <motion.img
                 src={data.scrollArrow.publicURL}
@@ -85,7 +85,7 @@ const Page = ({ data }) => {
                 transition={bounceTransition}
                 animate={{ y: animated }}
                 width="26px"
-                className="sticky md:top-[90vh] mx-auto hidden md:block z-20"
+                className="sticky md:top-[90vh] mx-auto z-20"
               />
             </AnchorLink>
           </div>
@@ -118,7 +118,7 @@ const Page = ({ data }) => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.75 }}
-              className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-16 md:mb-6 opacity-0"
+              className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-36 md:mb-6 opacity-0"
               style={{ textShadow: "0px 2px 40px rgba(0, 0, 0, 0.4)" }}
             >
               Improve Sustainability.
@@ -134,11 +134,11 @@ const Page = ({ data }) => {
               transition={bounceTransition}
               animate={{ y: animatedMobile }}
               width="26px"
-              className="sticky top-72 mx-auto md:hidden"
+              className="sticky top-72 mx-auto md:hidden z-20"
             />
           </AnchorLink>
         </ParallaxProvider>
-        <div className="bg-white h-72 md:h-72 md:relative md:-top-12"></div>
+        <div className="bg-white h-56 md:h-72 relative"></div>
       </section>
 
       {/* end animated hero section */}
@@ -263,11 +263,11 @@ const Page = ({ data }) => {
                 proprietary technology that improves cooling towers. ALI uses
                 specially-designed ductwork over cooling towers to capture
                 evaporating water. Without using heat or chemicals, ALI
-                condenses and recovers 90 percent of your evaporating water and
-                eliminates the concentration of dissolved solids in your system.
-                Our proprietary and patented technology only requires one day
-                for installation and involves no moving parts, which means
-                minimal maintenance and operating expenses.
+                condenses and recovers 90% of your evaporating water and
+                eliminates the concentration of solid and liquid impurities in
+                your system. Our proprietary and patented technology only
+                requires one day for installation and involves no moving parts,
+                which means minimal maintenance and operating expenses.
               </p>
               <ButtonWithIcon
                 href="/how-to-improve-cooling-tower-efficiency/"
@@ -326,7 +326,7 @@ export const query = graphql`
     ) {
       publicURL
     }
-    heroMobile: file(relativePath: { eq: "home/1.0 Hero mobile.jpg" }) {
+    heroMobile: file(relativePath: { eq: "home/hero-mobile.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
