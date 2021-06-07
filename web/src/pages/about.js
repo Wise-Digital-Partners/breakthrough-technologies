@@ -99,10 +99,8 @@ const Page = ({ data }) => {
         </div>
       </BgImage>
 
-      <OurTeam className="mb-20 md:mb-32" headingLevel="h2" />
-
-      <RecentBlogPosts className="mb-20 md:mb-32" />
-
+      <OurTeam className="mb-20 md:mb-40" headingLevel="h2" />
+      <RecentBlogPosts className="mb-20 md:mb-40" />
       <CallToAction headingLevel="h2" />
     </Layout>
   );

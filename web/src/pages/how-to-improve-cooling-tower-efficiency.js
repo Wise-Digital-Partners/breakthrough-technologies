@@ -198,7 +198,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-32">
+      <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-36">
         <div className="container">
           <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-12 gap-y-10 md:items-center">
             <div>
@@ -239,7 +239,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative mb-20 md:mb-52">
+      <section className="bg-white relative mb-20 md:mb-44">
         <div className="container">
           <TextDecorative
             text="Features"
@@ -573,7 +573,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative mb-20 md:mb-24">
+      <section className="bg-white relative mb-20 md:mb-32">
         <div className="bg-white h-20 md:h-48"></div>
         <div className="container">
           <div className="bg-gray-800 w-5 h-px mx-auto hidden md:block"></div>
@@ -646,12 +646,9 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <OurTeam className="mb-20 md:mb-32" headingLevel="h2" />
-
-      <RecentBlogPosts className="mb-20 md:mb-32" />
-
+      <OurTeam className="mb-20 md:mb-40" headingLevel="h2" />
+      <RecentBlogPosts className="mb-20 md:mb-40" />
       <CallToAction headingLevel="h2" />
-
       <ModalVideo vidRef={vidRef} />
     </Layout>
   );

@@ -134,14 +134,15 @@ const Page = ({ data }) => {
 
         <img
           src={data.heroDivider.publicURL}
-          className="absolute bottom-[13.9rem] md:bottom-[17.9rem] w-full"
+          alt="Hero divider"
+          className="absolute bottom-[13.9rem] md:bottom-[13.9rem] w-full"
         />
-        <div className="bg-white h-56 md:h-72 relative"></div>
+        <div className="bg-white h-56 md:h-56 relative"></div>
       </section>
 
       {/* end animated hero section */}
 
-      <section id="our-mission" className="bg-white mb-44 md:mb-32 relative">
+      <section id="our-mission" className="bg-white mb-44 md:mb-72 relative">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
             <div className="bg-gray-800 w-5 h-px mx-auto"></div>
@@ -150,7 +151,7 @@ const Page = ({ data }) => {
               desktopAlignment="center"
               mobileAlignment="center"
             />
-            <h1 className="text-mobile-5xl md:text-5xl mb-0">
+            <h1 className="text-mobile-5xl md:text-5xl mb-0 mt-4">
               We build innovative industrial products that improve water and
               energy sustainability and drive better business performance.
             </h1>
@@ -158,7 +159,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative mb-20 md:mb-24">
+      <section className="bg-white relative mb-20 md:mb-52">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-x-4 gap-y-2 lg:items-center">
             <div className="lg:h-[560px]">
@@ -197,7 +198,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white mb-22 md:mb-32">
+      <section className="bg-white mb-22 md:mb-40">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
             <TextDecorative
@@ -302,12 +303,9 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <OurTeam className="mb-20 md:mb-32" headingLevel="h2" />
-
-      <RecentBlogPosts className="mb-20 md:mb-32" />
-
+      <OurTeam className="mb-20 md:mb-40" headingLevel="h2" />
+      <RecentBlogPosts className="mb-20 md:mb-40" />
       <CallToAction headingLevel="h2" />
-
       <ModalVideo vidRef={vidRef} />
     </Layout>
   );

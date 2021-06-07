@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import MicroModal from "micromodal";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
@@ -93,8 +93,6 @@ const Modal = ({ vidRef }) => {
         <div
           className="overlay fixed flex items-center justify-center top-0 right-0 left-0 bottom-0 bg-black bg-opacity-80 outline-none"
           tabIndex="-1"
-          data-modal-
-          onClick={handlePauseVideo}
         >
           <div
             className="content-wrapper bg-transparent w-full h-screen overflow-auto"
@@ -105,6 +103,8 @@ const Modal = ({ vidRef }) => {
               <i
                 className="close fal fa-times text-3xl md:text-4xl text-white hover:text-primary-600 cursor-pointer transition-all duration-300 ease-linear"
                 data-modal-close
+                onKeyDown={handlePauseVideo}
+                onClick={handlePauseVideo}
               ></i>
             </div>
 
