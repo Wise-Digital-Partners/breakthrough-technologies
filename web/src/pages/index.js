@@ -2,7 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
-import { ParallaxProvider } from "react-scroll-parallax";
+// import { ParallaxProvider } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
@@ -53,6 +53,11 @@ const Page = ({ data }) => {
     };
   }, [animated, animatedMobile]);
 
+  const vidRef = useRef(null);
+  const handlePlayVideo = () => {
+    vidRef.current.play();
+  };
+
   return (
     <Layout headerStyle="overlap" headerLinkColor="white">
       <SearchEngineOptimization
@@ -64,7 +69,7 @@ const Page = ({ data }) => {
 
       {/* start animated hero section */}
 
-      <section className="relative pt-44 md:pt-0">
+      <section className="relative pt-32 md:pt-0">
         <BgImage
           className="md:hidden h-full w-full left-0 top-0"
           image={data.heroMobile.childImageSharp.gatsbyImageData}
@@ -76,68 +81,61 @@ const Page = ({ data }) => {
           }}
         />
 
-        <ParallaxProvider>
-          <div className="hidden md:block absolute w-full h-full">
-            <AnchorLink to="/#our-mission">
-              <motion.img
-                src={data.scrollArrow.publicURL}
-                alt="Scroll arrow"
-                transition={bounceTransition}
-                animate={{ y: animated }}
-                width="26px"
-                className="sticky md:top-[90vh] mx-auto z-20"
-              />
-            </AnchorLink>
-          </div>
+        <video
+          ref={videoRef}
+          onCanPlay={() => setPlayBack()}
+          width="100%"
+          autoPlay
+          muted
+          loop
+          className="hidden md:block"
+        >
+          <source
+            src="https://player.vimeo.com/external/560179441.hd.mp4?s=2cac835eb56a07ff7b8e5bc23b70de1081c1d416&profile_id=175"
+            type="video/mp4"
+          />
+        </video>
 
-          {/* <div
-            className="hidden md:block absolute h-full w-full"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(255, 255, 255, 0) 52.08%, #FFFFFF 89.58%), linear-gradient(180deg, rgba(4, 29, 92, 0.5) 0%, rgba(39, 39, 39, 0.11) 90.01%)",
-            }}
-          ></div> */}
-
-          <video
-            ref={videoRef}
-            onCanPlay={() => setPlayBack()}
-            width="100%"
-            autoPlay
-            muted
-            loop
-            className="hidden md:block"
+        <header className="relative md:absolute md:top-0 md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full md:pt-[15%] px-4 z-10">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.75 }}
+            className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-20 md:mb-20 opacity-0 relative"
+            style={{ textShadow: "0px 2px 40px rgba(0, 0, 0, 0.4)" }}
           >
-            <source
-              src="https://player.vimeo.com/external/558654682.sd.mp4?s=04303febae045c33865ea607235df2631fe760ce&profile_id=165"
-              type="video/mp4"
-            />
-          </video>
-
-          <header className="relative md:absolute md:top-[24%] md:left-0 md:right-0 m-auto text-center max-w-4xl md:max-w-5xl mx-auto h-full px-4 z-10">
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.5, delay: 0.75 }}
-              className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-36 md:mb-6 opacity-0"
-              style={{ textShadow: "0px 2px 40px rgba(0, 0, 0, 0.4)" }}
-            >
-              Improve Sustainability.
-              <br />
-              Drive Better Business Performance.
-            </motion.p>
-          </header>
+            Improve Sustainability.
+            <br />
+            Drive Better Business Performance.
+          </motion.p>
 
           <AnchorLink to="/#our-mission">
             <motion.img
               src={data.scrollArrow.publicURL}
               alt="Scroll arrow"
               transition={bounceTransition}
-              animate={{ y: animatedMobile }}
+              animate={{ y: animated }}
               width="26px"
-              className="sticky top-72 mx-auto md:hidden z-20"
+              className="sticky md:top-[50vh] mx-auto z-20 hidden md:block"
             />
           </AnchorLink>
-        </ParallaxProvider>
+        </header>
+
+        <AnchorLink to="/#our-mission">
+          <motion.img
+            src={data.scrollArrow.publicURL}
+            alt="Scroll arrow"
+            transition={bounceTransition}
+            animate={{ y: animatedMobile }}
+            width="26px"
+            className="sticky top-72 mx-auto md:hidden z-20"
+          />
+        </AnchorLink>
+
+        <img
+          src={data.heroDivider.publicURL}
+          className="absolute bottom-[13.9rem] md:bottom-[17.9rem] w-full"
+        />
         <div className="bg-white h-56 md:h-72 relative"></div>
       </section>
 
@@ -228,6 +226,7 @@ const Page = ({ data }) => {
                 <button
                   className="group flex justify-center items-center space-x-3 focus:outline-none absolute md:relative top-0 right-0 left-0 bottom-0 m-auto z-10"
                   data-modal-open="modal-video"
+                  onClick={handlePlayVideo}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +308,7 @@ const Page = ({ data }) => {
 
       <CallToAction headingLevel="h2" />
 
-      <ModalVideo />
+      <ModalVideo vidRef={vidRef} />
     </Layout>
   );
 };
@@ -326,12 +325,15 @@ export const query = graphql`
     ) {
       publicURL
     }
-    heroMobile: file(relativePath: { eq: "home/hero-mobile.jpg" }) {
+    heroMobile: file(relativePath: { eq: "home/1.0 Hero V3 - mobile.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
     scrollArrow: file(relativePath: { eq: "home/scroll arrow.svg" }) {
+      publicURL
+    }
+    heroDivider: file(relativePath: { eq: "home/1.1 hero delta.svg" }) {
       publicURL
     }
     cloud1: file(relativePath: { eq: "home/1.1 Clouds - desktop.png" }) {

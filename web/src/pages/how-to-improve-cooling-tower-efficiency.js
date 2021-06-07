@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
@@ -129,6 +129,11 @@ const Page = ({ data }) => {
     },
   };
 
+  const vidRef = useRef(null);
+  const handlePlayVideo = () => {
+    vidRef.current.play();
+  };
+
   return (
     <Layout>
       <SearchEngineOptimization
@@ -167,6 +172,7 @@ const Page = ({ data }) => {
               <button
                 className="group flex justify-center items-center space-x-3 focus:outline-none"
                 data-modal-open="modal-video"
+                onClick={handlePlayVideo}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -646,7 +652,7 @@ const Page = ({ data }) => {
 
       <CallToAction headingLevel="h2" />
 
-      <ModalVideo />
+      <ModalVideo vidRef={vidRef} />
     </Layout>
   );
 };
