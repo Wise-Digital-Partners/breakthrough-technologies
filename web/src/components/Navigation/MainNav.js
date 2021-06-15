@@ -9,7 +9,7 @@ import Burger from "./Burger";
 import OffCanvas from "../OffCanvas/OffCanvas";
 import ButtonSolid from "../Button/ButtonSolid";
 // import ButtonGhost from "../Button/ButtonGhost";
-// import Accordion from "./Accordion";
+import Accordion from "./Accordion";
 
 const StyledMainNav = styled.nav`
   ${({ headerStyle }) => (headerStyle === "hidden" ? tw`hidden` : null)};
@@ -17,9 +17,6 @@ const StyledMainNav = styled.nav`
     headerHasBorder
       ? tw`border-b border-solid border-gray-700 border-opacity-10`
       : null};
-  /* @media (min-width: 1024px) {
-        ${({ megaMenuHovering }) => (megaMenuHovering ? tw`bg-white` : null)};
-    } */
   @media (max-width: 1023px) {
     ${({ offcanvasOpen }) => (offcanvasOpen ? tw`bg-gray-900` : null)};
     /* ${({ headerStyle }) =>
@@ -46,17 +43,12 @@ const StyledMainNav = styled.nav`
   }
   #navigation-desktop {
     > li {
-      &:not(:last-child) {
-        ${tw`lg:mr-8`}
-      }
       > a {
         ${({ headerLinkColor }) =>
           headerLinkColor === "white" ? tw`text-white` : tw`text-gray-900`};
-        /* ${({ megaMenuHovering }) =>
-          megaMenuHovering ? tw`text-gray-700` : null}; */
         ${tw`relative font-body text-base font-medium no-underline pb-8`}
         &:after {
-          ${tw`content absolute bottom-0 right-0 left-0 mx-auto h-0.5	 w-0 bg-primary-400 transform -translate-y-6 transition-all duration-300 ease-linear`}
+          ${tw`content absolute bottom-0 right-0 left-0 mx-auto h-0.5	w-0 bg-primary-400 transform -translate-y-6 transition-all duration-300 ease-linear`}
         }
         &:hover {
           &:after {
@@ -70,17 +62,19 @@ const StyledMainNav = styled.nav`
         }
       }
     }
-    /* .submenu-parent {
+    .submenu-parent {
       ${tw`relative`}
       .submenu {
-        ${tw`absolute flex flex-col w-auto bg-white shadow-3xl py-7 px-7 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear`}
+        ${tw`absolute flex flex-col w-auto bg-white shadow-3xl space-y-4 pt-7 pb-10 px-7 opacity-0 invisible z-10 transform -translate-x-10 translate-y-12 transition-all duration-300 ease-linear`}
         li {
           ${tw`whitespace-nowrap`}
-          &:not(:last-child) {
-            ${tw`mb-3`}
-          }
           a {
-            ${tw`relative font-body text-base text-gray-600 uppercase tracking-wide no-underline`}
+            ${tw`relative font-body text-base text-gray-600 font-medium tracking-wide no-underline pb-4 block`}
+            &:after {
+              ${tw`content absolute bottom-0 left-0 h-px w-full bg-primary-400 transition-all duration-300 ease-linear`}
+            }
+            &:hover {
+              ${tw`text-primary-400`}
             }
           }
         }
@@ -90,7 +84,7 @@ const StyledMainNav = styled.nav`
           ${tw`opacity-100 visible translate-y-7`}
         }
       }
-    } */
+    }
   }
 
   #navigation-mobile {
@@ -101,7 +95,7 @@ const StyledMainNav = styled.nav`
         ${tw`font-heading text-4xl text-white hover:text-white font-bold no-underline text-left focus:outline-none transition-colors duration-300 ease-linear`}
       }
     }
-    /* .submenu {
+    .submenu {
       ${tw`flex-col pl-6`}
       li {
         &:not(:last-child) {
@@ -111,7 +105,7 @@ const StyledMainNav = styled.nav`
           ${tw`text-white hover:text-primary-400`}
         }
       }
-    } */
+    }
   }
 `;
 
@@ -125,13 +119,9 @@ const MainNav = ({
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
   // Hover on parent links
-  // const [megaMenuHovering, setMegaMenuHovering] = useState(false);
-  // const isHoveringMegaMenu = () => setMegaMenuHovering(true);
-  // const notHoveringMegaMenu = () => setMegaMenuHovering(false);
-
-  // const [subMenuHovering1, setSubMenuHovering1] = useState(false);
-  // const isHoveringSubMenu1 = () => setSubMenuHovering1(true);
-  // const notHoveringSubMenu1 = () => setSubMenuHovering1(false);
+  const [subMenuHovering1, setSubMenuHovering1] = useState(false);
+  const isHoveringSubMenu1 = () => setSubMenuHovering1(true);
+  const notHoveringSubMenu1 = () => setSubMenuHovering1(false);
 
   // const [subMenuHovering2, setSubMenuHovering2] = useState(false);
   // const isHoveringSubMenu2 = () => setSubMenuHovering2(true);
@@ -171,11 +161,6 @@ const MainNav = ({
     stickyLogo = data.logoDark.publicURL;
   }
 
-  // Change logo on mega menu reveal
-  // if (megaMenuHovering) {
-  //     initialLogo = data.logoDark.publicURL;
-  // }
-
   if (offcanvasOpen) {
     initialLogo = data.logoLight.publicURL;
     stickyLogo = data.logoLight.publicURL;
@@ -191,7 +176,6 @@ const MainNav = ({
       headerStyle={headerStyle}
       headerHasBorder={headerHasBorder}
       headerLinkColor={headerLinkColor}
-      // megaMenuHovering={megaMenuHovering}
       offcanvasOpen={offcanvasOpen}
     >
       <div className="container flex justify-between items-center">
@@ -216,18 +200,39 @@ const MainNav = ({
         <div className="flex items-center justify-end flex-auto">
           <ul
             id="navigation-desktop"
-            className="hidden lg:flex lg:items-center lg:justify-end lg:mr-10"
+            className="hidden lg:flex lg:items-center lg:justify-end space-x-8 lg:mr-10"
           >
             <li>
               <AniLink fade to="/about/">
                 About
               </AniLink>
             </li>
-            <li>
-              <AniLink fade to="/how-to-improve-cooling-tower-efficiency/">
-                ALI: Water Recovery
+
+            <li
+              className={`submenu-parent ${subMenuHovering1 ? "active" : ""}`}
+            >
+              <AniLink
+                fade
+                to="/how-to-improve-cooling-tower-efficiency/"
+                onMouseEnter={isHoveringSubMenu1}
+                onMouseLeave={notHoveringSubMenu1}
+              >
+                Technologies
               </AniLink>
+              <ul className="submenu">
+                <li>
+                  <AniLink fade to="/how-to-improve-cooling-tower-efficiency/">
+                    ALI: Water Recovery
+                  </AniLink>
+                </li>
+                <li>
+                  <AniLink fade to="/on-the-horizon/">
+                    On The Horizon
+                  </AniLink>
+                </li>
+              </ul>
             </li>
+
             <li>
               <AniLink fade to="/news-resources/">
                 News & Resources
@@ -259,14 +264,28 @@ const MainNav = ({
                   </AniLink>
                 </li>
                 <li className="mb-8">
-                  <AniLink
-                    fade
-                    to="/how-to-improve-cooling-tower-efficiency/"
-                    onKeyDown={clickHandler}
-                    onClick={clickHandler}
-                  >
-                    ALI: Water Recovery
-                  </AniLink>
+                  <Accordion title="Technologies" className="submenu-parent">
+                    <li>
+                      <AniLink
+                        fade
+                        to="/how-to-improve-cooling-tower-efficiency/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        ALI: Water Recovery
+                      </AniLink>
+                    </li>
+                    <li>
+                      <AniLink
+                        fade
+                        to="/on-the-horizon/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                      >
+                        On The Horizon
+                      </AniLink>
+                    </li>
+                  </Accordion>
                 </li>
                 <li className="mb-8">
                   <AniLink

@@ -42,6 +42,17 @@ const Footer = () => {
                 />
               </AniLink>
             </div>
+            <div className="max-[140px] md:max-w-full mx-auto md:mx-0">
+              <div>
+                <div className="bg-white bg-opacity-30 w-full h-2 mb-4"></div>
+                <p className="text-white font-heading text-5xl font-bold mb-3">
+                  Contact
+                </p>
+                <p className="text-white mb-0">
+                  <a href="mailto:info@bt-tech.com">info@bt-tech.com</a>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row justify-items-center md:justify-between items-center">

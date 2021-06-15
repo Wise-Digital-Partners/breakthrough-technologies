@@ -22,7 +22,7 @@ module.exports = {
         fadeIn: "fadeIn 0.5s ease-in",
       },
       boxShadow: {
-        "3xl": "0px 2px 8px rgba(130, 183, 222, 0.5)",
+        "3xl": "0px 4px 10px rgba(0, 0, 0, 0.25)",
       },
       colors: {
         gray: {

@@ -81,6 +81,14 @@ const Page = ({ data }) => {
           }}
         />
 
+        <div
+          className="absolute h-full w-full top-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.17) 30.88%)",
+          }}
+        ></div>
+
         <video
           ref={videoRef}
           onCanPlay={() => setPlayBack()}
@@ -188,10 +196,14 @@ const Page = ({ data }) => {
               <p className="mb-0">
                 Population growth and climate change continue to stress natural
                 resources around the world. To overcome these challenges,
-                industrial processes must become more efficient. Breakthrough
-                Technologies is a Boston-based company that builds innovative
-                industrial products to improve water and energy sustainability
-                and drive better business performance.
+                industrial processes must become more efficient. These
+                challenges require environmental stewardship, corporate
+                leadership engagement and collaborative partnerships that
+                embrace innovative and cost-effective solutions to complex
+                environmental problems. Breakthrough Technologies is a
+                Boston-based company that builds innovative industrial products
+                to improve water and energy sustainability and drive better
+                business performance.
               </p>
             </div>
           </div>

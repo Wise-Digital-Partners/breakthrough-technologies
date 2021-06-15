@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
@@ -9,6 +9,7 @@ import TextDecorative from "../components/Text/TextDecorative";
 import OurTeam from "../components/Repeating/OurTeam";
 import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
+import ModalTeamMembers from "../components/Modal/ModalTeamMembers";
 
 const Page = ({ data }) => {
   const ourMissionBgImages = [
@@ -19,6 +20,8 @@ const Page = ({ data }) => {
     },
   ];
 
+  const [slideIndex, setSlideIndex] = useState(0);
+
   return (
     <Layout>
       <SearchEngineOptimization
@@ -28,7 +31,7 @@ const Page = ({ data }) => {
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="bg-white relative pt-4">
+      <section className="bg-white relative pt-4 mb-10">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-x-4 lg:items-center">
             <div className="order-2 lg:order-1">
@@ -75,6 +78,73 @@ const Page = ({ data }) => {
         </div>
       </section>
 
+      <section className="bg-white pt-14 md:pt-32 mb-20 md:mb-36">
+        <div className="container">
+          <header className="mb-8 md:mb-12">
+            <TextDecorative
+              text="Company Leadership"
+              desktopAlignment="center"
+              mobileAlignment="center"
+            />
+          </header>
+          <div className="grid md:grid-cols-3 md:gap-x-5 gap-y-10 md:items-center">
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(0)}
+              >
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Irwin Heller</div>
+                <div className="text-xl">Chief Executive Officer</div>
+              </div>
+            </div>
+
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(1)}
+              >
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Kamal Jaffrey</div>
+                <div className="text-xl">Chief Technology Officer</div>
+              </div>
+            </div>
+
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(2)}
+              >
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Jeffery J. Mahaffey</div>
+                <div className="text-xl">Chief Operating Officer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <BgImage
         className="pt-22 md:pt-60 pb-36 md:pb-64"
         image={ourMissionBgImages}
@@ -102,6 +172,149 @@ const Page = ({ data }) => {
       <OurTeam className="mb-20 md:mb-40" headingLevel="h2" />
       <RecentBlogPosts className="mb-20 md:mb-40" />
       <CallToAction headingLevel="h2" />
+
+      <ModalTeamMembers slideIndex={slideIndex}>
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">Irwin Heller</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Chief Executive Officer
+                </p>
+                <a href="# " target="_blank">
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a>
+              </header>
+              <p className="mb-0">
+                As chief executive officer, Irwin M. Heller is the architect of
+                Breakthrough Technologies’ tremendous growth from startup to
+                successful company. A strong business and legal mind, Heller
+                established the company’s visionary physics-based energy and
+                water sustainability ethos and assembled a senior leadership
+                team that could deliver scalable industrial solutions at a
+                global level. Prior to Breakthrough Strategies, Heller served as
+                CEO of Twin Rivers Technologies (TRT), a leading manufacturer of
+                oils, fats, oleochemicals and biodiesel, which was successfully
+                sold for millions to the Federal Land Development Authority or
+                FELDA, the world’s largest producer of crude palm oil. In
+                addition to his strong business acumen, Heller is a former
+                managing partner at Mintz Levin, a premier legal and consulting
+                solutions provider for energy technology innovators, where he
+                devoted a significant portion of his practice to representing
+                early-stage companies in technology and sustainability-related
+                industries. Heller is a graduate of Columbia University Law
+                School and Tufts University, where he is a trustee emeritus.
+                Heller also serves as an advisor to Tufts University Friedman
+                School of Nutrition Science and Policy and an advisor to the
+                Beth Israel Deaconess Medical Center, a world-class hospital of
+                Harvard Medical School.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">Kamal Jaffrey</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Chief Technology Officer
+                </p>
+                <a href="# " target="_blank">
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a>
+              </header>
+              <p className="mb-0">
+                Serving as the chief technology officer for Breakthrough
+                Technologies, Kamal Jaffrey is a dynamic innovator and global
+                problem solver. Jaffery’s ingenuity is at the core of nearly
+                every Breakthrough Technologies solution and has been honed over
+                his twenty years of experience in leading technology research
+                and development labs to develop game-changing industrial
+                products. In addition to Breakthrough Technologies, Jaffrey is
+                the founder of Delta Search Labs in Cambridge, where he designed
+                high-performance supercomputing centers and created the world’s
+                first commercialized immersive virtual-reality space that
+                enables companies to build virtual prototypes instead of costly
+                and inaccurate physical prototypes. Jaffrey holds an concurrent
+                engineering and management degree from Western International
+                University and graduate and undergraduate degrees from Arizona
+                State University. In addition to holding multiple U.S. and
+                international patents and post-graduate studies and work at the
+                Massachusetts Institute of Technology and Harvard University,
+                Jaffery maintains research and teaching appointments at the MIT
+                School of Engineering and Harvard Medical School in Boston.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">Jeffery J. Mahaffey</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Chief Operating Officer
+                </p>
+                <a href="# " target="_blank">
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a>
+              </header>
+              <p className="mb-0">
+                A longtime executive with strong roots in business, economics
+                and biochemistry, Jeffery J. Mahaffey is the chief operating
+                officer of Breakthrough Technologies and is responsible for
+                almost every aspect of the core business functions, from running
+                day-to-day operations to leading strategic initiatives and major
+                corporate decisions. Prior to Breakthrough Technologies,
+                Mahaffey formed and led a joint venture with HB International
+                (HBI) of Paris, an international brokerage company that
+                negotiates deals on behalf of businesses and professionals in
+                the oleochemicals industry. Before serving as managing director
+                at HBI USA, Mahaffey served as chief operating officer of Global
+                Bio Chem Technology Group of China, where he developed and
+                commercialized bio-based glycols and built a commercial
+                organization to market these products in the U.S. and Europe
+                with more than $30 million in annual sales. He was also vice
+                president and general manager for Oleochemicals and Surfactants
+                at Cognis in North America, where he drove over $400 million in
+                sales. Mahaffey’s early career includes nearly 25 years of
+                executive management and global marketing experience at Henkel,
+                a multi-billion dollar company specializing in well-known soap,
+                haircare product and adhesive brands and leading multinational
+                conglomerate Procter & Gamble.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ModalTeamMembers>
     </Layout>
   );
 };
@@ -140,6 +353,12 @@ export const query = graphql`
     ourMissionMobile: file(
       relativePath: { eq: "about/2.0 mission - mobile.jpg" }
     ) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+
+    teamMember: file(relativePath: { eq: "about/2.0 Team Member.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }

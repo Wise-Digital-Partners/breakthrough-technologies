@@ -44,9 +44,10 @@ const Page = ({ data }) => {
         "Due to the fact that ALI does not involve any moving parts, ALI only requires one inspection and cleaning per year.",
     },
     {
-      question: "Does using ALI affect the cooling tower chemicals?",
+      question:
+        "Does ALI reduce the use of chemicals to treat water in the cooling tower system?",
       answer:
-        "Since ALI returns evaporated water to the cooling tower, the concentration of impurities at the basin or sump is reduced. Depending upon the quality of the water used, this may result in fewer blowdowns or the removal of solid and liquid impurities. The combination of chemicals for treating water does not change.",
+        "Since ALI returns evaporated water to the cooling tower, the concentration of impurities at the basin or sump is reduced. This results in fewer blowdowns or the removal of impurities and reduced chemical use.",
     },
   ];
   // const [accordionOpen1, setAccordionOpen1] = useState("block"),
@@ -243,7 +244,7 @@ const Page = ({ data }) => {
         <div className="container">
           <TextDecorative
             text="Features"
-            desktopAlignment="left"
+            desktopAlignment="center"
             mobileAlignment="center"
           />
           <header className="mb-18 text-center md:text-left">
@@ -383,7 +384,7 @@ const Page = ({ data }) => {
         <div className="container">
           <TextDecorative
             text="The Science"
-            desktopAlignment="left"
+            desktopAlignment="center"
             mobileAlignment="center"
           />
           <header className="mb-18 text-center md:text-left">
@@ -595,7 +596,7 @@ const Page = ({ data }) => {
       <section className="bg-white relative mb-20 md:mb-24">
         <div className="container">
           <TextDecorative
-            text="FAQs"
+            text="Frequently Asked Questions"
             desktopAlignment="center"
             mobileAlignment="center"
           />
