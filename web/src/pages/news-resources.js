@@ -60,7 +60,7 @@ const ArchivePage = (props) => {
         // openGraphImage={data.openGraphImage.publicURL}
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
-      <section className="pt-16">
+      <section className="pt-16 mb-20 md:mb-32">
         <div className="container">
           <h1>News & Resources</h1>
           <div className="mb-32">

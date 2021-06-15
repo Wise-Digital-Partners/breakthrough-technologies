@@ -19,12 +19,12 @@ const Header = ({ headerStyle, headerLinkColor, headerHasBorder }) => {
 
     const handleLoad = () => {
       // calculate #offcanvas-navigation menu offset top
-      offcanvasNavigation.style.top = siteNavigation.offsetHeight + "px";
+      offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
     };
 
     const handleResize = () => {
       // calculate #offcanvas-navigation offset top on resize
-      offcanvasNavigation.style.top = siteNavigation.offsetHeight + "px";
+      offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
     };
 
     const handleScroll = () => {
@@ -59,7 +59,7 @@ const Header = ({ headerStyle, headerLinkColor, headerHasBorder }) => {
         setScrolled(false);
 
         // calculate #offcanvas-navigation menu offset top
-        offcanvasNavigation.style.top = siteNavigation.offsetHeight + "px";
+        offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
 
         // recalculate #body-content offset top on scroll
         if (headerStyle === "overlap") {
