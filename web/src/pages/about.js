@@ -113,8 +113,12 @@ const Page = ({ data }) => {
                 data-modal-open="modal-team-members"
                 onClick={() => setSlideIndex(1)}
               >
-                <GatsbyImage
+                {/* <GatsbyImage
                   image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                /> */}
+                <img
+                  src="http://via.placeholder.com/772x772?text=FPO"
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </button>
@@ -195,28 +199,28 @@ const Page = ({ data }) => {
                 </a>
               </header>
               <p className="mb-0">
-                As chief executive officer, Irwin M. Heller is the architect of
-                Breakthrough Technologies’ tremendous growth from startup to
-                successful company. A strong business and legal mind, Heller
-                established the company’s visionary physics-based energy and
-                water sustainability ethos and assembled a senior leadership
-                team that could deliver scalable industrial solutions at a
-                global level. Prior to Breakthrough Strategies, Heller served as
-                CEO of Twin Rivers Technologies (TRT), a leading manufacturer of
-                oils, fats, oleochemicals and biodiesel, which was successfully
-                sold for millions to the Federal Land Development Authority or
-                FELDA, the world’s largest producer of crude palm oil. In
-                addition to his strong business acumen, Heller is a former
-                managing partner at Mintz Levin, a premier legal and consulting
-                solutions provider for energy technology innovators, where he
-                devoted a significant portion of his practice to representing
-                early-stage companies in technology and sustainability-related
-                industries. Heller is a graduate of Columbia University Law
-                School and Tufts University, where he is a trustee emeritus.
-                Heller also serves as an advisor to Tufts University Friedman
-                School of Nutrition Science and Policy and an advisor to the
-                Beth Israel Deaconess Medical Center, a world-class hospital of
-                Harvard Medical School.
+                Chief Executive Officer Irwin M. Heller is the architect of
+                Breakthrough Technologies growth strategy. Possessing a strong
+                business and legal mind, Heller established the company’s
+                visionary physics-based energy and water sustainability ethos
+                and assembled a senior leadership team that could deliver
+                scalable, proprietary and industrial solutions at a global
+                level. Prior to Breakthrough Technologies, Heller served as
+                chief executive officer of Twin Rivers Technologies (TRT), a
+                leading manufacturer of oils, fats, oleochemicals and biodiesel,
+                which was successfully sold to the Federal Land Development
+                Authority or FELDA, the world’s largest producer of crude palm
+                oil. In addition to his strong business acumen, Heller is a
+                former managing partner at Mintz Levin, a premier legal and
+                consulting solutions provider for energy technology innovators,
+                where he devoted a significant portion of his practice to
+                representing early-stage companies in technology and
+                sustainability-related industries. Heller is a graduate of
+                Columbia University Law School and Tufts University, where he is
+                a trustee emeritus. Heller also serves as an advisor to Tufts
+                University Friedman School of Nutrition Science and Policy and
+                an advisor to the Beth Israel Deaconess Medical Center, a
+                world-class teaching hospital of Harvard Medical School.
               </p>
             </div>
           </div>
@@ -226,8 +230,12 @@ const Page = ({ data }) => {
           <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
-                <GatsbyImage
+                {/* <GatsbyImage
                   image={data.teamMember.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                /> */}
+                <img
+                  src="http://via.placeholder.com/772x772?text=FPO"
                   className="md:h-[536px]"
                 />
               </div>
@@ -246,21 +254,22 @@ const Page = ({ data }) => {
                 Serving as the chief technology officer for Breakthrough
                 Technologies, Kamal Jaffrey is a dynamic innovator and global
                 problem solver. Jaffery’s ingenuity is at the core of nearly
-                every Breakthrough Technologies solution and has been honed over
-                his twenty years of experience in leading technology research
-                and development labs to develop game-changing industrial
-                products. In addition to Breakthrough Technologies, Jaffrey is
-                the founder of Delta Search Labs in Cambridge, where he designed
-                high-performance supercomputing centers and created the world’s
-                first commercialized immersive virtual-reality space that
-                enables companies to build virtual prototypes instead of costly
-                and inaccurate physical prototypes. Jaffrey holds an concurrent
-                engineering and management degree from Western International
-                University and graduate and undergraduate degrees from Arizona
-                State University. In addition to holding multiple U.S. and
-                international patents and post-graduate studies and work at the
-                Massachusetts Institute of Technology and Harvard University,
-                Jaffery maintains research and teaching appointments at the MIT
+                every Breakthrough Technologies solution, which has been honed
+                over his twenty years of experience in leading technology
+                research and development labs to develop game-changing
+                industrial products. In addition to Breakthrough Technologies,
+                Jaffrey is the founder of Delta Search Labs in Cambridge, where
+                he designed high-performance supercomputing centers and created
+                the world’s first commercialized immersive virtual-reality space
+                that enables companies to build virtual prototypes instead of
+                costly and inaccurate physical prototypes. Jaffrey holds a
+                concurrent engineering and management degree from Western
+                International University and graduate and undergraduate degrees
+                from Arizona State University and is a registered professional
+                engineer. In addition to holding multiple U.S. and international
+                patents and post-graduate studies and work at the Massachusetts
+                Institute of Technology (MIT) and Harvard University, Jaffery
+                also maintains research and teaching appointments at the MIT
                 School of Engineering and Harvard Medical School in Boston.
               </p>
             </div>
@@ -307,8 +316,8 @@ const Page = ({ data }) => {
                 at Cognis in North America, where he drove over $400 million in
                 sales. Mahaffey’s early career includes nearly 25 years of
                 executive management and global marketing experience at Henkel,
-                a multi-billion dollar company specializing in well-known soap,
-                haircare product and adhesive brands and leading multinational
+                a multi-billion-dollar company specializing in well-known soap,
+                haircare products and adhesive brands and leading multinational
                 conglomerate Procter & Gamble.
               </p>
             </div>
