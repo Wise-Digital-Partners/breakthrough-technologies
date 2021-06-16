@@ -61,11 +61,11 @@ const Footer = () => {
                 <li className="text-sm text-white">
                   © {getYear()} Breakthrough Technologies
                 </li>
-                <li className="text-sm">
+                {/* <li className="text-sm">
                   <a href="/terms-conditions/" className="text-white">
                     Terms & Conditions
                   </a>
-                </li>
+                </li> */}
                 <li className="text-sm">
                   <AniLink fade to="/privacy-policy/" className="text-white">
                     Privacy Policy
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <div className="flex justify-center md:justify-items-start space-x-3 order-1 md:order-2 mb-36 md:mb-0">
               <a
-                href="# "
+                href="https://www.facebook.com/BrkTec"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-white md:opacity-60 hover:opacity-100"
@@ -98,7 +98,15 @@ const Footer = () => {
                 <i className="fab fa-facebook-f text-sm text-gray-900"></i>
               </a>
               <a
-                href="# "
+                href="https://twitter.com/BrkTec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-white md:opacity-60 hover:opacity-100"
+              >
+                <i className="fab fa-twitter text-sm text-gray-900"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/brktec"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-white md:opacity-60 hover:opacity-100"

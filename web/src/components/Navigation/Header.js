@@ -10,7 +10,7 @@ const Header = ({ headerStyle, headerLinkColor, headerHasBorder }) => {
 
   // change state on scroll
   useLayoutEffect(() => {
-    const siteNavigation = document.querySelector("#site-navigation"),
+    const // siteNavigation = document.querySelector("#site-navigation"),
       promoBar = document.querySelector("#promo-bar"),
       utilityNavigation = document.querySelector("#utlity-navigation"),
       mainNavigation = document.querySelector("#main-navigation"),

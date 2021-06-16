@@ -96,7 +96,7 @@ const Page = ({ data }) => {
                 onClick={() => setSlideIndex(0)}
               >
                 <GatsbyImage
-                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  image={data.irwin.childImageSharp.gatsbyImageData}
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </button>
@@ -132,7 +132,7 @@ const Page = ({ data }) => {
                 onClick={() => setSlideIndex(2)}
               >
                 <GatsbyImage
-                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  image={data.jeff.childImageSharp.gatsbyImageData}
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </button>
@@ -179,7 +179,7 @@ const Page = ({ data }) => {
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
                 <GatsbyImage
-                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  image={data.irwin.childImageSharp.gatsbyImageData}
                   className="md:h-[536px]"
                 />
               </div>
@@ -272,7 +272,7 @@ const Page = ({ data }) => {
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
                 <GatsbyImage
-                  image={data.teamMember.childImageSharp.gatsbyImageData}
+                  image={data.jeff.childImageSharp.gatsbyImageData}
                   className="md:h-[536px]"
                 />
               </div>
@@ -357,8 +357,17 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-
     teamMember: file(relativePath: { eq: "about/2.0 Team Member.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    irwin: file(relativePath: { eq: "about/irwin.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    jeff: file(relativePath: { eq: "about/jeff.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }

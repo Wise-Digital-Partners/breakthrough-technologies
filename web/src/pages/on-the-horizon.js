@@ -19,9 +19,24 @@ const Page = ({ data }) => {
 
       <section className="bg-white pt-14 md:pt-26 mb-32 md:mb-40">
         <div className="container">
-          <header className="mb-14 md:mb-20">
+          <header className="mb-14 md:mb-20 max-w-4xl">
             <h1>On The Horizon</h1>
-            <p className="mb-0">Blurb about the new technologies coming up?</p>
+            <p className="mb-0">
+              Breakthrough Technologies maintains a number of groundbreaking
+              patented and patent-pending technologies that improve
+              sustainability and drive better business performance. Below are a
+              number of new industrial solutions that Breakthrough Technologies
+              is on the cusp of bringing to market. For more information or
+              questions about these industrial solutions on the horizon, please
+              contact us at{" "}
+              <a
+                href="mailto:info@bt-tech.com"
+                className="underline whitespace-nowrap"
+              >
+                info@bt-tech.com
+              </a>
+              .
+            </p>
           </header>
 
           <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center mb-16 md:mb-20">
@@ -91,7 +106,7 @@ const Page = ({ data }) => {
               <h2 className="mb-2.5">Multi-Effect Process (MEP)</h2>
               <div className="bg-primary-400 w-16 h-1 mb-6"></div>
               <p className="mb-0">
-                It is estimated that 220 billion gallons of wastewater is
+                It is estimated that over 18 trillion gallons of wastewater is
                 generated in North America every year. Breakthrough
                 Technologies’ groundbreaking Multi-Effect Process uses a novel
                 combination of thermo-electrochemistry techniques to reduce the

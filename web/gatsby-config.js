@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://breakthrough-technologies-studio.netlify.app/",
+  URL: NETLIFY_SITE_URL = "https://breakthrough-technologies.netlify.app",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
