@@ -272,14 +272,14 @@ const Page = ({ data }) => {
               </p>
               <p>
                 ALI, Aqua Liquefaction with Ionization, is our leading
-                proprietary technology that improves cooling towers. ALI uses
+                patent-pending technology that improves cooling towers. ALI uses
                 specially-designed ductwork over cooling towers to capture
-                evaporating water. Without using heat or chemicals, ALI
-                condenses and recovers 90% of your evaporating water and
-                eliminates the concentration of solid and liquid impurities in
-                your system. Our proprietary and patented technology only
-                requires one day for installation and involves no moving parts,
-                which means minimal maintenance and operating expenses.
+                evaporating water. Without using heat or chemicals under normal
+                cooling tower operations, ALI condenses and recovers 90% of your
+                evaporating water and eliminates the concentration of solid and
+                liquid impurities in your system. Our patent-pending technology
+                only requires one day for installation and involves no moving
+                parts, which means minimal maintenance and operating expenses.
               </p>
               <ButtonWithIcon
                 href="/how-to-improve-cooling-tower-efficiency/"

@@ -31,12 +31,12 @@ const Page = ({ data }) => {
     {
       question: "Does ALI inhibit air flow from the cooling tower exhaust?",
       answer:
-        "No, ALI’s patented design improves air flow by removing moisture, straightening the air flow and creating a venturi effect, which increases airflow toward the exhaust.",
+        "No, ALI’s patent-pending design improves air flow by removing moisture, straightening the air flow and creating a venturi effect, which increases airflow toward the exhaust.",
     },
     {
       question: "Is ALI patented?",
       answer:
-        "Yes, Breakthrough Technologies filed patents in the U.S. and additional jurisdictions abroad.",
+        "ALI is patent-pending. Breakthrough Technologies filed patents in the U.S. and additional jurisdictions abroad.",
     },
     {
       question: "Does ALI require a lot of maintenance?",
@@ -214,12 +214,13 @@ const Page = ({ data }) => {
                 </h2>
                 <p className="mb-0">
                   ALI, Aqua Liquefaction with Ionization, is our leading
-                  proprietary technology for cooling towers. ALI uses
+                  patent-pending technology for cooling towers. ALI uses
                   specially-designed ductwork over cooling towers to capture
-                  evaporating water. Without using heat or chemicals, ALI
-                  condenses and recovers 90% of your evaporating water and
-                  eliminates the concentration of impurities in your system. Our
-                  proprietary and patented technology only requires one day for
+                  evaporating water. Without using heat or chemicals under
+                  normal cooling tower operations, ALI condenses and recovers
+                  90% of your evaporating water and eliminates the concentration
+                  of solid and liquid impurities in your system. Our
+                  patent-pending technology only requires one day for
                   installation and involves no moving parts, which means minimal
                   maintenance and operating expenses.
                 </p>
@@ -263,9 +264,9 @@ const Page = ({ data }) => {
                     Recover at least 90% of water loss.
                   </p>
                   <p className="mb-0">
-                    ALI captures and recovers more than 90% of evaporative
-                    water, which may save you millions of dollars in operating
-                    expenses.
+                    Under normal cooling tower operations, ALI captures and
+                    recovers more than 90% of evaporative water which may save
+                    you millions of dollars in operating expenses.
                   </p>
                 </div>
               </div>
@@ -327,7 +328,7 @@ const Page = ({ data }) => {
                     Lower energy costs.
                   </p>
                   <p className="mb-0">
-                    ALI’s patented duct system increases the efficiency of
+                    ALI’s patent-pending duct system increases the efficiency of
                     cooling tower system fans. This allows each fan to pull with
                     less energy, which reduces operating costs.
                   </p>
@@ -455,7 +456,7 @@ const Page = ({ data }) => {
                   Splitting
                 </p>
                 <p className="mb-0">
-                  ALI’s technology adds a patented duct system above the
+                  ALI’s technology adds a patent-pending duct system above the
                   existing cooling tower that condenses and recovers evaporating
                   water. The duct system splits and straightens the airflow
                   using psychrometrics, which prevents back pressure and reduces

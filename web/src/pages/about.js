@@ -113,12 +113,8 @@ const Page = ({ data }) => {
                 data-modal-open="modal-team-members"
                 onClick={() => setSlideIndex(1)}
               >
-                {/* <GatsbyImage
+                <GatsbyImage
                   image={data.teamMember.childImageSharp.gatsbyImageData}
-                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
-                /> */}
-                <img
-                  src="http://via.placeholder.com/772x772?text=FPO"
                   className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
                 />
               </button>
@@ -194,7 +190,10 @@ const Page = ({ data }) => {
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Chief Executive Officer
                 </p>
-                <a href="# " target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/irwin-heller-7bb25a13/"
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>
               </header>
@@ -230,12 +229,8 @@ const Page = ({ data }) => {
           <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
-                {/* <GatsbyImage
+                <GatsbyImage
                   image={data.teamMember.childImageSharp.gatsbyImageData}
-                  className="md:h-[536px]"
-                /> */}
-                <img
-                  src="http://via.placeholder.com/772x772?text=FPO"
                   className="md:h-[536px]"
                 />
               </div>
@@ -246,14 +241,17 @@ const Page = ({ data }) => {
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Chief Technology Officer
                 </p>
-                <a href="# " target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/kamal-jaffrey-598256a/"
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>
               </header>
               <p className="mb-0">
                 Serving as the chief technology officer for Breakthrough
                 Technologies, Kamal Jaffrey is a dynamic innovator and global
-                problem solver. Jaffery’s ingenuity is at the core of nearly
+                problem solver. Jaffrey’s ingenuity is at the core of nearly
                 every Breakthrough Technologies solution, which has been honed
                 over his twenty years of experience in leading technology
                 research and development labs to develop game-changing
@@ -268,7 +266,7 @@ const Page = ({ data }) => {
                 from Arizona State University and is a registered professional
                 engineer. In addition to holding multiple U.S. and international
                 patents and post-graduate studies and work at the Massachusetts
-                Institute of Technology (MIT) and Harvard University, Jaffery
+                Institute of Technology (MIT) and Harvard University, Jaffrey
                 also maintains research and teaching appointments at the MIT
                 School of Engineering and Harvard Medical School in Boston.
               </p>
@@ -292,7 +290,10 @@ const Page = ({ data }) => {
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Chief Operating Officer
                 </p>
-                <a href="# " target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>
               </header>
@@ -366,7 +367,9 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    teamMember: file(relativePath: { eq: "about/2.0 Team Member.jpg" }) {
+    teamMember: file(
+      relativePath: { eq: "about/2.0 team member placeholder.jpg" }
+    ) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
