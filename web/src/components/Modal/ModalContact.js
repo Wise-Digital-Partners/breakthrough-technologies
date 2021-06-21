@@ -115,7 +115,7 @@ const Modal = () => {
             role="dialog"
             aria-modal="true"
           >
-            <div className="flex justify-end items-center py-4 md:py-6 px-6">
+            <div className="flex justify-end items-center pt-10 pb-4 md:py-6 px-6">
               <i
                 className="close fal fa-times text-xl text-black hover:text-primary-600 cursor-pointer transition-all duration-300 ease-linear"
                 data-modal-close
