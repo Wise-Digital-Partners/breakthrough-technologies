@@ -242,13 +242,6 @@ const Page = ({ data }) => {
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Chief Technology Officer
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/kamal-jaffrey-598256a/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
-                </a>
               </header>
               <p className="mb-0">
                 Serving as the chief technology officer for Breakthrough
