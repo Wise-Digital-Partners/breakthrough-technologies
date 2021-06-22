@@ -27,8 +27,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="About Breakthrough Technologies | Industrial Tech Company"
         description="Boston-based Breakthrough Technologies is led by a world-class engineering team that believes in the power of innovation to change the world."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="bg-white relative pt-4 mb-10">
@@ -328,12 +328,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/About.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/About.jpg" }
     ) {
       publicURL
     }

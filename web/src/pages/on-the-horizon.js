@@ -13,8 +13,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="How to Improve Cooling Tower Efficiency: ALI Water Recovery"
         description="How can you improve cooling tower efficiency? ALI by Breakthrough Technologies is a new water recovery solution for cooling towers. Learn more here."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="bg-white pt-14 md:pt-26 mb-32 md:mb-40">
@@ -136,12 +136,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage_FB.jpg" }
+      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage_TW.jpg" }
+      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
     ) {
       publicURL
     }
