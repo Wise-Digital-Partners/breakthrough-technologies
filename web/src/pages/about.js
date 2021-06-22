@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import TextDecorative from "../components/Text/TextDecorative";
 import OurTeam from "../components/Repeating/OurTeam";
-import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
+// import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ModalTeamMembers from "../components/Modal/ModalTeamMembers";
 
@@ -169,8 +169,8 @@ const Page = ({ data }) => {
         </div>
       </BgImage>
 
-      <OurTeam className="mb-20 md:mb-40" headingLevel="h2" />
-      <RecentBlogPosts className="mb-20 md:mb-40" />
+      <OurTeam className="mb-10 md:mb-10" headingLevel="h2" />
+      {/* <RecentBlogPosts className="mb-20 md:mb-40" /> */}
       <CallToAction headingLevel="h2" />
 
       <ModalTeamMembers slideIndex={slideIndex}>

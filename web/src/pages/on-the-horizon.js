@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
-import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
+// import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 
 const Page = ({ data }) => {
@@ -127,7 +127,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <RecentBlogPosts className="mb-20 md:mb-40" />
+      {/* <RecentBlogPosts className="mb-20 md:mb-40" /> */}
       <CallToAction headingLevel="h2" />
     </Layout>
   );
