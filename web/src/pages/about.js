@@ -193,6 +193,7 @@ const Page = ({ data }) => {
                 <a
                   href="https://www.linkedin.com/in/irwin-heller-7bb25a13/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>
@@ -244,6 +245,7 @@ const Page = ({ data }) => {
                 <a
                   href="https://www.linkedin.com/in/kamal-jaffrey-598256a/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>
@@ -293,6 +295,7 @@ const Page = ({ data }) => {
                 <a
                   href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
                 </a>

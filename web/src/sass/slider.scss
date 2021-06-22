@@ -5,6 +5,9 @@
    q {
       @apply block;
    }
+   &.slick-active {
+      @apply z-10;
+   }
 }
 .slick-prev,
 .slick-next {
