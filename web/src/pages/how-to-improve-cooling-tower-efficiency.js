@@ -586,10 +586,14 @@ const Page = ({ data }) => {
           />
 
           <div className="flex items-center justify-center space-x-10 lg:space-x-20">
+            <a href="https://www.fortistar.com/" target="_blank" rel="noreferrer">
             <GatsbyImage
               image={data.fortistar.childImageSharp.gatsbyImageData}
             />
+            </a>
+            <a href="https://www.coolingtechnology.org/" target="_blank" rel="noreferrer">
             <GatsbyImage image={data.cti.childImageSharp.gatsbyImageData} />
+            </a>
           </div>
         </div>
       </section>
