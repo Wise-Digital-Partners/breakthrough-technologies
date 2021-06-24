@@ -43,7 +43,7 @@ const Page = ({ data }) => {
                 />
                 <h1>About Breakthrough Technologies</h1>
                 <p className="mb-0">
-                  Born from a small group of visionary engineers, physicists and
+                  Born from a group of visionary engineers, physicists and
                   business leaders near Massachusetts Institute of Technology in
                   Cambridge, our founders created Breakthrough Technologies to
                   produce innovative products that provide significant cost
