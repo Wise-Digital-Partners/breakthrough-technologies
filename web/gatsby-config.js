@@ -24,8 +24,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-advanced-sitemap``gatsby-plugin-transition-link`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
