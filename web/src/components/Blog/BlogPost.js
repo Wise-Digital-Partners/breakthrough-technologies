@@ -73,11 +73,11 @@ function BlogPost(props) {
         {/* {authors && <AuthorList items={authors} title="Authors" />} */}
         {/* </aside> */}
 
-        <TextDecorative
+        {/* <TextDecorative
           text="Related News"
           desktopAlignment="center"
           mobileAlignment="center"
-        />
+        /> */}
       </div>
       {/* <div className="mt-10">
         <RecentBlogPosts heading={false} className="mb-16 md:mb-32" />
