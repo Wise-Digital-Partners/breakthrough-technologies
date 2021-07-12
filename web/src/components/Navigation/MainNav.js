@@ -233,11 +233,11 @@ const MainNav = ({
               </ul>
             </li>
 
-            {/* <li>
+            <li>
               <AniLink fade to="/news-resources/">
                 News & Resources
               </AniLink>
-            </li> */}
+            </li>
           </ul>
           <div className="hidden lg:inline-flex items-center">
             <ButtonSolid as="button" modal="modal-contact" text="Contact Us" />
@@ -287,7 +287,7 @@ const MainNav = ({
                     </li>
                   </Accordion>
                 </li>
-                {/* <li className="mb-8">
+                <li className="mb-8">
                   <AniLink
                     fade
                     to="/news-resources/"
@@ -296,7 +296,7 @@ const MainNav = ({
                   >
                     News & Resources
                   </AniLink>
-                </li> */}
+                </li>
               </ul>
 
               <ButtonSolid

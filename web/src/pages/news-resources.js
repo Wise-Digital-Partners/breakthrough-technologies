@@ -62,15 +62,16 @@ const ArchivePage = (props) => {
       />
       <section className="pt-16 mb-20 md:mb-32">
         <div className="container">
-          <h1>News & Resources</h1>
-          <div className="mb-32">
+          {/* <h1>News & Resources</h1> */}
+          {/* <div className="mb-32">
             {postNodes && postNodes.length > 0 && (
               <BlogPostFeaturedList nodes={postNodes} />
             )}
-          </div>
+          </div> */}
 
           <header className="mb-18">
-            <h2>Recent Articles</h2>
+            <h1>News & Resources</h1>
+            {/* <h2>Recent Articles</h2> */}
           </header>
           {postNodes && postNodes.length > 0 && (
             <BlogPostPreviewList nodes={postNodes} />
