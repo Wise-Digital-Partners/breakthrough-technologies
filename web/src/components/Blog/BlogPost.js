@@ -7,7 +7,7 @@ import styled from "@emotion/styled";
 import tw from "twin.macro";
 
 import TextDecorative from "../Text/TextDecorative";
-import RecentBlogPosts from "../Repeating/RecentBlogPosts";
+// import RecentBlogPosts from "../Repeating/RecentBlogPosts";
 
 const StyledContent = styled.div`
   p,
@@ -79,9 +79,9 @@ function BlogPost(props) {
           mobileAlignment="center"
         />
       </div>
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <RecentBlogPosts heading={false} className="mb-16 md:mb-32" />
-      </div>
+      </div> */}
     </article>
   );
 }
