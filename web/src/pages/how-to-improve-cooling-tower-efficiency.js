@@ -586,13 +586,28 @@ const Page = ({ data }) => {
           />
 
           <div className="flex items-center justify-center space-x-10 lg:space-x-20">
-            <a href="https://www.fortistar.com/" target="_blank" rel="noreferrer">
-            <GatsbyImage
-              image={data.fortistar.childImageSharp.gatsbyImageData}
-            />
+            <a
+              href="https://www.fortistar.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GatsbyImage
+                image={data.fortistar.childImageSharp.gatsbyImageData}
+              />
             </a>
-            <a href="https://www.coolingtechnology.org/" target="_blank" rel="noreferrer">
-            <GatsbyImage image={data.cti.childImageSharp.gatsbyImageData} />
+            <a
+              href="https://www.coolingtechnology.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GatsbyImage image={data.cti.childImageSharp.gatsbyImageData} />
+            </a>
+            <a
+              href="https://ec.europa.eu/growth/index_en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GatsbyImage image={data.ce.childImageSharp.gatsbyImageData} />
             </a>
           </div>
         </div>
@@ -662,9 +677,7 @@ const Page = ({ data }) => {
 
 export const query = graphql`
   {
-    openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/ALI.jpg" }
-    ) {
+    openGraphImage: file(relativePath: { eq: "open-graph/facebook/ALI.jpg" }) {
       publicURL
     }
     twitterOpenGraphImage: file(
@@ -817,6 +830,16 @@ export const query = graphql`
       }
     }
     cti: file(relativePath: { eq: "ALI/cti-logo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 115
+          placeholder: BLURRED
+          quality: 100
+        )
+      }
+    }
+    ce: file(relativePath: { eq: "ALI/CE Logo.jpeg" }) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
