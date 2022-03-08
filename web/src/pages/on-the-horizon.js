@@ -39,14 +39,40 @@ const Page = ({ data }) => {
             </p>
           </header>
 
-          <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center mb-16 md:mb-20">
-            <div className="md:col-start-1 md:col-span-5">
+          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center mb-16 md:mb-20">
+            <div className="order-2 md:order-1">
+              <h2 className="mb-2.5">SulphyPro</h2>
+              <div className="bg-primary-400 w-16 h-1 mb-6"></div>
+              <p className="mb-0">
+                Hydrogen sulfide is a naturally occurring, yet toxic and
+                corrosive impurity that is produced from decaying organic
+                matter. It is created in the process of refining petroleum and
+                it is also released during the fermentation of organic material
+                to make biogas. Instead of using a hazardous and expensive
+                purification process, Breakthrough Technologies’ innovative
+                SulphyPro uses a combination of microwaves and manipulated
+                ultraviolet-light waves to excite and separate hydrogen sulfide
+                molecules into hydrogen and sulfur. This nascent recycled
+                hydrogen can save operating costs, be burned for energy or
+                tapped as a renewable transportation source.
+              </p>
+            </div>
+
+            <div className="order-1 md:order-2">
+              <GatsbyImage
+                image={data.sulphyPro.childImageSharp.gatsbyImageData}
+              />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center mb-16 md:mb-20">
+            <div>
               <GatsbyImage
                 image={data.phoenix.childImageSharp.gatsbyImageData}
               />
             </div>
 
-            <div className="md:col-end-13 md:col-span-7">
+            <div>
               <h2 className="mb-2.5">
                 Phoenix Pressure and Heat Exchanger (PHX)
               </h2>
@@ -71,38 +97,8 @@ const Page = ({ data }) => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center mb-16 md:mb-20">
-            <div className="md:col-start-1 md:col-span-7 order-2 md:order-1">
-              <h2 className="mb-2.5">SulphyPro</h2>
-              <div className="bg-primary-400 w-16 h-1 mb-6"></div>
-              <p className="mb-0">
-                Hydrogen sulfide is a naturally occurring, yet toxic and
-                corrosive impurity that is produced from decaying organic
-                matter. It is created in the process of refining petroleum and
-                it is also released during the fermentation of organic material
-                to make biogas. Instead of using a hazardous and expensive
-                purification process, Breakthrough Technologies’ innovative
-                SulphyPro uses a combination of microwaves and manipulated
-                ultraviolet-light waves to excite and separate hydrogen sulfide
-                molecules into hydrogen and sulfur. This nascent recycled
-                hydrogen can save operating costs, be burned for energy or
-                tapped as a renewable transportation source.
-              </p>
-            </div>
-
-            <div className="md:col-end-13 md:col-span-5 order-1 md:order-2">
-              <GatsbyImage
-                image={data.sulphyPro.childImageSharp.gatsbyImageData}
-              />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center">
-            <div className="md:col-start-1 md:col-span-5">
-              <GatsbyImage image={data.mep.childImageSharp.gatsbyImageData} />
-            </div>
-
-            <div className="md:col-end-13 md:col-span-7">
+          <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-10 md:items-center">
+            <div className="order-2 md:order-1">
               <h2 className="mb-2.5">Multi-Effect Process (MEP)</h2>
               <div className="bg-primary-400 w-16 h-1 mb-6"></div>
               <p className="mb-0">
@@ -122,6 +118,9 @@ const Page = ({ data }) => {
                 industrial site can reclaim enough water to save a million
                 dollars a year in sewage charges.
               </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <GatsbyImage image={data.mep.childImageSharp.gatsbyImageData} />
             </div>
           </div>
         </div>

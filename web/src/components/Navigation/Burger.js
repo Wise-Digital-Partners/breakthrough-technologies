@@ -15,8 +15,8 @@ const StyledBurger = styled.button`
   }
   .line {
     ${({ headerStyle }) =>
-      headerStyle === "overlap" ? tw`bg-primary-400` : tw`bg-primary-400`};
-    ${({ scrolled }) => (scrolled ? tw`bg-primary-400` : null)};
+      headerStyle === "overlap" ? tw`bg-white` : tw`bg-black`};
+    ${({ scrolled }) => (scrolled ? tw`bg-black` : null)};
     transform-origin: 1px;
     ${({ offcanvasOpen }) => (offcanvasOpen ? tw`bg-white` : null)};
     /* &:first-of-type {
@@ -47,7 +47,7 @@ const Burger = ({ offcanvasOpen, setOffcanvasOpen, headerStyle, scrolled }) => {
       headerStyle={headerStyle}
       scrolled={scrolled}
     >
-      <svg
+      {/* <svg
         width="26"
         height="21"
         viewBox="0 0 26 21"
@@ -59,11 +59,11 @@ const Burger = ({ offcanvasOpen, setOffcanvasOpen, headerStyle, scrolled }) => {
           d="M25.1017 20.5L0.896811 20.5L12.9796 0.949929L25.1017 20.5Z"
           className="stroke-current"
         />
-      </svg>
+      </svg> */}
 
-      {/* <div className="line relative w-6 h-0.5 z-10 transition-all duration-300 ease-linear" />
       <div className="line relative w-6 h-0.5 z-10 transition-all duration-300 ease-linear" />
-      <div className="line relative w-6 h-0.5 z-10 transition-all duration-300 ease-linear" /> */}
+      <div className="line relative w-6 h-0.5 z-10 transition-all duration-300 ease-linear" />
+      <div className="line relative w-6 h-0.5 z-10 transition-all duration-300 ease-linear" />
     </StyledBurger>
   );
 };

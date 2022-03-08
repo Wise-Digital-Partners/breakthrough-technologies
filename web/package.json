@@ -46,7 +46,6 @@
     "gbimage-bridge": "^0.1.1",
     "gsap": "file:gsap-bonus.tgz",
     "micromodal": "^0.4.2",
-    "node-sass": "^5.0.0",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.5",
     "postcss-preset-env": "^6.7.0",
@@ -61,6 +60,7 @@
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.28.0",
     "react-tabs": "^3.2.1",
+    "sass": "^1.49.9",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.0.1"
   },
