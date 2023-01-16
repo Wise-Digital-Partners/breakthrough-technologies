@@ -141,12 +141,87 @@ const Page = ({ data }) => {
                 <div className="text-xl">Chief Operating Officer</div>
               </div>
             </div>
+            {/* item 4 */}
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(3)}
+              >
+                <GatsbyImage
+                  image={data.nadeem.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Nadeem Nisar</div>
+                <div className="text-xl">Managing Director of Fortistar</div>
+              </div>
+            </div>
+            {/* end of item 4 */}
+            {/* item 5 */}
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(4)}
+              >
+                <GatsbyImage
+                  image={data.chuck.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Chuck Bryceland</div>
+                <div className="text-xl">Managing Director of Fortistar</div>
+              </div>
+            </div>
+            {/* end of item 5*/}
+            {/* item 6 */}
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(5)}
+              >
+                <GatsbyImage
+                  image={data.newsha.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Newsha K. Ajami </div>
+                <div className="text-lg">Chief Research Strategy & Development Officer</div>
+              </div>
+            </div>
+            {/* end of item 6*/}
+            {/* item 7 */}
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(6)}
+              >
+                <GatsbyImage
+                  image={data.graham.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Graham Beesley</div>
+              </div>
+            </div>
+            {/* end of item 7*/}
           </div>
         </div>
       </section>
 
       <BgImage
-        className="pt-22 md:pt-60 pb-36 md:pb-64"
+        className="pt-22 pb-36 md:pb-64"
         image={ourMissionBgImages}
         style={{
           backgroundSize: "cover",
@@ -199,28 +274,7 @@ const Page = ({ data }) => {
                 </a>
               </header>
               <p className="mb-0">
-                Chief Executive Officer Irwin M. Heller is the architect of
-                Breakthrough Technologies growth strategy. Possessing a strong
-                business and legal mind, Heller established the company’s
-                visionary physics-based energy and water sustainability ethos
-                and assembled a senior leadership team that could deliver
-                scalable, proprietary and industrial solutions at a global
-                level. Prior to Breakthrough Technologies, Heller served as
-                chief executive officer of Twin Rivers Technologies (TRT), a
-                leading manufacturer of oils, fats, oleochemicals and biodiesel,
-                which was successfully sold to the Federal Land Development
-                Authority or FELDA, the world’s largest producer of crude palm
-                oil. In addition to his strong business acumen, Heller is a
-                former managing partner at Mintz Levin, a premier legal and
-                consulting solutions provider for energy technology innovators,
-                where he devoted a significant portion of his practice to
-                representing early-stage companies in technology and
-                sustainability-related industries. Heller is a graduate of
-                Columbia University Law School and Tufts University, where he is
-                a trustee emeritus. Heller also serves as an advisor to Tufts
-                University Friedman School of Nutrition Science and Policy and
-                an advisor to the Beth Israel Deaconess Medical Center, a
-                world-class teaching hospital of Harvard Medical School.
+                <b>Irwin Heller</b> is <b>the CEO/Board Member</b> and architect of Breakthrough Technologies growth strategy. He previously served as CEO of Twin Rivers Technologies, a leading manufacturer of oils, fats, oleochemicals and biodiesel, which was successfully sold to FELDA, the world’s largest producer of crude palm oil. Irwin is also a former managing partner at Mintz Levin, one of the 50 largest law firms in the United States. He is a graduate of Columbia University Law School and Tufts University, where he is a trustee emeritus. Irwin also serves as an advisor to Tufts University Friedman School of Nutrition Science and Policy and an advisor to the Beth Israel Deaconess Medical Center, a world-class teaching hospital of Harvard Medical School.
               </p>
             </div>
           </div>
@@ -244,26 +298,7 @@ const Page = ({ data }) => {
                 </p>
               </header>
               <p className="mb-0">
-                Serving as the chief technology officer for Breakthrough
-                Technologies, Kamal Jaffrey is a dynamic innovator and global
-                problem solver. Jaffrey’s ingenuity is at the core of nearly
-                every Breakthrough Technologies solution, which has been honed
-                over his twenty years of experience in leading technology
-                research and development labs to develop game-changing
-                industrial products. In addition to Breakthrough Technologies,
-                Jaffrey is the founder of Delta Search Labs in Cambridge, where
-                he designed high-performance supercomputing centers and created
-                the world’s first commercialized immersive virtual-reality space
-                that enables companies to build virtual prototypes instead of
-                costly and inaccurate physical prototypes. Jaffrey holds a
-                concurrent engineering and management degree from Western
-                International University and graduate and undergraduate degrees
-                from Arizona State University and is a registered professional
-                engineer. In addition to holding multiple U.S. and international
-                patents and post-graduate studies and work at the Massachusetts
-                Institute of Technology (MIT) and Harvard University, Jaffrey
-                also maintains research and teaching appointments at the MIT
-                School of Engineering and Harvard Medical School in Boston.
+                <b>Kamal Jaffrey</b> is the <b>CTO</b> and innovator at the core of every Breakthrough Technologies innovation. He previously served as founder of Delta Search Labs in Cambridge, where he designed high-performance supercomputing centers. Kamal holds a concurrent engineering and management degree from Western International University and graduate and undergraduate degrees from Arizona State University. In addition to holding multiple U.S. and international patents and post-graduate studies and work at MIT and Harvard University, Kamal also maintains research and teaching appointments at the MIT School of Engineering and Harvard Medical School in Boston.
               </p>
             </div>
           </div>
@@ -294,32 +329,143 @@ const Page = ({ data }) => {
                 </a>
               </header>
               <p className="mb-0">
-                A longtime executive with strong roots in business, economics
-                and biochemistry, Jeffery J. Mahaffey is the chief operating
-                officer of Breakthrough Technologies and is responsible for
-                almost every aspect of the core business functions, from running
-                day-to-day operations to leading strategic initiatives and major
-                corporate decisions. Prior to Breakthrough Technologies,
-                Mahaffey formed and led a joint venture with HB International
-                (HBI) of Paris, an international brokerage company that
-                negotiates deals on behalf of businesses and professionals in
-                the oleochemicals industry. Before serving as managing director
-                at HBI USA, Mahaffey served as chief operating officer of Global
-                Bio Chem Technology Group of China, where he developed and
-                commercialized bio-based glycols and built a commercial
-                organization to market these products in the U.S. and Europe
-                with more than $30 million in annual sales. He was also vice
-                president and general manager for Oleochemicals and Surfactants
-                at Cognis in North America, where he drove over $400 million in
-                sales. Mahaffey’s early career includes nearly 25 years of
-                executive management and global marketing experience at Henkel,
-                a multi-billion-dollar company specializing in well-known soap,
-                haircare products and adhesive brands and leading multinational
-                conglomerate Procter & Gamble.
+                <b>Jeff Mahaffey</b> is the <b>COO</b> and leader of Breakthrough Technologies commercial execution plan. He previously formed and led a joint venture with HB International (HBI) of Paris, an international brokerage company that negotiates deals on behalf of businesses in the oleochemical industry. Before serving as managing director at HBI USA, Jeff served as COO of Global Bio Chem Technology Group of China, where he developed and commercialized bio-based glycols. Jeff’s early career includes twenty-five years of executive management experience at Henkel and Procter & Gamble. He is a graduate of Emory University with degrees in Economics, Chemistry & Physics, and German.
               </p>
             </div>
           </div>
         </div>
+        {/* model item 4 */}
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.nadeem.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">Nadeem Nisar</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Managing Director of Fortistar
+                </p>
+                {/* <a
+                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a> */}
+              </header>
+              <p className="mb-0">
+                <b>Nadeem Nisar</b> has been serving as a Managing Director of Fortistar since July 2008, where he serves as head of their investment team. He is a member of Fortistar’s management and investment committees which oversee the operations of Fortistar’s portfolio companies. He also serves on the board of several of Fortistar’s portfolio companies, including Fortistar Sustainable Solutions Corp, Carbonfree Chemicals LLC, Braven Environmental and Pellucere Technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* end of model item 4 */}        
+        {/* model item 5 */}
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.nadeem.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">
+                  Chuck Bryceland</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Managing Director of Fortistar
+                </p>
+                {/* <a
+                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a> */}
+              </header>
+              <p className="mb-0">
+                <b>Chuck Bryceland</b> serves as a Managing Director at Fortistar and is a member of Fortistar's management and investment committees. He is actively involved in the firm's growth strategy and is responsible for originating and stewarding investments focused on sustainability and decarbonization. Chuck has over thirty years of financial services experience and has held several senior leadership roles in both large and small investment firms including, but not limited to JPMorgan, Bank of America, and Bessemer Trust.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* end of model item 5 */}        
+        {/* model item 6 */}
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.newsha.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">
+                  Newsha K. Ajami </p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  the Chief Research Strategy & <br></br> Development Officer
+                </p>
+                {/* <a
+                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a> */}
+              </header>
+              <p className="mb-0">
+                <b>Newsha K. Ajami </b>is the Chief Research Strategy and Development Officer for the Earth and Environmental Sciences Area (EESA) at the Lawrence Berkeley National Lab. A leading expert in sustainable water resource management, smart cities, and the water-energy-food nexus, she uses data science principles to study the human and policy dimensions of urban water and hydrologic systems. In her role at LBL, she is focused on developing interdisciplinary and impact-focused research initiatives across various domains within EESA.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* end of model item 6 */}        
+        {/* model item 7 */}
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
+                  image={data.graham.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">
+                  Graham Beesley</p>
+                {/* <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Managing Director of Fortistar
+                </p> */}
+                {/* <a
+                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a> */}
+              </header>
+              <p className="mb-0">
+                <b>Graham Beesley</b> has over thirty-five years experience in the Chemical Industry, having held commercial and technical leadership roles at both Procter and Gamble and INEOS. He is a board advisor to several companies and charitable foundations, most notably My Carbon Zero, focused on  CO2 reduction. Graham is a joint UK and Swiss citizen, and  holds a BA in Chemical Engineering from the University of Cambridge. 
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* end of model item 7 */}
+
       </ModalTeamMembers>
     </Layout>
   );
@@ -376,6 +522,22 @@ export const query = graphql`
       }
     }
     jeff: file(relativePath: { eq: "about/jeff.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }    nadeem: file(relativePath: { eq: "about/nadeem_nisar_thmb.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }    chuck: file(relativePath: { eq: "about/chuck_bryceland_thmb.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }    newsha: file(relativePath: { eq: "about/newsha_k_thmb.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }    graham: file(relativePath: { eq: "about/graham_beesley_thmb.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
