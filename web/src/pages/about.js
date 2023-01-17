@@ -213,6 +213,7 @@ const Page = ({ data }) => {
               </button>
               <div className="text-center">
                 <div className="heading-three mb-2">Graham Beesley</div>
+                <div className="text-xl">Board of Directors </div>
               </div>
             </div>
             {/* end of item 7*/}
@@ -447,6 +448,8 @@ const Page = ({ data }) => {
               <header className="mb-6 md:mb-10">
                 <p className="heading-two mb-3">
                   Graham Beesley</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Board of Directors                 </p>
                 {/* <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Managing Director of Fortistar
                 </p> */}
