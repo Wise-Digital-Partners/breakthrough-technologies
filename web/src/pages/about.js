@@ -141,6 +141,15 @@ const Page = ({ data }) => {
                 <div className="text-xl">Chief Operating Officer</div>
               </div>
             </div>
+          </div>
+          <div className="mt-24 mb-2 md:mb-3">
+            <TextDecorative
+              text="Board of Directors"
+              desktopAlignment="center"
+              mobileAlignment="center"
+            />
+          </div>
+          <div className="grid md:grid-cols-4 md:gap-x-2 gap-y-10 md:items-center">
             {/* item 4 */}
             <div>
               <button
@@ -156,7 +165,8 @@ const Page = ({ data }) => {
               </button>
               <div className="text-center">
                 <div className="heading-three mb-2">Nadeem Nisar</div>
-                <div className="text-xl">Managing Director of Fortistar</div>
+                <div className="text-lg">Board Member</div>
+
               </div>
             </div>
             {/* end of item 4 */}
@@ -175,7 +185,8 @@ const Page = ({ data }) => {
               </button>
               <div className="text-center">
                 <div className="heading-three mb-2">Chuck Bryceland</div>
-                <div className="text-xl">Managing Director of Fortistar</div>
+                <div className="text-lg">Board Member</div>
+
               </div>
             </div>
             {/* end of item 5*/}
@@ -194,7 +205,8 @@ const Page = ({ data }) => {
               </button>
               <div className="text-center">
                 <div className="heading-three mb-2">Newsha K. Ajami </div>
-                <div className="text-lg">Chief Research Strategy & Development Officer</div>
+                <div className="text-lg">Board Member</div>
+
               </div>
             </div>
             {/* end of item 6*/}
@@ -213,7 +225,8 @@ const Page = ({ data }) => {
               </button>
               <div className="text-center">
                 <div className="heading-three mb-2">Graham Beesley</div>
-                <div className="text-xl">Board of Directors </div>
+                <div className="text-lg">Board Member</div>
+
               </div>
             </div>
             {/* end of item 7*/}
@@ -350,8 +363,8 @@ const Page = ({ data }) => {
               <header className="mb-6 md:mb-10">
                 <p className="heading-two mb-3">Nadeem Nisar</p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
-                  Managing Director of Fortistar
-                </p>
+                  Board Member                </p>
+
                 {/* <a
                   href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
                   target="_blank"
@@ -383,8 +396,7 @@ const Page = ({ data }) => {
                 <p className="heading-two mb-3">
                   Chuck Bryceland</p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
-                  Managing Director of Fortistar
-                </p>
+                  Board Member                </p>
                 {/* <a
                   href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
                   target="_blank"
@@ -416,8 +428,7 @@ const Page = ({ data }) => {
                 <p className="heading-two mb-3">
                   Newsha K. Ajami </p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
-                  the Chief Research Strategy & <br></br> Development Officer
-                </p>
+                  Board Member                </p>
                 {/* <a
                   href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
                   target="_blank"
@@ -449,7 +460,7 @@ const Page = ({ data }) => {
                 <p className="heading-two mb-3">
                   Graham Beesley</p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
-                  Board of Directors                 </p>
+                  Board Member                </p>
                 {/* <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Managing Director of Fortistar
                 </p> */}
