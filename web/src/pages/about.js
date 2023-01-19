@@ -365,13 +365,13 @@ const Page = ({ data }) => {
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Board Member                </p>
 
-                {/* <a
-                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                <a
+                  href="https://www.linkedin.com/in/nadeem-nisar-84b3b69"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
-                </a> */}
+                </a>
               </header>
               <p className="mb-0">
                 <b>Nadeem Nisar</b> has been serving as a Managing Director of Fortistar since July 2008, where he serves as head of their investment team. He is a member of Fortistar’s management and investment committees which oversee the operations of Fortistar’s portfolio companies. He also serves on the board of several of Fortistar’s portfolio companies, including Fortistar Sustainable Solutions Corp, Carbonfree Chemicals LLC, Braven Environmental and Pellucere Technologies.
@@ -386,7 +386,7 @@ const Page = ({ data }) => {
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
                 <GatsbyImage
-                  image={data.nadeem.childImageSharp.gatsbyImageData}
+                  image={data.chuck.childImageSharp.gatsbyImageData}
                   className="md:h-[536px]"
                 />
               </div>
@@ -397,13 +397,13 @@ const Page = ({ data }) => {
                   Chuck Bryceland</p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Board Member                </p>
-                {/* <a
-                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                <a
+                  href="https://www.linkedin.com/in/chuck-bryceland-39a90a"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
-                </a> */}
+                </a>
               </header>
               <p className="mb-0">
                 <b>Chuck Bryceland</b> serves as a Managing Director at Fortistar and is a member of Fortistar's management and investment committees. He is actively involved in the firm's growth strategy and is responsible for originating and stewarding investments focused on sustainability and decarbonization. Chuck has over thirty years of financial services experience and has held several senior leadership roles in both large and small investment firms including, but not limited to JPMorgan, Bank of America, and Bessemer Trust.
@@ -429,13 +429,13 @@ const Page = ({ data }) => {
                   Newsha K. Ajami </p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Board Member                </p>
-                {/* <a
-                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                <a
+                  href="https://www.linkedin.com/in/newsha-ajami-phd-a509363"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
-                </a> */}
+                </a>
               </header>
               <p className="mb-0">
                 <b>Newsha K. Ajami </b>is the Chief Research Strategy and Development Officer for the Earth and Environmental Sciences Area (EESA) at the Lawrence Berkeley National Lab. A leading expert in sustainable water resource management, smart cities, and the water-energy-food nexus, she uses data science principles to study the human and policy dimensions of urban water and hydrologic systems. In her role at LBL, she is focused on developing interdisciplinary and impact-focused research initiatives across various domains within EESA.
@@ -461,16 +461,13 @@ const Page = ({ data }) => {
                   Graham Beesley</p>
                 <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
                   Board Member                </p>
-                {/* <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
-                  Managing Director of Fortistar
-                </p> */}
-                {/* <a
-                  href="https://www.linkedin.com/in/jeffery-mahaffey-7397071a/"
+                <a
+                  href="https://www.linkedin.com/in/graham-beesley-427209"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
-                </a> */}
+                </a>
               </header>
               <p className="mb-0">
                 <b>Graham Beesley</b> has over thirty-five years experience in the Chemical Industry, having held commercial and technical leadership roles at both Procter and Gamble and INEOS. He is a board advisor to several companies and charitable foundations, most notably My Carbon Zero, focused on  CO2 reduction. Graham is a joint UK and Swiss citizen, and  holds a BA in Chemical Engineering from the University of Cambridge. 
