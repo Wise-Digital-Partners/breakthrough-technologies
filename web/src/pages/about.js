@@ -470,7 +470,7 @@ const Page = ({ data }) => {
                 </a>
               </header>
               <p className="mb-0">
-                <b>Graham Beesley</b> is the CEO of BiOWiSH Technologies, a company that creates microbial solutions to restore quality in the world’s polluted waters, safely increase crop production, and help feed the world’s growing population. Graham has over thirty-five years experience in the Chemical Industry, having held commercial and technical leadership roles at both Procter and Gamble and INEOS.
+                <b>Graham Beesley</b> is the CEO of BiOWiSH Technologies, a company that creates microbial solutions to restore quality in the world’s polluted waters, safely increase crop production, and help feed the world’s growing population. Graham has over thirty-five years experience in the Chemical Industry, having held commercial and technical leadership roles at both Procter and Gamble and INEOS.He is a board advisor to several companies and charitable foundations, most notably My Carbon Zero, focused on  CO2 reduction. Graham is a joint UK and Swiss citizen, and  holds a BA in Chemical Engineering from the University of Cambridge. 
               </p>
             </div>
           </div>
