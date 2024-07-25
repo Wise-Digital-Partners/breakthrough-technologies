@@ -142,7 +142,7 @@ const Page = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="mt-24 mb-2 md:mb-3">
+          {/* <div className="mt-24 mb-2 md:mb-3">
             <TextDecorative
               text="Board of Directors"
               desktopAlignment="center"
@@ -150,7 +150,6 @@ const Page = ({ data }) => {
             />
           </div>
           <div className="grid md:grid-cols-4 md:gap-x-2 gap-y-10 md:items-center">
-            {/* item 4 */}
             <div>
               <button
                 className="group w-full overflow-hidden mb-6 focus:outline-none"
@@ -169,8 +168,6 @@ const Page = ({ data }) => {
 
               </div>
             </div>
-            {/* end of item 4 */}
-            {/* item 5 */}
             <div>
               <button
                 className="group w-full overflow-hidden mb-6 focus:outline-none"
@@ -189,8 +186,6 @@ const Page = ({ data }) => {
 
               </div>
             </div>
-            {/* end of item 5*/}
-            {/* item 6 */}
             <div>
               <button
                 className="group w-full overflow-hidden mb-6 focus:outline-none"
@@ -209,8 +204,6 @@ const Page = ({ data }) => {
 
               </div>
             </div>
-            {/* end of item 6*/}
-            {/* item 7 */}
             <div>
               <button
                 className="group w-full overflow-hidden mb-6 focus:outline-none"
@@ -229,8 +222,7 @@ const Page = ({ data }) => {
 
               </div>
             </div>
-            {/* end of item 7*/}
-          </div>
+          </div> */}
         </div>
       </section>
 
