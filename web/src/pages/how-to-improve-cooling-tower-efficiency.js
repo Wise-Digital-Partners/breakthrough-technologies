@@ -213,16 +213,25 @@ const Page = ({ data }) => {
                   Improve Your Cooling Tower Efficiency
                 </h2>
                 <p className="mb-0">
-                  ALI, Aqua Liquefaction with Ionization, is our leading
-                  patent-pending technology for cooling towers. ALI uses
-                  specially-designed ductwork over cooling towers to capture
-                  evaporating water. Without using heat or chemicals under
-                  normal cooling tower operations, ALI condenses and recovers
-                  90% of your evaporating water and eliminates the concentration
-                  of solid and liquid impurities in your system. Our
-                  patent-pending technology only requires one day for
-                  installation and involves no moving parts, which means minimal
-                  maintenance and operating expenses.
+                  Our proprietary and patented technology only requires one day
+                  for installation and involves no moving parts, which means
+                  minimal maintenance and operating expenses.
+                  <ul className="list-disc ml-4 mb-6">
+                    <li className="mb-2">
+                      Aqua Liquefaction with Ionization (ALI), is a leading
+                      patented technology for cooling towers
+                    </li>
+                    <li>
+                      ALI uses specially-designed ductwork over cooling towers
+                      to capture evaporating water
+                    </li>
+                    <li>
+                      Without using heat or chemicals under normal cooling tower
+                      operations, ALI condenses and recovers evaporating water
+                      and eliminates the concentration of solid and liquid
+                      impurities
+                    </li>
+                  </ul>
                 </p>
               </header>
             </div>
@@ -257,16 +266,16 @@ const Page = ({ data }) => {
               <div className="flex items-start space-x-6">
                 <img
                   src={data.benfitsIcon1.publicURL}
-                  alt="Recover at least 90% of water loss"
+                  alt="Recover a significant amount of water loss."
                 />
                 <div>
                   <p className="font-heading text-lg font-bold text-gray-800 mb-3 md:mb-4">
-                    Recover at least 90% of water loss.
+                    Recover a significant amount of water loss.
                   </p>
                   <p className="mb-0">
                     Under normal cooling tower operations, ALI captures and
-                    recovers more than 90% of evaporative water which may save
-                    you millions of dollars in operating expenses.
+                    recovers evaporative water which may save in operating
+                    expenses.
                   </p>
                 </div>
               </div>
@@ -286,7 +295,9 @@ const Page = ({ data }) => {
                   </p>
                 </div>
               </div>
+            </div>
 
+            <div className="flex flex-col space-y-12 md:space-y-16">
               <div className="flex items-start space-x-6">
                 <img src={data.benfitsIcon3.publicURL} alt="Reduce blow down" />
                 <div>
@@ -315,10 +326,7 @@ const Page = ({ data }) => {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="flex flex-col space-y-12 md:space-y-16">
-              <div className="flex items-start space-x-6">
+              {/* <div className="flex items-start space-x-6">
                 <img
                   src={data.benfitsIcon5.publicURL}
                   alt="Lower energy costs"
@@ -367,7 +375,7 @@ const Page = ({ data }) => {
                     years.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
