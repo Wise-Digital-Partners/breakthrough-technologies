@@ -213,9 +213,6 @@ const Page = ({ data }) => {
                   Improve Your Cooling Tower Efficiency
                 </h2>
                 <p className="mb-0">
-                  Our proprietary and patented technology only requires one day
-                  for installation and involves no moving parts, which means
-                  minimal maintenance and operating expenses.
                   <ul className="list-disc ml-4 mb-6">
                     <li className="mb-2">
                       Aqua Liquefaction with Ionization (ALI), is a leading
