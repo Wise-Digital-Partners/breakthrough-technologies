@@ -10,7 +10,7 @@ import Layout from "../components/Layout";
 import SearchEngineOptimization from "../components/SEO";
 import TextDecorative from "../components/Text/TextDecorative";
 import OurTeam from "../components/Repeating/OurTeam";
-// import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
+import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 import ModalVideo from "../components/Modal/ModalVideo";
@@ -322,7 +322,7 @@ const Page = ({ data }) => {
       </section>
 
       <OurTeam className="mb-10 md:mb-10" headingLevel="h2" />
-      {/* <RecentBlogPosts className="mb-20 md:mb-40" /> */}
+      <RecentBlogPosts className="mb-20 md:mb-40" />
       <CallToAction headingLevel="h2" />
       <ModalVideo vidRef={vidRef} />
     </Layout>
