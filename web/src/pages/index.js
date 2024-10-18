@@ -267,36 +267,43 @@ const Page = ({ data }) => {
             </div>
           </div>
           <div className="flex flex-col gap-y-6">
-            <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px] leading-[100%]">
-              ALI
+            <div className="flex flex-col gap-y-6 lg:grid grid-cols-2 lg:gap-x-20">
+              <div className="flex flex-col gap-y-4">
+                <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px] leading-[100%]">
+                  ALI
+                </div>
+                <div className="text-[#E6E6E6] font-heading text-xl leading-[130%] text-center">
+                  Aqua Liquefaction with Ionization
+                </div>
+                <img
+                  src={blackBlueChevron}
+                  alt="Brand triangle"
+                  className={`block mx-auto `}
+                />
+              </div>
+              <div className="flex flex-col gap-y-4">
+                <div className="font-heading font-bold text-[26px] text-center text-white">
+                  Improving Cooling Tower Efficiency
+                </div>
+                <div className=" font-heading leading-[26px] text-[#CCC] text-start">
+                  ALI, Aqua Liquefaction with Ionization, is our leading
+                  proprietary technology that improves cooling towers. ALI uses
+                  specially designed ductwork over cooling towers to capture
+                  evaporating water. Without using heat or chemicals, ALI
+                  condenses and recovers most evaporative water loss and
+                  eliminates the concentration of dissolved solids in your
+                  system. Our proprietary and patented technology only requires
+                  minimal installation and downtime and involves no moving
+                  parts, which means minimal maintenance and operating expenses.
+                </div>
+              </div>
             </div>
-            <div className="text-[#E6E6E6] font-heading text-xl leading-[130%] text-center">
-              Aqua Liquefaction with Ionization
-            </div>
-            <img
-              src={blackBlueChevron}
-              alt="Brand triangle"
-              className={`block mx-auto `}
-            />
-            <div className="font-heading font-bold text-[26px] text-center text-white">
-              Improving Cooling Tower Efficiency
-            </div>
-            <div className=" font-heading leading-[26px] text-[#CCC] text-start">
-              ALI, Aqua Liquefaction with Ionization, is our leading proprietary
-              technology that improves cooling towers. ALI uses specially
-              designed ductwork over cooling towers to capture evaporating
-              water. Without using heat or chemicals, ALI condenses and recovers
-              most evaporative water loss and eliminates the concentration of
-              dissolved solids in your system. Our proprietary and patented
-              technology only requires minimal installation and downtime and
-              involves no moving parts, which means minimal maintenance and
-              operating expenses.
-            </div>
-            <div className="flex flex-col gap-y-5 items-start lg:grid grid-cols-4">
+
+            <div className="flex flex-col lg:gap-10 gap-y-5 items-start lg:grid grid-cols-4">
               {aliItems.map((item, index) => (
                 <div
                   key={index}
-                  className="flex gap-x-3 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3"
+                  className="flex h-full gap-x-3 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3"
                 >
                   <img src={item.icon} alt="" className={`block mx-auto `} />
                   <div className="text-white font-heading leading-[26px]">
