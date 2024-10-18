@@ -17,13 +17,13 @@ import ModalVideo from "../components/Modal/ModalVideo";
 import triangleRed from "../images/global/Red-Triangle.svg";
 import triangleWhite from "../images/global/outiline-white-traingle.svg";
 import blackBlueChevron from "../images/global/black-blue-chevron.svg";
-import item001 from "../images/global/item-001.svg";
-import item002 from "../images/global/item-002.svg";
-import item003 from "../images/global/item-003.svg";
-import item004 from "../images/global/item-004.svg";
-import item005 from "../images/global/item-005.svg";
-import item006 from "../images/global/item-006.svg";
-import item007 from "../images/global/item-007.svg";
+import item001 from "../images/home/item-001.svg";
+import item002 from "../images/home/item-002.svg";
+import item003 from "../images/home/item-003.svg";
+import item004 from "../images/home/item-004.svg";
+import item005 from "../images/home/item-005.svg";
+import item006 from "../images/home/item-006.svg";
+import item007 from "../images/home/item-007.svg";
 
 const aliItems = [
   {
