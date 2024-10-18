@@ -254,58 +254,61 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="bg-black">
-        <div className="flex flex-col gap-y-[14px]">
-          <img
-            src={triangleWhite}
-            alt="Brand triangle"
-            className={`block mx-auto mb-2.5 `}
-          />
-          <div className="font-heading text-[18px] text-white uppercase">
-            The Latest Technology
+      <section className="bg-black py-[104px] px-4 lg:px-0">
+        <div className="max-w-[561px] mx-auto lg:max-w-[1200px]">
+          <div className="flex flex-col gap-y-[14px] items-center">
+            <img
+              src={triangleWhite}
+              alt="Brand triangle"
+              className={`block mx-auto mb-2.5 `}
+            />
+            <div className="font-heading text-[18px] text-white uppercase">
+              The Latest Technology
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col gap-y-4">
-          <div className="text-[160px] font-heading text-center font-black lg:text-[200px]">
-            ALI
-          </div>
-          <div className="text-[#E6E6E6] font-heading text-xl leading-[130%]">
-            Aqua Liquefaction with Ionization
-          </div>
-          <img
-            src={blackBlueChevron}
-            alt="Brand triangle"
-            className={`block mx-auto `}
-          />
-          <div className="font-heading font-bold text-[26px] text-center text-white">
-            Improving Cooling Tower Efficiency
-          </div>
-          <div className=" font-heading leading-[26px] text-[#CCC]">
-            ALI, Aqua Liquefaction with Ionization, is our leading proprietary
-            technology that improves cooling towers. ALI uses specially designed
-            ductwork over cooling towers to capture evaporating water. Without
-            using heat or chemicals, ALI condenses and recovers most evaporative
-            water loss and eliminates the concentration of dissolved solids in
-            your system. Our proprietary and patented technology only requires
-            minimal installation and downtime and involves no moving parts,
-            which means minimal maintenance and operating expenses.
-          </div>
-          <div>
-            {aliItems.map((item, index) => (
-              <div key={index}>
-                <img src={item.icon} alt="" className={`block mx-auto `} />
-                <div className="text-white font-heading leading-[26px]">
-                  {item.label}
+          <div className="flex flex-col gap-y-4">
+            <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px]">
+              ALI
+            </div>
+            <div className="text-[#E6E6E6] font-heading text-xl leading-[130%]">
+              Aqua Liquefaction with Ionization
+            </div>
+            <img
+              src={blackBlueChevron}
+              alt="Brand triangle"
+              className={`block mx-auto `}
+            />
+            <div className="font-heading font-bold text-[26px] text-center text-white">
+              Improving Cooling Tower Efficiency
+            </div>
+            <div className=" font-heading leading-[26px] text-[#CCC] text-start">
+              ALI, Aqua Liquefaction with Ionization, is our leading proprietary
+              technology that improves cooling towers. ALI uses specially
+              designed ductwork over cooling towers to capture evaporating
+              water. Without using heat or chemicals, ALI condenses and recovers
+              most evaporative water loss and eliminates the concentration of
+              dissolved solids in your system. Our proprietary and patented
+              technology only requires minimal installation and downtime and
+              involves no moving parts, which means minimal maintenance and
+              operating expenses.
+            </div>
+            <div className="flex flex-col gap-y-5 items-start">
+              {aliItems.map((item, index) => (
+                <div key={index} className="flex gap-x-3 items-center">
+                  <img src={item.icon} alt="" className={`block mx-auto `} />
+                  <div className="text-white font-heading leading-[26px]">
+                    {item.label}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <Link
+              to="how-to-improve-cooling-tower-efficiency"
+              className="text-white font-heading font-medium leading-[26px]"
+            >
+              Learn More
+            </Link>
           </div>
-          <Link
-            to="how-to-improve-cooling-tower-efficiency"
-            className="text-white font-heading font-medium leading-[26px]"
-          >
-            Learn More
-          </Link>
         </div>
       </section>
       <section className="bg-white mb-22 md:mb-40">
