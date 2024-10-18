@@ -1,5 +1,5 @@
 import React, { useRef, useState, useLayoutEffect } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 // import { ParallaxProvider } from "react-scroll-parallax";
@@ -15,7 +15,46 @@ import CallToAction from "../components/Repeating/CTA";
 import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 import ModalVideo from "../components/Modal/ModalVideo";
 import triangleRed from "../images/global/Red-Triangle.svg";
+import triangleWhite from "../images/global/outiline-white-traingle.svg";
+import blackBlueChevron from "../images/global/black-blue-chevron.svg";
+import item001 from "../images/global/item-001.svg";
+import item002 from "../images/global/item-002.svg";
+import item003 from "../images/global/item-003.svg";
+import item004 from "../images/global/item-004.svg";
+import item005 from "../images/global/item-005.svg";
+import item006 from "../images/global/item-006.svg";
+import item007 from "../images/global/item-007.svg";
 
+const aliItems = [
+  {
+    label: "Recovers most evaporative water loss",
+    icon: item001,
+  },
+  {
+    label: "Reduce water treatment chemicals ",
+    icon: item002,
+  },
+  {
+    label: "Reduce blowdown ",
+    icon: item003,
+  },
+  {
+    label: "Eliminate plume rise",
+    icon: item004,
+  },
+  {
+    label: "Lower operating costs",
+    icon: item005,
+  },
+  {
+    label: "Increase sustainability",
+    icon: item006,
+  },
+  {
+    label: "Minimize disruption with one-day installation",
+    icon: item007,
+  },
+];
 const Page = ({ data }) => {
   const [animated, setAnimated] = useState(["0px", "-16px"]);
   const [animatedMobile, setAnimatedMobile] = useState(["0px", "-16px"]);
@@ -215,7 +254,60 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-
+      <section className="bg-black">
+        <div className="flex flex-col gap-y-[14px]">
+          <img
+            src={triangleWhite}
+            alt="Brand triangle"
+            className={`block mx-auto mb-2.5 `}
+          />
+          <div className="font-heading text-[18px] text-white uppercase">
+            The Latest Technology
+          </div>
+        </div>
+        <div className="flex flex-col gap-y-4">
+          <div className="text-[160px] font-heading text-center font-black lg:text-[200px]">
+            ALI
+          </div>
+          <div className="text-[#E6E6E6] font-heading text-xl leading-[130%]">
+            Aqua Liquefaction with Ionization
+          </div>
+          <img
+            src={blackBlueChevron}
+            alt="Brand triangle"
+            className={`block mx-auto `}
+          />
+          <div className="font-heading font-bold text-[26px] text-center text-white">
+            Improving Cooling Tower Efficiency
+          </div>
+          <div className=" font-heading leading-[26px] text-[#CCC]">
+            ALI, Aqua Liquefaction with Ionization, is our leading proprietary
+            technology that improves cooling towers. ALI uses specially designed
+            ductwork over cooling towers to capture evaporating water. Without
+            using heat or chemicals, ALI condenses and recovers most evaporative
+            water loss and eliminates the concentration of dissolved solids in
+            your system. Our proprietary and patented technology only requires
+            minimal installation and downtime and involves no moving parts,
+            which means minimal maintenance and operating expenses.
+          </div>
+          <div>
+            {aliItems.map((item, index) => (
+              <div key={index}>
+                <img src={item.icon} alt="" className={`block mx-auto `} />
+                <div className="text-white font-heading leading-[26px]">
+                  {item.label}
+                </div>
+              </div>
+            ))}
+          </div>
+          <Link
+            to="how-to-improve-cooling-tower-efficiency"
+            className="text-white font-heading font-medium leading-[26px]"
+          >
+            Learn More
+          </Link>
+        </div>
+      </section>
       <section className="bg-white mb-22 md:mb-40">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
