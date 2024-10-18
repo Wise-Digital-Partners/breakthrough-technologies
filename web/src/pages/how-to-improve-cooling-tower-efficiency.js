@@ -607,13 +607,13 @@ const Page = ({ data }) => {
             >
               <GatsbyImage image={data.cti.childImageSharp.gatsbyImageData} />
             </a>
-            <a
+            {/* <a
               href="https://ec.europa.eu/growth/index_en"
               target="_blank"
               rel="noreferrer"
             >
               <GatsbyImage image={data.ce.childImageSharp.gatsbyImageData} />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
