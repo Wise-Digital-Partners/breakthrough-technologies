@@ -14,6 +14,7 @@ import OurTeam from "../components/Repeating/OurTeam";
 import CallToAction from "../components/Repeating/CTA";
 import ButtonWithIcon from "../components/Button/ButtonWithIcon";
 import ModalVideo from "../components/Modal/ModalVideo";
+import triangleRed from "../images/global/Red-Triangle.svg";
 
 const Page = ({ data }) => {
   const [animated, setAnimated] = useState(["0px", "-16px"]);
@@ -112,9 +113,9 @@ const Page = ({ data }) => {
             className="font-heading text-white font-black uppercase tracking-wider text-mobile-8xl lg:text-8xl mb-20 md:mb-20 opacity-0 relative"
             style={{ textShadow: "0px 2px 40px rgba(0, 0, 0, 0.4)" }}
           >
-            Improve Sustainability.
+            Transforming Green Energy Into
             <br />
-            Drive Better Business Performance.
+            Economic Growth
           </motion.p>
 
           <AnchorLink to="/#our-mission">
@@ -189,21 +190,26 @@ const Page = ({ data }) => {
               </div>
             </div>
             <div className="lg:text-center">
-              <h2>
-                We’re a sustainability technology company focused on creating
-                value for business.
-              </h2>
+              <h2>The Future of Sustainable Industry Starts Here</h2>
+              <img
+                src={darkmode ? triangleWhite : triangleRed}
+                alt="Brand triangle"
+                className={`block mx-auto mb-2.5 `}
+              />
               <p className="mb-0">
                 Population growth and climate change continue to stress natural
-                resources around the world. To overcome these challenges,
-                industrial processes must become more efficient. These
-                challenges require environmental stewardship, corporate
-                leadership engagement and collaborative partnerships that
-                embrace innovative and cost-effective solutions to complex
-                environmental problems. Breakthrough Technologies is a
-                Boston-based company that builds innovative industrial products
-                to improve water and energy sustainability and drive better
-                business performance.
+                resources around the world. Overcoming these challenges requires
+                leadership, collaboration, and forward-thinking solutions.
+              </p>
+              <p className="mb-0">
+                That is what Nouvel Technologies offers—innovative industrial
+                products that improve water and energy sustainability while
+                optimizing efficiency.
+              </p>
+              <p className="mb-0">
+                With a robust patent portfolio, partnerships with investment
+                firms like Foristar, and new technologies on the horizon, we're
+                set to redefine industrial sustainability in 2025 and beyond.
               </p>
             </div>
           </div>
