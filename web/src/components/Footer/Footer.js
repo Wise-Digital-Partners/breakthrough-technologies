@@ -49,7 +49,9 @@ const Footer = () => {
                   Contact
                 </p>
                 <p className="text-white mb-0">
-                  <a href="mailto:info@bt-tech.com">info@bt-tech.com</a>
+                  <a href="mailto:info@nouveltechnologies.com">
+                    info@nouveltechnologies.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -59,7 +61,7 @@ const Footer = () => {
             <div className="md:flex md:items-center order-2 md:order-1">
               <ul className="flex items-center flex-row flex-wrap space-x-2 md:space-x-6 justify-center md:justify-start">
                 <li className="text-sm text-white">
-                  © {getYear()} Breakthrough Technologies
+                  © {getYear()} Nouvel Technologies
                 </li>
                 {/* <li className="text-sm">
                   <a href="/terms-conditions/" className="text-white">

@@ -64,13 +64,12 @@ const About = ({ className, headingLevel }) => {
           Who We Are
         </HeadingTag>
         <p className="text-left md:text-center text-white mb-5">
-          Boston-based Breakthrough Technologies is led by a world-class
-          engineering team managed by one of Massachusetts Institute of
-          Technology’s brightest engineers. Unlike any other sustainable
-          technology company, our engineers utilize physics to solve
-          sustainability problems with industrial production processes. This
-          unique approach ultimately leads to cleaner, cost-saving sustainable
-          solutions.
+          Nouvel Technologies is an engineering-driven organization that
+          utilizes fundamental physics to solve sustainability problems. We
+          develop innovative products that provide significant cost savings to
+          businesses. With each breakthrough solution, we seek to partner with
+          world-class companies to dramatically transform industrial processes
+          and deliver positive social and environmental change around the world.
         </p>
         <div className="text-center">
           <ButtonWithIcon darkmode={true} href="/about/" text="Learn More" />
