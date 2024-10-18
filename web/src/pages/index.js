@@ -266,22 +266,27 @@ const Page = ({ data }) => {
               The Latest Technology
             </div>
           </div>
-          <div className="flex flex-col gap-y-6">
+          <div className="flex flex-col gap-y-6 lg:mt-20">
             <div className="flex flex-col gap-y-6 lg:grid grid-cols-2 lg:gap-x-20">
-              <div className="flex flex-col gap-y-4">
-                <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px] leading-[100%]">
+              <div className="flex flex-col gap-y-4 lg:items-start">
+                <div className="text-[160px]  lg:flex lg:gap-x-6 font-heading text-center font-black text-white lg:text-[200px] leading-[100%]">
                   ALI
+                  <img
+                    src={blackBlueChevron}
+                    alt="Brand triangle"
+                    className={`block mx-auto lg:hidden`}
+                  />
                 </div>
-                <div className="text-[#E6E6E6] font-heading text-xl leading-[130%] text-center">
+                <div className="text-[#E6E6E6] font-heading text-xl lg:text-[40px] leading-[130%] text-center">
                   Aqua Liquefaction with Ionization
                 </div>
                 <img
                   src={blackBlueChevron}
                   alt="Brand triangle"
-                  className={`block mx-auto `}
+                  className={`block mx-auto lg:hidden`}
                 />
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-y-4 lg:items-start">
                 <div className="font-heading font-bold text-[26px] text-center text-white">
                   Improving Cooling Tower Efficiency
                 </div>
