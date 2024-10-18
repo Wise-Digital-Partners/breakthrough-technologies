@@ -274,10 +274,10 @@ const Page = ({ data }) => {
                   <img
                     src={blackBlueChevron}
                     alt="Brand triangle"
-                    className={`block mx-auto lg:hidden`}
+                    className={`rotate-90 mx-auto hidden lg:flex`}
                   />
                 </div>
-                <div className="text-[#E6E6E6] font-heading text-xl lg:text-[40px] leading-[130%] text-center">
+                <div className="text-[#E6E6E6] font-heading text-xl lg:text-[40px] leading-[130%] text-center lg:text-start">
                   Aqua Liquefaction with Ionization
                 </div>
                 <img
