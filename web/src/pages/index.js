@@ -192,7 +192,7 @@ const Page = ({ data }) => {
             <div className="lg:text-center">
               <h2>The Future of Sustainable Industry Starts Here</h2>
               <img
-                src={darkmode ? triangleWhite : triangleRed}
+                src={triangleRed}
                 alt="Brand triangle"
                 className={`block mx-auto mb-2.5 `}
               />
