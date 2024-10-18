@@ -326,7 +326,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="bg-white mb-22 md:mb-40">
+      {/* <section className="bg-white mb-22 md:mb-40">
         <div className="container">
           <header className="max-w-4xl mx-auto text-center">
             <TextDecorative
@@ -429,7 +429,7 @@ const Page = ({ data }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <OurTeam className="mb-10 md:mb-10" headingLevel="h2" />
       <RecentBlogPosts className="mb-20 md:mb-40" />
