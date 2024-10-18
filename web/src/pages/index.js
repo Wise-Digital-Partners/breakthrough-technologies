@@ -266,11 +266,11 @@ const Page = ({ data }) => {
               The Latest Technology
             </div>
           </div>
-          <div className="flex flex-col gap-y-4">
-            <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px]">
+          <div className="flex flex-col gap-y-6">
+            <div className="text-[160px] font-heading text-center font-black text-white lg:text-[200px] leading-[100%]">
               ALI
             </div>
-            <div className="text-[#E6E6E6] font-heading text-xl leading-[130%]">
+            <div className="text-[#E6E6E6] font-heading text-xl leading-[130%] text-center">
               Aqua Liquefaction with Ionization
             </div>
             <img
@@ -292,9 +292,12 @@ const Page = ({ data }) => {
               involves no moving parts, which means minimal maintenance and
               operating expenses.
             </div>
-            <div className="flex flex-col gap-y-5 items-start">
+            <div className="flex flex-col gap-y-5 items-start lg:grid grid-cols-4">
               {aliItems.map((item, index) => (
-                <div key={index} className="flex gap-x-3 items-center">
+                <div
+                  key={index}
+                  className="flex gap-x-3 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3"
+                >
                   <img src={item.icon} alt="" className={`block mx-auto `} />
                   <div className="text-white font-heading leading-[26px]">
                     {item.label}
