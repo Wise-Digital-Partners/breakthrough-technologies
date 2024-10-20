@@ -146,7 +146,7 @@ const Page = ({ data }) => {
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
-      <section className="relative pt-8 md:pt-40 lg:pt-64 md:pb-40 lg:pb-64">
+      {/* <section className="relative pt-8 md:pt-40 lg:pt-64 md:pb-40 lg:pb-64">
         <BgImage
           className="hidden md:block left-0 top-0 h-full w-full"
           image={data.heroDesktop.childImageSharp.gatsbyImageData}
@@ -199,31 +199,36 @@ const Page = ({ data }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="pt-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 lg:px-0">
         <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <div className="flex flex-col gap-6 lg:flex-row ">
-            <div className="text-primary-400 font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
+            <div className="text-primary-400 text-center lg:text-left font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
               ALI
             </div>
             <img
               src={blackBlueChevron}
               alt="Brand triangle"
-              className={`rotate-90 mx-auto hidden lg:flex`}
+              className={`mx-auto lg:hidden`}
+            />
+            <img
+              src={blackBlueChevron}
+              alt="Brand triangle"
+              className={`rotate-270 mx-auto hidden lg:flex`}
             />
           </div>
-          <p className="text-gray-900 text-center font-heading font-bold text-[26px] lg:text-[42px] lg:font-black lg:text-left">
+          <div className="text-gray-900 text-center leading-normal font-heading font-bold text-[26px] lg:text-[42px] lg:font-black lg:text-left">
             Improve Your Cooling Tower Efficiency
-          </p>
+          </div>
         </div>
-        <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
-          <GatsbyImage
-            image={data.aliIntroDesktop.childImageSharp.gatsbyImageData}
-            className="hidden lg:flex"
-          />
+        <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-16 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <GatsbyImage
             image={data.aliIntroMobile.childImageSharp.gatsbyImageData}
-            className="lg:hidden"
+            className="lg:hidden mx-auto w-full max-w-[561px]"
+          />
+          <GatsbyImage
+            image={data.aliIntroDesktop.childImageSharp.gatsbyImageData}
+            className="hidden lg:flex "
           />
           <div>
             <p className="uppercase text-gray-900 font-heading text-lg leading-[28px] tracking-[5.4px] text-left lg:text-center">
@@ -268,7 +273,7 @@ const Page = ({ data }) => {
                   Improve Your Cooling Tower Efficiency
                 </h2>
                 <p className="mb-0">
-                  <ul className="list-disc ml-4 mb-6">
+                  <ul className="list-disc ml-4 mb-6 flex flex-col gap-y-4">
                     <li className="mb-2">
                       Aqua Liquefaction with Ionization (ALI), is a leading
                       patented technology for cooling towers

@@ -423,7 +423,7 @@ const Page = ({ data }) => {
           <img
             src={upcomingItems[activeTab].imageDesktop}
             alt="Brand triangle"
-            className="mx-auto w-full h-full"
+            className="mx-auto w-full h-full object-cover"
           />
         </div>
         <Link
