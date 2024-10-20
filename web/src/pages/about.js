@@ -248,7 +248,56 @@ const Page = ({ data }) => {
         </div>
       </BgImage>
 
-      <OurTeam className="mb-10 md:mb-10" headingLevel="h2" />
+      <section className="bg-white relative mb-20 md:mb-52">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-x-4 gap-y-2 lg:items-center">
+            <div className="lg:text-left">
+              <img
+                src={triangleRed}
+                alt="Brand triangle"
+                className={`block mx-auto mb-2.5 `}
+              />
+              <div className="text-secondary-400 uppercase font-heading text-lg leading-[28px] tracking-[5.4px] font-light mt-[14px]">
+                The Team
+              </div>
+              <h2>Who We Are</h2>
+              <p className="mb-0">
+                Long before we were acquired by Nouvel Technologies, our core
+                team had already proven they could produce clean, cost-efficient
+                energy without compromising efficiency.
+              </p>
+              <p className="mb-4">But ambition demanded growth.</p>
+              <p className="mb-4">
+                Now, backed by sustainability-focused investor Foristar, we're
+                poised to achieve even greater impact while remaining true to
+                our founding mission:
+              </p>
+              <p className="mb-4">
+                To transform physics and emerging technology into cleaner, more
+                efficient industrial solutions.
+              </p>
+            </div>
+            <div className="lg:h-[560px]">
+              <div className="lg:absolute lg:left-0 lg:w-50vw lg:h-full">
+                <BgImage
+                  className="hidden lg:block lg:h-full"
+                  image={data.aboutDesktop.childImageSharp.gatsbyImageData}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "100% 0%",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                />
+
+                <GatsbyImage
+                  image={data.aboutMobile.childImageSharp.gatsbyImageData}
+                  className="lg:hidden -mx-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <RecentBlogPosts className="mb-20 md:mb-40" /> */}
       <CallToAction headingLevel="h2" />
 
@@ -565,6 +614,16 @@ export const query = graphql`
       }
     }
     heroMobile: file(relativePath: { eq: "about/1.0 Hero - mobile.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    aboutDesktop: file(relativePath: { eq: "about/about-desktop.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    aboutMobile: file(relativePath: { eq: "about/about-mobile.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }

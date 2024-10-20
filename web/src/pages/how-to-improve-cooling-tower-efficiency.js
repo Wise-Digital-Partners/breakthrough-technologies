@@ -241,17 +241,17 @@ const Page = ({ data }) => {
                 minimal maintenance and operating expenses.
               </p>
               <ul className="list-image-checkmark">
-                <li>
+                <li className="flex gap-x-2">
                   <img src={checkIcon} alt="" className="" />
                   Aqua Liquefaction with Ionization (ALI) is a leading patented
                   technology for cooling towers
                 </li>
-                <li>
+                <li className="flex gap-x-2">
                   <img src={checkIcon} alt="" className="" />
                   ALI uses specially designed ductwork over cooling towers to
                   capture evaporating water
                 </li>
-                <li>
+                <li className="flex gap-x-2">
                   <img src={checkIcon} alt="" className="" />
                   Without using heat or chemicals under normal cooling tower
                   operations, ALI condenses and recovers evaporating water and
