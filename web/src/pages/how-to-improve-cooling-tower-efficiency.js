@@ -20,6 +20,8 @@ import OurTeam from "../components/Repeating/OurTeam";
 // import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ModalVideo from "../components/Modal/ModalVideo";
+import blackBlueChevron from "../images/global/black-blue-chevron.svg";
+// import checkIcon from "../images/ALI/check-icon.svg";
 
 const Page = ({ data }) => {
   const questionsAnswers = [
@@ -198,7 +200,60 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-
+      <section className="pt-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 lg:px-0">
+        <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
+          <div className="flex flex-col gap-6 lg:flex-row ">
+            <div className="text-primary-400 font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
+              ALI
+            </div>
+            <img
+              src={blackBlueChevron}
+              alt="Brand triangle"
+              className={`rotate-90 mx-auto hidden lg:flex`}
+            />
+          </div>
+          <p className="text-gray-900 text-center font-heading font-bold text-[26px] lg:text-[42px] lg:font-black lg:text-left">
+            Improve Your Cooling Tower Efficiency
+          </p>
+        </div>
+        <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
+          <GatsbyImage
+            image={data.aliDesktop.childImageSharp.gatsbyImageData}
+            className="hidden lg:flex"
+          />
+          <GatsbyImage
+            image={data.aliMobile.childImageSharp.gatsbyImageData}
+            className="lg:hidden"
+          />
+          <div>
+            <p className="uppercase text-gray-900 font-heading text-lg leading-[28px] tracking-[5.4px] text-left lg:text-center">
+              Aqua Liquefaction with Ionization
+            </p>
+            <div className="text-gray-600 font-body leading-[26px]">
+              <p>
+                Our proprietary and patented technology only requires one day
+                for installation and involves no moving parts, which means
+                minimal maintenance and operating expenses.
+              </p>
+              <ul className="list-image-checkmark">
+                <li>
+                  Aqua Liquefaction with Ionization (ALI) is a leading patented
+                  technology for cooling towers
+                </li>
+                <li>
+                  ALI uses specially designed ductwork over cooling towers to
+                  capture evaporating water
+                </li>
+                <li>
+                  Without using heat or chemicals under normal cooling tower
+                  operations, ALI condenses and recovers evaporating water and
+                  reduces the concentration of solid and liquid impurities
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-36">
         <div className="container">
           <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-12 gap-y-10 md:items-center">
@@ -698,6 +753,26 @@ export const query = graphql`
     heroMobile: file(relativePath: { eq: "ALI/1.0 video hero - mobile.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    aliIntroDesktop: file(relativePath: { eq: "ALI/ali-intro.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 560
+          placeholder: BLURRED
+          quality: 100
+        )
+      }
+    }
+    aliIntroMobile: file(relativePath: { eq: "ALI/ali-intro.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          width: 382
+          placeholder: BLURRED
+          quality: 100
+        )
       }
     }
     introDesktop: file(relativePath: { eq: "ALI/2.0 About - desktop.jpg" }) {

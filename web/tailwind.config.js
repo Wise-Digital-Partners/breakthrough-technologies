@@ -18,6 +18,9 @@ module.exports = {
       body: ['"Roboto", sans-serif'],
     },
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/images/check-icon.svg")',
+      },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in",
       },
