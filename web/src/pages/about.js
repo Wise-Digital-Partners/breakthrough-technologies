@@ -10,6 +10,7 @@ import OurTeam from "../components/Repeating/OurTeam";
 // import RecentBlogPosts from "../components/Repeating/RecentBlogPosts";
 import CallToAction from "../components/Repeating/CTA";
 import ModalTeamMembers from "../components/Modal/ModalTeamMembers";
+import triangleRed from "../images/global/Red-Triangle.svg";
 
 const Page = ({ data }) => {
   const ourMissionBgImages = [
