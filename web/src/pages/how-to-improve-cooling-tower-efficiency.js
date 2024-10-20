@@ -218,11 +218,11 @@ const Page = ({ data }) => {
         </div>
         <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <GatsbyImage
-            image={data.aliDesktop.childImageSharp.gatsbyImageData}
+            image={data.aliIntroDesktop.childImageSharp.gatsbyImageData}
             className="hidden lg:flex"
           />
           <GatsbyImage
-            image={data.aliMobile.childImageSharp.gatsbyImageData}
+            image={data.aliIntroMobile.childImageSharp.gatsbyImageData}
             className="lg:hidden"
           />
           <div>
