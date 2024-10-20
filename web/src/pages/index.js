@@ -386,7 +386,7 @@ const Page = ({ data }) => {
             </div>
           ))}
         </div>
-        <div className="hidden lg:flex gap-x-6">
+        <div className="hidden lg:flex gap-x-6 mx-auto">
           {upcomingItems.map((item, index) => (
             <div
               key={index}
@@ -403,7 +403,7 @@ const Page = ({ data }) => {
         </div>
         <Link
           to="/on-the-horizon/"
-          className="hidden text-white font-heading font-medium leading-[26px] lg:flex h-full gap-x-2 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:justify-center mt-2"
+          className="text-[#1858FD] font-heading font-medium leading-[26px] flex h-full gap-x-2 items-center lg:p-8  lg:justify-center mt-2"
         >
           Discover Sustainability
           <img src={blueArrow} alt="Brand triangle" className={``} />
