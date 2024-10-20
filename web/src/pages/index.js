@@ -359,7 +359,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="py-[104px] lg;py-[160px] flex flex-col gap-y-8 px-4 lg:px-0">
+      <section className="py-[104px] lg;py-[160px] flex flex-col gap-y-8 px-4 lg:px-0 bg-gray-50">
         <TextDecorative
           text="Coming In 2025..."
           desktopAlignment="center"
@@ -401,7 +401,7 @@ const Page = ({ data }) => {
             </div>
           ))}
         </div>
-        <div className="bg-white hidden lg:grid grid-cols-2 items-center">
+        <div className="bg-white hidden lg:grid grid-cols-2 items-center max-w-[1200px]">
           <div className="w-full">
             <h3 className="mt-6 font-heading text-[30px] font-bold text-black">
               {upcomingItems[activeTab].title}
