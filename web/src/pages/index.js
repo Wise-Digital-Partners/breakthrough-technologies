@@ -17,6 +17,7 @@ import ModalVideo from "../components/Modal/ModalVideo";
 import triangleRed from "../images/global/Red-Triangle.svg";
 import triangleWhite from "../images/global/outiline-white-traingle.svg";
 import blackBlueChevron from "../images/global/black-blue-chevron.svg";
+import blueArrow from "../images/ALI/blue-arrow.svg";
 import item001 from "../images/home/item-001.svg";
 import item002 from "../images/home/item-002.svg";
 import item003 from "../images/home/item-003.svg";
@@ -240,12 +241,12 @@ const Page = ({ data }) => {
                 resources around the world. Overcoming these challenges requires
                 leadership, collaboration, and forward-thinking solutions.
               </p>
-              <p className="mb-0">
+              <p className="mb-4">
                 That is what Nouvel Technologies offers—innovative industrial
                 products that improve water and energy sustainability while
                 optimizing efficiency.
               </p>
-              <p className="mb-0">
+              <p className="mb-4">
                 With a robust patent portfolio, partnerships with investment
                 firms like Foristar, and new technologies on the horizon, we're
                 set to redefine industrial sustainability in 2025 and beyond.
@@ -277,7 +278,7 @@ const Page = ({ data }) => {
                     className={`rotate-90 mx-auto hidden lg:flex`}
                   />
                 </div>
-                <div className="text-[#E6E6E6] font-heading text-xl lg:text-[40px] leading-[130%] text-center lg:text-start">
+                <div className="text-[#E6E6E6] font-heading text-xl lg:text-[40px] leading-[130%] text-center lg:text-left">
                   Aqua Liquefaction with Ionization
                 </div>
                 <img
@@ -286,7 +287,7 @@ const Page = ({ data }) => {
                   className={`block mx-auto lg:hidden`}
                 />
               </div>
-              <div className="flex flex-col gap-y-4 lg:items-start">
+              <div className="flex flex-col gap-y-4 lg:items-start lg:mt-[122px]">
                 <div className="font-heading font-bold text-[26px] text-center text-white">
                   Improving Cooling Tower Efficiency
                 </div>
@@ -304,24 +305,40 @@ const Page = ({ data }) => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:gap-10 gap-y-5 items-start lg:grid grid-cols-4">
+            <div className="flex flex-col lg:gap-10 gap-y-5 items-start lg:grid grid-cols-4 lg:mt-20">
               {aliItems.map((item, index) => (
                 <div
                   key={index}
                   className="flex h-full gap-x-3 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3"
                 >
                   <img src={item.icon} alt="" className={`block mx-auto `} />
-                  <div className="text-white font-heading leading-[26px]">
+                  <div className="text-white font-heading leading-[26px] lg:text-center">
                     {item.label}
                   </div>
                 </div>
               ))}
+              <Link
+                to="how-to-improve-cooling-tower-efficiency"
+                className="hidden text-white font-heading font-medium leading-[26px] lg:flex h-full gap-x-2 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3 "
+              >
+                Learn More
+                <img
+                  src={blueArrow}
+                  alt="Brand triangle"
+                  className={`block mx-auto lg:hidden`}
+                />
+              </Link>
             </div>
             <Link
               to="how-to-improve-cooling-tower-efficiency"
-              className="text-white font-heading font-medium leading-[26px]"
+              className="text-white font-heading font-medium leading-[26px] lg:hidden flex items-center gap-x-2"
             >
               Learn More
+              <img
+                src={blueArrow}
+                alt="Brand triangle"
+                className={`block mx-auto lg:hidden`}
+              />
             </Link>
           </div>
         </div>
