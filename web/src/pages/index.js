@@ -411,8 +411,8 @@ const Page = ({ data }) => {
             </div>
           ))}
         </div>
-        <div className="bg-white hidden lg:grid grid-cols-2 items-center max-w-[1200px]">
-          <div className="w-full">
+        <div className="bg-white hidden lg:grid grid-cols-2 items-center max-w-[1200px] mx-auto">
+          <div className="w-full p-20">
             <h3 className="mt-6 font-heading text-[30px] font-bold text-black">
               {upcomingItems[activeTab].title}
             </h3>
@@ -421,9 +421,9 @@ const Page = ({ data }) => {
             </p>
           </div>
           <img
-            src={upcomingItems[activeTab].imageMobile}
+            src={upcomingItems[activeTab].imageDesktop}
             alt="Brand triangle"
-            className="mx-auto"
+            className="mx-auto w-full h-full"
           />
         </div>
         <Link
