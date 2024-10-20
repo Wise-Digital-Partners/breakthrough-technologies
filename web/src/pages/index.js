@@ -25,6 +25,9 @@ import item004 from "../images/home/item-004.svg";
 import item005 from "../images/home/item-005.svg";
 import item006 from "../images/home/item-006.svg";
 import item007 from "../images/home/item-007.svg";
+import upcoming001 from "../images/home/upcoming-001.jpg";
+import upcoming002 from "../images/home/upcoming-002.jpg";
+import upcoming003 from "../images/home/upcoming-003.jpg";
 
 const aliItems = [
   {
@@ -54,6 +57,27 @@ const aliItems = [
   {
     label: "Minimize disruption with one-day installation",
     icon: item007,
+  },
+];
+
+const upcomingItems = [
+  {
+    title: "SulphyPro",
+    description:
+      "SulphyPro is an advanced cleaning system that uses special light waves to break down harmful hydrogen sulfide into useful hydrogen and sulfur. This process is safer and more cost-effective than traditional methods, providing clean hydrogen that can be used as a green energy source.",
+    image: upcoming001,
+  },
+  {
+    title: "Phoenix Pressure and Heat Exchanger (PHX)",
+    description:
+      "Concrete is essential for construction. But it is also a significant source of carbon emissions. Our innovative technology converts excess heat from cement kilns into electricity. In fact, a typical kiln equipped with PHX can generate enough power for 10,000 homes, significantly reducing energy costs and environmental impact.",
+    image: upcoming002,
+  },
+  {
+    title: "Multi-Effect Process (MEP)",
+    description:
+      "Our water treatment system uses thermo-electrochemistry to clean industrial wastewater in a way that traditional methods cannot match. MEP not only purifies water for reuse but also extracts and recycles valuable materials like fertilizer and energy-producing gases.",
+    image: upcoming003,
   },
 ];
 const Page = ({ data }) => {
@@ -333,6 +357,38 @@ const Page = ({ data }) => {
               <img src={blueArrow} alt="Brand triangle" className={``} />
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="py-[104px] lg;py-[160px] flex flex-col gap-y-8">
+        <TextDecorative
+          text="Coming In 2025..."
+          desktopAlignment="center"
+          mobileAlignment="center"
+        />
+        <p className="">
+          The future depends on sustainable innovation—which is why we continue
+          to push the boundaries of green technology. Here's a glimpse of our
+          groundbreaking projects set to launch in 2025.
+        </p>
+        <div className="flex flex-col gap-y-10 lg:hidden w-full">
+          {upcomingItems.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col w-full max-w-[561px] mx-auto"
+            >
+              <img
+                src={item.image}
+                alt="Brand triangle"
+                className={`rotate-90 mx-auto hidden lg:flex`}
+              />
+              <h3 className="mt-6 font-heading text-[30px] font-bold text-black">
+                {item.title}
+              </h3>
+              <p className="mt-3 font-heading leading-[26px] text-[#666]">
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
       {/* <section className="bg-white mb-22 md:mb-40">
