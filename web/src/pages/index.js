@@ -17,7 +17,7 @@ import ModalVideo from "../components/Modal/ModalVideo";
 import triangleRed from "../images/global/Red-Triangle.svg";
 import triangleWhite from "../images/global/outiline-white-traingle.svg";
 import blackBlueChevron from "../images/global/black-blue-chevron.svg";
-import blueArrow from "../images/ALI/blue-arrow.svg";
+import blueArrow from "../images/global/blue-arrow.svg";
 import item001 from "../images/home/item-001.svg";
 import item002 from "../images/home/item-002.svg";
 import item003 from "../images/home/item-003.svg";
