@@ -200,7 +200,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section> */}
-      <section className="pt-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 ">
+      <section className="py-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 ">
         <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <div className="flex flex-col gap-6 lg:flex-row ">
             <div className="text-primary-400 text-center lg:text-left font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
@@ -241,18 +241,18 @@ const Page = ({ data }) => {
                 minimal maintenance and operating expenses.
               </p>
               <ul className="list-image-checkmark">
-                <li className="flex gap-x-2">
-                  <img src={checkIcon} alt="" className="" />
+                <li className="flex gap-x-2 items-start">
+                  <img src={checkIcon} alt="" className="mt-[2px]" />
                   Aqua Liquefaction with Ionization (ALI) is a leading patented
                   technology for cooling towers
                 </li>
-                <li className="flex gap-x-2">
-                  <img src={checkIcon} alt="" className="" />
+                <li className="flex gap-x-2 items-start">
+                  <img src={checkIcon} alt="" className="mt-[2px]" />
                   ALI uses specially designed ductwork over cooling towers to
                   capture evaporating water
                 </li>
-                <li className="flex gap-x-2">
-                  <img src={checkIcon} alt="" className="" />
+                <li className="flex gap-x-2 items-start">
+                  <img src={checkIcon} alt="" className="mt-[2px]" />
                   Without using heat or chemicals under normal cooling tower
                   operations, ALI condenses and recovers evaporating water and
                   reduces the concentration of solid and liquid impurities
@@ -322,16 +322,16 @@ const Page = ({ data }) => {
 
           <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
             <div className="flex flex-col space-y-12 md:space-y-16">
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start space-x-6">
                 <img
                   src={data.benfitsIcon1.publicURL}
                   alt="Recover a significant amount of water loss."
                 />
                 <div>
-                  <p className="font-heading text-lg font-bold text-gray-800 mb-3 md:mb-4">
+                  <p className="text-center lg:text-left font-heading text-lg font-bold text-gray-800 mt-2 lg:mt-0 mb-3 md:mb-4">
                     Recover a significant amount of water loss.
                   </p>
-                  <p className="mb-0">
+                  <p className="text-center lg:text-left mb-0">
                     Under normal cooling tower operations, ALI captures and
                     recovers evaporative water which may save in operating
                     expenses.
@@ -339,16 +339,16 @@ const Page = ({ data }) => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start space-x-6">
                 <img
                   src={data.benfitsIcon2.publicURL}
                   alt="Reduce chemical treatments"
                 />
                 <div>
-                  <p className="font-heading text-lg font-bold text-gray-800 mb-3 md:mb-4">
+                  <p className="text-center lg:text-left font-heading text-lg font-bold text-gray-800 mt-2 mb-3 md:mb-4">
                     Reduce chemical treatments.
                   </p>
-                  <p className="mb-0">
+                  <p className="text-center lg:text-left mb-0">
                     ALI reduces the need for expensive chemicals to treat water
                     impurities and bacteria by recovering and recycling water.
                   </p>
@@ -357,29 +357,29 @@ const Page = ({ data }) => {
             </div>
 
             <div className="flex flex-col space-y-12 md:space-y-16">
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start space-x-6">
                 <img src={data.benfitsIcon3.publicURL} alt="Reduce blow down" />
                 <div>
-                  <p className="font-heading text-lg font-bold text-gray-800 mb-3 md:mb-4">
+                  <p className="text-center lg:text-left font-heading text-lg font-bold text-gray-800 mt-2 mb-3 md:mb-4">
                     Reduce blow down.
                   </p>
-                  <p className="mb-0">
+                  <p className="text-center lg:text-left mb-0">
                     Recycling clean, evaporated water reduces sewage discharge
                     and wastewater disposal.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start space-x-6">
                 <img
                   src={data.benfitsIcon4.publicURL}
                   alt="Eliminate plume rise"
                 />
                 <div>
-                  <p className="font-heading text-lg font-bold text-gray-800 mb-3 md:mb-4">
+                  <p className="text-center lg:text-left font-heading text-lg font-bold text-gray-800 mt-2 mb-3 md:mb-4">
                     Eliminate plume rise.
                   </p>
-                  <p className="mb-0">
+                  <p className="text-center lg:text-left mb-0">
                     ALI contains and redirects the plume, which can spread
                     bacteria and diseases into the atmosphere.
                   </p>

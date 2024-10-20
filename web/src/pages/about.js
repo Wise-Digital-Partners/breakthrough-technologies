@@ -279,7 +279,7 @@ const Page = ({ data }) => {
               </p>
             </div>
             <div className="lg:h-[560px]">
-              <div className="lg:absolute lg:left-0 lg:w-50vw lg:h-full">
+              <div className=" lg:left-0 lg:w-50vw lg:h-full">
                 <BgImage
                   className="hidden lg:block lg:h-full"
                   image={data.aboutDesktop.childImageSharp.gatsbyImageData}
