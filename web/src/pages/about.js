@@ -619,12 +619,12 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    aboutDesktop: file(relativePath: { eq: "about/about-desktop.jpg" }) {
+    aboutDesktop: file(relativePath: { eq: "about/about-desktop.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    aboutMobile: file(relativePath: { eq: "about/about-mobile.png" }) {
+    aboutMobile: file(relativePath: { eq: "about/about-mobile.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
