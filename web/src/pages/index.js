@@ -83,7 +83,7 @@ const upcomingItems = [
 const Page = ({ data }) => {
   const [animated, setAnimated] = useState(["0px", "-16px"]);
   const [animatedMobile, setAnimatedMobile] = useState(["0px", "-16px"]);
-
+  const [activeTab, setActiveTab] = useState(0);
   const bounceTransition = {
     y: {
       duration: 1,
@@ -359,13 +359,13 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="py-[104px] lg;py-[160px] flex flex-col gap-y-8">
+      <section className="py-[104px] lg;py-[160px] flex flex-col gap-y-8 px-4 lg:px-0">
         <TextDecorative
           text="Coming In 2025..."
           desktopAlignment="center"
           mobileAlignment="center"
         />
-        <p className="">
+        <p className="w-full lg:max-w-[720px] max-w-[561px] mx-auto text-center">
           The future depends on sustainable innovation—which is why we continue
           to push the boundaries of green technology. Here's a glimpse of our
           groundbreaking projects set to launch in 2025.
@@ -376,11 +376,7 @@ const Page = ({ data }) => {
               key={index}
               className="flex flex-col w-full max-w-[561px] mx-auto"
             >
-              <img
-                src={item.image}
-                alt="Brand triangle"
-                className={`rotate-90 mx-auto hidden lg:flex`}
-              />
+              <img src={item.image} alt="Brand triangle" className="mx-auto" />
               <h3 className="mt-6 font-heading text-[30px] font-bold text-black">
                 {item.title}
               </h3>
@@ -390,6 +386,28 @@ const Page = ({ data }) => {
             </div>
           ))}
         </div>
+        <div className="hidden lg:flex gap-x-6">
+          {upcomingItems.map((item, index) => (
+            <div
+              key={index}
+              className={`${
+                index === activeTab
+                  ? "font-medium text-black border-[#1858FD]"
+                  : "text-[#666] border-transparent"
+              } text-center px-2 pb-3 border-b-2 leading-2xl font-heading cursor-pointer`}
+              onClick={() => setActiveTab(index)}
+            >
+              {item.title}
+            </div>
+          ))}
+        </div>
+        <Link
+          to="/on-the-horizon/"
+          className="hidden text-white font-heading font-medium leading-[26px] lg:flex h-full gap-x-2 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:justify-center mt-2"
+        >
+          Discover Sustainability
+          <img src={blueArrow} alt="Brand triangle" className={``} />
+        </Link>
       </section>
       {/* <section className="bg-white mb-22 md:mb-40">
         <div className="container">
