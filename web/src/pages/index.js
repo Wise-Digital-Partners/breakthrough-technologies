@@ -26,11 +26,11 @@ import item005 from "../images/home/item-005.svg";
 import item006 from "../images/home/item-006.svg";
 import item007 from "../images/home/item-007.svg";
 import upcoming001Mobile from "../images/home/upcoming-001-mobile.jpg";
-import upcoming001Desktop from "../images/home/upcoming-001-desktop.jpg";
+import upcoming001Desktop from "../images/home/upcoming-001-desktop.png";
 import upcoming002Mobile from "../images/home/upcoming-002-mobile.jpg";
-import upcoming002Desktop from "../images/home/upcoming-002-desktop.jpg";
+import upcoming002Desktop from "../images/home/upcoming-002-desktop.png";
 import upcoming003Mobile from "../images/home/upcoming-003-mobile.jpg";
-import upcoming003Desktop from "../images/home/upcoming-003-desktop.jpg";
+import upcoming003Desktop from "../images/home/upcoming-003-desktop.png";
 
 const aliItems = [
   {
