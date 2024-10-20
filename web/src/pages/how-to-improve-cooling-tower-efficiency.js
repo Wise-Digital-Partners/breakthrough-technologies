@@ -500,7 +500,7 @@ const Page = ({ data }) => {
                   heat and eject it into the atmosphere. In these towers, humid
                   air carries warm water vapor out of each tower. Many cooling
                   towers also utilize a sump, or basin, that collects water and
-                  impurities that over time lead to corrosion and bacteria
+                  impurities that, over time, lead to corrosion and bacteria
                   growth. Many cooling tower systems control these issues by
                   adding more water and chemicals.
                 </p>
@@ -526,8 +526,7 @@ const Page = ({ data }) => {
                   ALI’s technology adds a patent-pending duct system above the
                   existing cooling tower that condenses and recovers evaporating
                   water. The duct system splits and straightens the airflow
-                  using psychrometrics, which prevents back pressure and reduces
-                  turbulence.
+                  using psychrometrics.
                 </p>
               </motion.div>
 
@@ -614,7 +613,8 @@ const Page = ({ data }) => {
                   The condensed, clean water is returned to the basin, and the
                   remaining air exits through the exhaust. The recovered and
                   recycled water is now available for reuse in the water cooling
-                  system.
+                  system—or as a source of clean water for other industrial
+                  purposes.
                 </p>
               </motion.div>
               <motion.div
@@ -680,17 +680,13 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative mb-20 md:mb-24">
+      {/* <section className="bg-white relative mb-20 md:mb-24">
         <div className="container">
           <TextDecorative
             text="Frequently Asked Questions"
             desktopAlignment="center"
             mobileAlignment="center"
           />
-          {/* <header className="mb-10 md:mb-14 text-center">
-            <h2>Frequently Asked Questions</h2>
-          </header> */}
-
           <div className="max-w-3xl mx-auto">
             <Accordion
               allowZeroExpanded={true}
@@ -730,9 +726,8 @@ const Page = ({ data }) => {
               })}
             </Accordion>
           </div>
-          {/* </div> */}
         </div>
-      </section>
+      </section> */}
 
       <OurTeam className="mb-10 md:mb-10" headingLevel="h2" />
       {/* <RecentBlogPosts className="mb-20 md:mb-40" /> */}
