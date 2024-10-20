@@ -21,7 +21,7 @@ import OurTeam from "../components/Repeating/OurTeam";
 import CallToAction from "../components/Repeating/CTA";
 import ModalVideo from "../components/Modal/ModalVideo";
 import blackBlueChevron from "../images/global/black-blue-chevron.svg";
-// import checkIcon from "../images/ALI/check-icon.svg";
+import checkIcon from "../images/ALI/check-icon.svg";
 
 const Page = ({ data }) => {
   const questionsAnswers = [
@@ -200,7 +200,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section> */}
-      <section className="pt-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 lg:px-0">
+      <section className="pt-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 ">
         <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <div className="flex flex-col gap-6 lg:flex-row ">
             <div className="text-primary-400 text-center lg:text-left font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
@@ -214,10 +214,10 @@ const Page = ({ data }) => {
             <img
               src={blackBlueChevron}
               alt="Brand triangle"
-              className={`rotate-270 mx-auto hidden lg:flex`}
+              className={`-rotate-90 mx-auto hidden lg:flex`}
             />
           </div>
-          <div className="text-gray-900 text-center leading-normal font-heading font-bold text-[26px] lg:text-[42px] lg:font-black lg:text-left">
+          <div className="text-gray-900 text-center leading-none font-heading font-bold text-[26px] lg:text-[42px] lg:font-black lg:text-left lg:self-center ">
             Improve Your Cooling Tower Efficiency
           </div>
         </div>
@@ -231,7 +231,7 @@ const Page = ({ data }) => {
             className="hidden lg:flex "
           />
           <div>
-            <p className="uppercase text-gray-900 font-heading text-lg leading-[28px] tracking-[5.4px] text-left lg:text-center">
+            <p className="uppercase text-gray-900 font-heading text-lg leading-[28px] tracking-[5.4px] lg:text-left text-center">
               Aqua Liquefaction with Ionization
             </p>
             <div className="text-gray-600 font-body leading-[26px]">
@@ -242,14 +242,17 @@ const Page = ({ data }) => {
               </p>
               <ul className="list-image-checkmark">
                 <li>
+                  <img src={checkIcon} alt="" className="" />
                   Aqua Liquefaction with Ionization (ALI) is a leading patented
                   technology for cooling towers
                 </li>
                 <li>
+                  <img src={checkIcon} alt="" className="" />
                   ALI uses specially designed ductwork over cooling towers to
                   capture evaporating water
                 </li>
                 <li>
+                  <img src={checkIcon} alt="" className="" />
                   Without using heat or chemicals under normal cooling tower
                   operations, ALI condenses and recovers evaporating water and
                   reduces the concentration of solid and liquid impurities
@@ -259,7 +262,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-36">
+      {/* <section className="bg-white pt-14 md:pt-32 mb-44 md:mb-36">
         <div className="container">
           <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-12 gap-y-10 md:items-center">
             <div>
@@ -305,8 +308,7 @@ const Page = ({ data }) => {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
       <section className="bg-white relative mb-20 md:mb-44">
         <div className="container">
           <TextDecorative
@@ -790,16 +792,16 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
     }
-    benfitsIcon1: file(relativePath: { eq: "ALI/3.0 benefit 1.svg" }) {
+    benfitsIcon1: file(relativePath: { eq: "ALI/item-001.svg" }) {
       publicURL
     }
-    benfitsIcon2: file(relativePath: { eq: "ALI/3.1 benefit 2.svg" }) {
+    benfitsIcon2: file(relativePath: { eq: "ALI/item-002.svg" }) {
       publicURL
     }
-    benfitsIcon3: file(relativePath: { eq: "ALI/3.2 benefit 3.svg" }) {
+    benfitsIcon3: file(relativePath: { eq: "ALI/item-003.svg" }) {
       publicURL
     }
-    benfitsIcon4: file(relativePath: { eq: "ALI/3.3 benefit 4.svg" }) {
+    benfitsIcon4: file(relativePath: { eq: "ALI/item-004.svg" }) {
       publicURL
     }
     benfitsIcon5: file(relativePath: { eq: "ALI/3.4 benefit 5.svg" }) {
