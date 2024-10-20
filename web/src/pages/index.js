@@ -401,6 +401,21 @@ const Page = ({ data }) => {
             </div>
           ))}
         </div>
+        <div className="bg-white hidden lg:grid grid-cols-2 items-center">
+          <div className="w-full">
+            <h3 className="mt-6 font-heading text-[30px] font-bold text-black">
+              {upcomingItems[activeTab].title}
+            </h3>
+            <p className="mt-3 font-heading leading-[26px] text-[#666]">
+              {upcomingItems[activeTab].description}
+            </p>
+          </div>
+          <img
+            src={upcomingItems[activeTab].image}
+            alt="Brand triangle"
+            className="mx-auto"
+          />
+        </div>
         <Link
           to="/on-the-horizon/"
           className="text-[#1858FD] font-heading font-medium leading-[26px] flex h-full gap-x-2 items-center lg:p-8  lg:justify-center mt-2"
