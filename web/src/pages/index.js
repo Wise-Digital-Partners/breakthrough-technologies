@@ -319,14 +319,10 @@ const Page = ({ data }) => {
               ))}
               <Link
                 to="how-to-improve-cooling-tower-efficiency"
-                className="hidden text-white font-heading font-medium leading-[26px] lg:flex h-full gap-x-2 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:flex-col lg:gap-y-3 "
+                className="hidden text-white font-heading font-medium leading-[26px] lg:flex h-full gap-x-2 items-center lg:bg-[#131c32] lg:p-8 lg:rounded-[4px] lg:justify-center"
               >
                 Learn More
-                <img
-                  src={blueArrow}
-                  alt="Brand triangle"
-                  className={`block mx-auto lg:hidden`}
-                />
+                <img src={blueArrow} alt="Brand triangle" className={``} />
               </Link>
             </div>
             <Link
@@ -334,11 +330,7 @@ const Page = ({ data }) => {
               className="text-white font-heading font-medium leading-[26px] lg:hidden flex items-center gap-x-2"
             >
               Learn More
-              <img
-                src={blueArrow}
-                alt="Brand triangle"
-                className={`block mx-auto lg:hidden`}
-              />
+              <img src={blueArrow} alt="Brand triangle" className={``} />
             </Link>
           </div>
         </div>
