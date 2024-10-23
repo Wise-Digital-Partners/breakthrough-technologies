@@ -231,8 +231,8 @@ const Page = ({ data }) => {
               mobileAlignment="center"
             />
             <h1 className="text-mobile-5xl md:text-5xl mb-0 mt-4">
-              We build innovative industrial products that improve water and
-              energy sustainability and drive better business performance.
+              Improve water and energy sustainability and drive better business
+              performance by building innovative industrial products.
             </h1>
           </header>
         </div>
@@ -264,9 +264,9 @@ const Page = ({ data }) => {
               <img
                 src={triangleRed}
                 alt="Brand triangle"
-                className={`block mx-auto mb-2.5 `}
+                className={`block mx-auto mb-2.5 rotate-180 `}
               />
-              <p className="mb-0">
+              <p className="mb-4">
                 Population growth and climate change continue to stress natural
                 resources around the world. Overcoming these challenges requires
                 leadership, collaboration, and forward-thinking solutions.
