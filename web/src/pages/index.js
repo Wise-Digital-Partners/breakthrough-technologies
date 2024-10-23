@@ -34,31 +34,31 @@ import upcoming003Desktop from "../images/home/upcoming-003-desktop.png";
 
 const aliItems = [
   {
-    label: "Recovers most evaporative water loss",
+    label: "Recovers most evaporative water loss",
     icon: item001,
   },
   {
-    label: "Reduce water treatment chemicals ",
+    label: "Reduces water treatment chemicals",
     icon: item002,
   },
   {
-    label: "Reduce blowdown ",
+    label: "Reduces blowdown",
     icon: item003,
   },
   {
-    label: "Eliminate plume rise",
+    label: "Eliminates plume rise",
     icon: item004,
   },
   {
-    label: "Lower operating costs",
+    label: "Lowers operating costs",
     icon: item005,
   },
   {
-    label: "Increase sustainability",
+    label: "Increases sustainability",
     icon: item006,
   },
   {
-    label: "Minimize disruption with one-day installation",
+    label: "Minimizes disruption with one-day installation",
     icon: item007,
   },
 ];
