@@ -18,6 +18,10 @@ module.exports = {
       body: ['"Roboto", sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        "ali-desktop": "url('/images/ali/bg-desktop.jpg')",
+        "ali-mobile": "url('/images/ali/bg-mobile.jpg')",
+      },
       listStyleImage: {
         checkmark: 'url("/images/check-icon.svg")',
       },
