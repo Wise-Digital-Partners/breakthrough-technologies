@@ -200,7 +200,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section> */}
-      <section className="py-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 bg-li-mobile lg:bg-ali-desktop">
+      <section className="py-20 lg:py-[104px] flex flex-col gap-y-16 lg:gap-y-14 px-4 bg-ali-mobile lg:bg-ali-desktop">
         <div className="max-w-[561px] lg:max-w-[1200px] mx-auto flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-20">
           <div className="flex flex-col gap-6 lg:flex-row ">
             <div className="text-primary-400 text-center lg:text-left font-heading uppercase text-[106px] font-black leading-[100%] lg:text-[200px]">
@@ -309,7 +309,7 @@ const Page = ({ data }) => {
           </div>
         </div>
       </section> */}
-      <section className="bg-white relative mb-20 md:mb-44">
+      <section className="bg-white relative py-[128px]">
         <div className="container">
           <TextDecorative
             text="Features"
@@ -440,7 +440,7 @@ const Page = ({ data }) => {
         </div>
       </section>
 
-      <section className="bg-white relative">
+      <section className="bg-gray-50 relative">
         <div className="absolute w-full h-full mt-48">
           <img
             src={data.blueTriangle.publicURL}
