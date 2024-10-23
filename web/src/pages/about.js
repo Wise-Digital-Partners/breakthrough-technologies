@@ -371,11 +371,11 @@ const Page = ({ data }) => {
               </header>
               <p className="mb-0">
                 <b>Jeff Mahaffey</b> is the{" "}
-                <b>COO and leader of Nouvel Technologies</b>
-                commercial execution plan. He previously formed and led a joint
-                venture with HB International (HBI) of Paris, an international
-                brokerage company that negotiates deals on behalf of businesses
-                in the oleochemical industry.
+                <b>COO and leader of Nouvel Technologies</b> commercial
+                execution plan. He previously formed and led a joint venture
+                with HB International (HBI) of Paris, an international brokerage
+                company that negotiates deals on behalf of businesses in the
+                oleochemical industry.
               </p>
               <p className="mb-0">
                 Before serving as managing director at HBI USA, Jeff served as
