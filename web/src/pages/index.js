@@ -58,7 +58,7 @@ const aliItems = [
     icon: item006,
   },
   {
-    label: "Minimizes disruption with one-day installation",
+    label: "Minimal disruption to cooling tower operation during installation",
     icon: item007,
   },
 ];

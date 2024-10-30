@@ -232,13 +232,13 @@ const Page = ({ data }) => {
           />
           <div>
             <p className="uppercase text-gray-900 font-heading text-lg leading-[28px] tracking-[5.4px] lg:text-left text-center">
-              Aqua Liquefaction with Ionization
+              Improve Your Cooling Tower Efficiency
             </p>
             <div className="text-gray-600 font-body leading-[26px]">
               <p>
-                Our proprietary and patented technology only requires one day
-                for installation and involves no moving parts, which means
-                minimal maintenance and operating expenses.
+                Our proprietary and patented technology installs quickly with
+                minimal downtime. With no moving parts, it requires virtually no
+                maintenance and may reduce operating expenses.
               </p>
               <ul className="list-image-checkmark">
                 <li className="flex gap-x-2 items-start">

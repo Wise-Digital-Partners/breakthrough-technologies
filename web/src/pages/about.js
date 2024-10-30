@@ -262,14 +262,14 @@ const Page = ({ data }) => {
                 The Team
               </div>
               <h2>Who We Are</h2>
-              <p className="mb-0">
+              <p className="mb-4">
                 Long before we were acquired by Nouvel Technologies, our core
                 team had already proven they could produce clean, cost-efficient
                 energy without compromising efficiency.
               </p>
               <p className="mb-4">But ambition demanded growth.</p>
               <p className="mb-4">
-                Now, backed by sustainability-focused investor Foristar, we're
+                Now, backed by sustainability-focused investor Fortistar, we're
                 poised to achieve even greater impact while remaining true to
                 our founding mission:
               </p>
