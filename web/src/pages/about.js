@@ -253,13 +253,15 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-x-4 gap-y-2 lg:items-center">
             <div className="lg:text-left">
-              <img
-                src={triangleRed}
-                alt="Brand triangle"
-                className={`block mx-auto mb-2.5 `}
-              />
-              <div className="text-secondary-400 uppercase font-heading text-lg leading-[28px] tracking-[5.4px] font-light mt-[14px]">
-                The Team
+              <div className="ml-0 mr-auto flex flex-col gap-y-[14px]">
+                <img
+                  src={triangleRed}
+                  alt="Brand triangle"
+                  className={`block mx-auto`}
+                />
+                <div className="text-secondary-400 uppercase font-heading text-lg leading-[28px] tracking-[5.4px] font-light">
+                  The Team
+                </div>
               </div>
               <h2>Who We Are</h2>
               <p className="mb-4">
