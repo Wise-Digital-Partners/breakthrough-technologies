@@ -10,13 +10,14 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://www.bt-tech.com, and Breakthrough
-            Technologies and governs data collection and usage. For the purposes
-            of this Privacy Policy, unless otherwise noted, all references to
-            Breakthrough Technologies include https://www.bt-tech.com. The
-            Breakthrough Technologies website is a general informational site.
-            By using the Breakthrough Technologies website, you consent to the
-            data practices described in this statement. 
+            of Privacy applies to https://www.nouveltechnologies.com/, and
+            Nouvel Technologies and governs data collection and usage. For the
+            purposes of this Privacy Policy, unless otherwise noted, all
+            references to Nouvel Technologies include
+            https://www.nouveltechnologies.com/. The Nouvel Technology website
+            is a general informational site. By using the Nouvel Technology
+            website, you consent to the data practices described in this
+            statement.
           </p>
           <h3>Collection of your Personal Information</h3>
           <p>
@@ -47,36 +48,35 @@ const Page = () => {
           </p>
           <h3>Use of your Personal Information </h3>
           <p>
-            Breakthrough Technologies collects and uses your personal
-            information to operate and deliver the services you have requested. 
+            Nouvel Technology collects and uses your personal information to
+            operate and deliver the services you have requested.
           </p>
           <p>
-            Breakthrough Technologies may also use your personally identifiable
+            Nouvel Technology may also use your personally identifiable
             information to inform you of other products or services available
-            from Breakthrough Technologies and its affiliates. 
+            from Nouvel Technology and its affiliates.
           </p>
           <h3>Sharing Information with Third Parties</h3>
           <p>
-            Breakthrough Technologies does not sell, rent or lease its customer
-            lists to third parties. 
+            Nouvel Technology does not sell, rent or lease its customer lists to
+            third parties.
           </p>
           <p>
-            Breakthrough Technologies may share data with trusted partners to
-            help perform statistical analysis, send you email or postal mail,
-            provide customer support, or arrange for deliveries. All such third
-            parties are prohibited from using your personal information except
-            to provide these services to Breakthrough Technologies, and they are
-            required to maintain the confidentiality of your information. 
+            Nouvel Technology may share data with trusted partners to help
+            perform statistical analysis, send you email or postal mail, provide
+            customer support, or arrange for deliveries. All such third parties
+            are prohibited from using your personal information except to
+            provide these services to Nouvel Technology, and they are required
+            to maintain the confidentiality of your information.
           </p>
           <p>
-            Breakthrough Technologies may disclose your personal information,
-            without notice, if required to do so by law or in the good faith
-            belief that such action is necessary to: (a) conform to the edicts
-            of the law or comply with legal process served on Breakthrough
-            Technologies or the site; (b) protect and defend the rights or
-            property of Breakthrough Technologies; and/or (c) act under exigent
-            circumstances to protect the personal safety of users of
-            Breakthrough Technologies, or the public. 
+            Nouvel Technology may disclose your personal information, without
+            notice, if required to do so by law or in the good faith belief that
+            such action is necessary to: (a) conform to the edicts of the law or
+            comply with legal process served on Nouvel Technology or the site;
+            (b) protect and defend the rights or property of Nouvel Technology;
+            and/or (c) act under exigent circumstances to protect the personal
+            safety of users of Nouvel Technology, or the public.
           </p>
           <h3>Automatically Collected Information</h3>
           <p>
@@ -90,34 +90,33 @@ const Page = () => {
           </p>
           <h3>Use of Cookies</h3>
           <p>
-            The Breakthrough Technologies website may use "cookies" to help you
+            The Nouvel Technology website may use "cookies" to help you
             personalize your online experience. A cookie is a text file that is
             placed on your hard disk by a web page server. Cookies cannot be
             used to run programs or deliver viruses to your computer. Cookies
             are uniquely assigned to you, and can only be read by a web server
-            in the domain that issued the cookie to you. 
+            in the domain that issued the cookie to you.
           </p>
           <p>
             One of the primary purposes of cookies is to provide a convenience
             feature to save you time. The purpose of a cookie is to tell the Web
             server that you have returned to a specific page. For example, if
-            you personalize Breakthrough Technologies pages, or register with
-            Breakthrough Technologies site or services, a cookie helps
-            Breakthrough Technologies to recall your specific information on
-            subsequent visits. This simplifies the process of recording your
-            personal information, such as billing addresses, shipping addresses,
-            and so on. When you return to the same Breakthrough Technologies
-            website, the information you previously provided can be retrieved,
-            so you can easily use the Breakthrough Technologies features that
-            you customized. 
+            you personalize Nouvel Technology pages, or register with Nouvel
+            Technology site or services, a cookie helps Nouvel Technology to
+            recall your specific information on subsequent visits. This
+            simplifies the process of recording your personal information, such
+            as billing addresses, shipping addresses, and so on. When you return
+            to the same Nouvel Technology website, the information you
+            previously provided can be retrieved, so you can easily use the
+            Nouvel Technology features that you customized.
           </p>
           <p>
             You have the ability to accept or decline cookies. Most Web browsers
             automatically accept cookies, but you can usually modify your
             browser setting to decline cookies if you prefer. If you choose to
             decline cookies, you may not be able to fully experience the
-            interactive features of the Breakthrough Technologies services or
-            websites you visit. 
+            interactive features of the Nouvel Technology services or websites
+            you visit.
           </p>
           <h3>Links</h3>
           <p>
@@ -213,51 +212,48 @@ const Page = () => {
           </ul>
           <h3>Children Under Thirteen</h3>
           <p>
-            Breakthrough Technologies does not knowingly collect personally
-            identifiable information from children under the age of thirteen. If
-            you are under the age of thirteen, you must ask your parent or
-            guardian for permission to use this website. 
+            Nouvel Technologydoes not knowingly collect personally identifiable
+            information from children under the age of thirteen. If you are
+            under the age of thirteen, you must ask your parent or guardian for
+            permission to use this website.
           </p>
           <h3>E-mail Communications</h3>
           <p>
-            From time to time, Breakthrough Technologies may contact you via
-            email for the purpose of providing announcements, promotional
-            offers, alerts, confirmations, surveys, and/or other general
-            communication. In order to improve our Services, we may receive a
-            notification when you open an email from Breakthrough Technologies
-            or click on a link therein. 
+            From time to time, Nouvel Technology may contact you via email for
+            the purpose of providing announcements, promotional offers, alerts,
+            confirmations, surveys, and/or other general communication. In order
+            to improve our Services, we may receive a notification when you open
+            an email from Nouvel Technology or click on a link therein.
           </p>
           <p>
             If you would like to stop receiving marketing or promotional
-            communications via email from Breakthrough Technologies, you may opt
-            out of such communications by clicking on the UNSUBSCRIBE button. 
+            communications via email from Nouvel Technology, you may opt out of
+            such communications by clicking on the UNSUBSCRIBE button.
           </p>
           <h3>Changes to this Statement</h3>
           <p>
-            Breakthrough Technologies reserves the right to change this Privacy
-            Policy from time to time. We will notify you about significant
-            changes in the way we treat personal information by sending a notice
-            to the primary email address specified in your account, by placing a
+            Nouvel Technology reserves the right to change this Privacy Policy
+            from time to time. We will notify you about significant changes in
+            the way we treat personal information by sending a notice to the
+            primary email address specified in your account, by placing a
             prominent notice on our website, and/or by updating any privacy
             information. Your continued use of the website and/or Services
             available after such modifications will constitute your: (a)
             acknowledgment of the modified Privacy Policy; and (b) agreement to
-            abide and be bound by that Policy. 
+            abide and be bound by that Policy.
           </p>
           <h3>Contact Information</h3>
           <p>
-            Breakthrough Technologies welcomes your questions or comments
-            regarding this Statement of Privacy. If you believe that
-            Breakthrough Technologies has not adhered to this Statement, please
-            contact Breakthrough Technologies at: 
+            Nouvel Technology welcomes your questions or comments regarding this
+            Statement of Privacy. If you believe that Nouvel Technology has not
+            adhered to this Statement, please contact Nouvel Technology at:
           </p>
-          <p>Breakthrough Technologies </p>
           <p>
             Email Address: 
             <br />
-            info@bt-tech.com
+            info@nouveltechnologies.com
           </p>
-          <p>Effective as of June 7, 2021 </p>
+          <p>Last updated: October 2024  </p>
         </div>
       </section>
     </Layout>

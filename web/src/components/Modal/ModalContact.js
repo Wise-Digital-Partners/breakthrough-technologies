@@ -129,10 +129,10 @@ const Modal = () => {
                   For more information or questions regarding our technologies,
                   please fill out the form below or contact us at{" "}
                   <a
-                    href="mailto:info@bt-tech.com"
+                    href="mailto:info@nouveltechnologies.com"
                     className="underline hover:text-primary-400"
                   >
-                    info@bt-tech.com
+                    info@nouveltechnologies.com
                   </a>
                   .
                 </p>
