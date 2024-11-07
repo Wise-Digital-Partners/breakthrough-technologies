@@ -28,7 +28,7 @@ const WhyUs = ({ className, headingLevel }) => {
     {
       question: "Before I Hire an Estate Planning Lawyer, What Should I Know?",
       answer:
-        "Many estate planning attorneys take a “one-size fits all” approach with their clients; they do this so that they can work with as many people as possible in a short period of time. In addition to leaving the client with a totally cold and impersonal experience, this way of planning can lead to unintended results in the long run. Breakthrough Technologies is different.",
+        "Many estate planning attorneys take a “one-size fits all” approach with their clients; they do this so that they can work with as many people as possible in a short period of time. In addition to leaving the client with a totally cold and impersonal experience, this way of planning can lead to unintended results in the long run. Nouvel Technologies is different.",
     },
     {
       question: "How Do You Calculate Fees?",

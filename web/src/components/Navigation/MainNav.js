@@ -184,14 +184,14 @@ const MainNav = ({
             <div className="logo-initial">
               <img
                 src={initialLogo}
-                alt="Breakthrough Technologies Logo"
+                alt="Nouvel Technologies Logo"
                 className="w-[179px] md:w-[260px]"
               />
             </div>
             <div className="logo-fixed hidden">
               <img
                 src={stickyLogo}
-                alt="Breakthrough Technologies Logo"
+                alt="Nouvel Technologies Logo"
                 className="w-[179px] md:w-[260px]"
               />
             </div>

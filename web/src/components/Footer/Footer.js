@@ -36,7 +36,7 @@ const Footer = () => {
               <AniLink fade to="/">
                 <img
                   src={data.logo.publicURL}
-                  alt="Breakthrough Technologies Logo"
+                  alt="Nouvel Technologies Logo"
                   width="258"
                   className="mb-8 md:mb-0 mx-auto md:mx-0"
                 />

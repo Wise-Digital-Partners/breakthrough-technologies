@@ -78,9 +78,8 @@ const WhyUs = ({ className, headingLevel }) => {
               Empowering
             </p>
             <p className="text-sm md:text-base mb-0">
-              Breakthrough Technologies, APC manifests a strong ethical and
-              spiritual foundation. We practice compassion, integrity, and
-              peace-building.
+              Nouvel Technologies, APC manifests a strong ethical and spiritual
+              foundation. We practice compassion, integrity, and peace-building.
             </p>
           </div>
           <div>

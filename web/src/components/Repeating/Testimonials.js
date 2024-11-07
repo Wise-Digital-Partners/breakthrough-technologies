@@ -134,7 +134,7 @@ const Testimonial = ({ className, headingLevel }) => {
                       something you can't put a price on. Rather than treating
                       you like a client, she treats you like a friend and gives
                       top quality advice and guidance every step of the way. I
-                      can't recommend Breakthrough Technologies enough!
+                      can't recommend Nouvel Technologies enough!
                     </q>
                     <footer className="mt-10">
                       <span>

@@ -55,8 +55,8 @@ const ArchivePage = (props) => {
   return (
     <Layout>
       <SearchEngineOptimization
-        title="News & Resources | Breakthrough Technologies"
-        description="Browse news and resources from Breakthrough Technologies here. We're a sustainable technology company that builds innovative industrial products."
+        title="News & Resources | Nouvel Technologies"
+        description="Browse news and resources from Nouvel Technologies here. We're a sustainable technology company that builds innovative industrial products."
         // openGraphImage={data.openGraphImage.publicURL}
         // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

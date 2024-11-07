@@ -22,8 +22,8 @@ const Page = () => {
           <h3>Collection of your Personal Information</h3>
           <p>
             In order to better provide you with products and services offered,
-            Breakthrough Technologies may collect personally identifiable
-            information, such as your: 
+            Nouvel Technologies may collect personally identifiable information,
+            such as your: 
           </p>
           <p>
             - First and Last Name 
@@ -81,12 +81,12 @@ const Page = () => {
           <h3>Automatically Collected Information</h3>
           <p>
             Information about your computer hardware and software may be
-            automatically collected by Breakthrough Technologies. This
-            information can include: your IP address, browser type, domain
-            names, access times and referring website addresses. This
-            information is used for the operation of the service, to maintain
-            quality of the service, and to provide general statistics regarding
-            use of the Breakthrough Technologies website. 
+            automatically collected by Nouvel Technologies. This information can
+            include: your IP address, browser type, domain names, access times
+            and referring website addresses. This information is used for the
+            operation of the service, to maintain quality of the service, and to
+            provide general statistics regarding use of the Nouvel Technologies
+            website. 
           </p>
           <h3>Use of Cookies</h3>
           <p>

@@ -141,7 +141,7 @@ const Page = ({ data }) => {
     <Layout>
       <SearchEngineOptimization
         title="How to Improve Cooling Tower Efficiency: ALI Water Recovery"
-        description="How can you improve cooling tower efficiency? ALI by Breakthrough Technologies is a new water recovery solution for cooling towers. Learn more here."
+        description="How can you improve cooling tower efficiency? ALI by Nouvel Technologies is a new water recovery solution for cooling towers. Learn more here."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

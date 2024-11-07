@@ -27,7 +27,7 @@ const Page = ({ data }) => {
     <Layout>
       <SearchEngineOptimization
         title="About Nouvel Technologies | Industrial Tech Company"
-        description="Boston-based Breakthrough Technologies is led by a world-class engineering team that believes in the power of innovation to change the world."
+        description="Boston-based Nouvel Technologies is led by a world-class engineering team that believes in the power of innovation to change the world."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />

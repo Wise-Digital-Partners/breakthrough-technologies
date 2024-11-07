@@ -132,8 +132,8 @@ const Page = ({ data }) => {
   return (
     <Layout headerStyle="overlap" headerLinkColor="white">
       <SearchEngineOptimization
-        title="Sustainable Technology Company | Breakthrough Technologies"
-        description="Breakthrough Technologies is a sustainable technology company that builds innovative industrial products to improve water & energy sustainability."
+        title="Sustainable Technology Company | Nouvel Technologies"
+        description="Nouvel Technologies is a sustainable technology company that builds innovative industrial products to improve water & energy sustainability."
         openGraphImage={data.openGraphImage.publicURL}
         twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
