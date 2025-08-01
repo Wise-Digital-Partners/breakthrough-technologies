@@ -140,6 +140,25 @@ const Page = ({ data }) => {
                 <div className="text-xl">Vice President of Supply Chain</div>
               </div>
             </div>
+            <div>
+              <button
+                className="group w-full overflow-hidden mb-6 focus:outline-none"
+                aria-label="Modal trigger"
+                data-modal-open="modal-team-members"
+                onClick={() => setSlideIndex(3)}
+              >
+                <GatsbyImage
+                  image={data.michael.childImageSharp.gatsbyImageData}
+                  className="transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                />
+              </button>
+              <div className="text-center">
+                <div className="heading-three mb-2">Michael Sherber</div>
+                <div className="text-xl">
+                  Vice President of Technology Development
+                </div>
+              </div>
+            </div>
           </div>
           {/* <div className="mt-24 mb-2 md:mb-3">
             <TextDecorative
@@ -435,6 +454,80 @@ const Page = ({ data }) => {
             <div className="md:col-start-1 md:col-span-4">
               <div className="sticky top-0">
                 <GatsbyImage
+                  image={data.michael.childImageSharp.gatsbyImageData}
+                  className="md:h-[536px]"
+                />
+              </div>
+            </div>
+            <div className="md:col-end-13 md:col-span-8">
+              <header className="mb-6 md:mb-10">
+                <p className="heading-two mb-3">Michael Sherber</p>
+                <p className="text-lg uppercase tracking-[0.3em] text-gray–900 mb-3">
+                  Vice President of Technology Development
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/graham-beesley-427209"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in text-primary-400 text-xl"></i>
+                </a>
+              </header>
+              <p className="mb-0">
+                <b>Michael Sherber</b> is Vice President of Technology
+                Development for Nouvel Technologies. He is a licensed mechanical
+                professional engineer (PE) in ten states. He is also a LEED
+                Accredited Professional, and an ASHRAE Certified High
+                Performance Building Design Professional (HBDP). He holds a BSE
+                in Civil Engineering from Princeton University, where he earned
+                membership into Sigma Xi (the Engineering and Science Research
+                Honor Society). He also has an MS in Mechanical Engineering from
+                Georgia Tech, where he won the ASHRAE Homer Addams Award for his
+                master’s thesis research. Additionally, he holds an MBA in
+                Finance from Columbia University Business School.
+              </p>
+              <p>
+                His career has been dedicated to the combination of energy
+                efficiency, indoor air quality, water efficiency, and
+                sustainability. In 2000, at the request of the Connecticut
+                Academy of Sciences and Engineering, he co-authored a report to
+                the Connecticut General Assembly on school indoor air quality
+                that led to the passage of the 2003 Connecticut School Indoor
+                Air Quality Act, which included many recommendations in his
+                report.
+              </p>
+              <p>
+                He designed the high-performance HVAC systems for the first
+                three New Jersey K-12 public schools that were LEED-certifiable
+                and did so for a construction cost significantly less than that
+                of a conventionally designed public schools in New Jersey at
+                that time. These schools provided 100% outside air ventilation
+                with MERV14 filtration while using about 30% less energy than
+                the ASHRAE and LEED energy baselines. The student absentee rates
+                in these schools were half those of the rest of this school
+                district. This project led the governor of New Jersey to issue
+                an executive order to require the use of LEED guidelines for all
+                new public-school construction in New Jersey going forward.
+              </p>
+              <p>
+                He is very active in ASHRAE. He is past president of the
+                500-member Connecticut ASHRAE Chapter. He is a past recipient of
+                the ASHRAE Distinguished Service Award. He has been active on
+                multiple ASHRAE technical committees and has chaired four ASHRAE
+                national technical committees (TCs), as well as has twice been a
+                member of ASHRAE’s Standard 62.1 (Ventilation and Indoor Air
+                Quality) committee.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* end of model item 4 */}
+        {/* model item 4 */}
+        <div>
+          <div className="grid md:grid-cols-12 md:gap-x-8 lg:gap-x-12 gap-y-4">
+            <div className="md:col-start-1 md:col-span-4">
+              <div className="sticky top-0">
+                <GatsbyImage
                   image={data.nadeem.childImageSharp.gatsbyImageData}
                   className="md:h-[536px]"
                 />
@@ -663,6 +756,11 @@ export const query = graphql`
       }
     }
     art: file(relativePath: { eq: "about/art.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
+      }
+    }
+    michael: file(relativePath: { eq: "about/michael.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, quality: 100)
       }
