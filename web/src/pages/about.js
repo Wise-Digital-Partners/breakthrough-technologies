@@ -466,7 +466,7 @@ const Page = ({ data }) => {
                   Vice President of Technology Development
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/graham-beesley-427209"
+                  href="https://www.linkedin.com/in/michael-sherber-pe-leed-ap-1a817213"
                   target="_blank"
                   rel="noreferrer"
                 >
