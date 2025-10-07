@@ -15,7 +15,7 @@ export default {
                   buildHookId:
                     "60a28e0eb9c88f0f683b30df",
                   title: "Sanity Studio",
-                  name: "breakthrough-technologies-studio",
+                  name: "nouvel-technologies-studio",
                   apiId: "93a6b15d-fdc8-4539-af07-887c79c5fe67",
                 },
                 {
