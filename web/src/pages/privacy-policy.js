@@ -57,7 +57,9 @@ const Page = () => {
             from Nouvel Technologies and its affiliates.
           </p>{" "}
           <p>
-            <a href="/cookie-policy">Learn more about how we use cookies.</a>
+            <a href="/cookie-policy" className="underline !text-[#1858fd]">
+              Learn more about how we use cookies.
+            </a>
           </p>
           <h3>Sharing Information with Third Parties</h3>
           <p>
