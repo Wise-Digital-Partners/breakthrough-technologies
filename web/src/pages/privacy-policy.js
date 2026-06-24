@@ -78,6 +78,9 @@ const Page = () => {
             Technologies; and/or (c) act under exigent circumstances to protect
             the personal safety of users of Nouvel Technologies, or the public.
           </p>
+          <p>
+            <a href="/cookie-policy">Learn more about how we use cookies.</a>
+          </p>
           <h3>Automatically Collected Information</h3>
           <p>
             Information about your computer hardware and software may be
