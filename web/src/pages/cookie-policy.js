@@ -2,6 +2,8 @@ import React from "react";
 
 import Layout from "../components/Layout";
 
+const lc = "font-semibold underline !text-[#1858fd]";
+
 const Page = () => {
   return (
     <Layout>
@@ -16,13 +18,21 @@ const Page = () => {
             "Nouvel Technologies Inc.", "our", "we" or "us") take your privacy
             seriously and encourage you to understand our use of automated data
             collection mechanisms in connection with our website{" "}
-            https://nouveltechnologies.com/ and its related domains, platforms,
-            social media channels, software applications, mobile applications,
-            services, information, web postings, products and tools
-            (collectively, "Service(s)" or "Website"). As discussed in greater
-            detail within this Cookie Policy, our collection of data through the
-            use of these technologies helps us to provide you with a positive
-            experience and potential offerings when you browse our Services.
+            <a
+              href="https://nouveltechnologies.com/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://nouveltechnologies.com/
+            </a>{" "}
+            and its related domains, platforms, social media channels, software
+            applications, mobile applications, services, information, web
+            postings, products and tools (collectively, "Service(s)" or
+            "Website"). As discussed in greater detail within this Cookie
+            Policy, our collection of data through the use of these technologies
+            helps us to provide you with a positive experience and potential
+            offerings when you browse our Services.
           </p>
           <p>
             <strong>
@@ -32,10 +42,44 @@ const Page = () => {
               parties also place these tools on our Website to collect and
               process information about our users for various purposes, including
               for security, for analytics, and to facilitate targeted
-              advertising. These tools include without limitation: Google
-              reCAPTCHA, Google Analytics, ZoomInfo, and Leadfeeder. Please
-              carefully review the linked information associated with each tool,
-              which is also set forth below.
+              advertising. These tools include without limitation:{" "}
+              <a
+                href="https://developers.google.com/recaptcha/"
+                target="_blank"
+                rel="noreferrer"
+                className={lc}
+              >
+                Google reCAPTCHA
+              </a>
+              ,{" "}
+              <a
+                href="https://policies.google.com"
+                target="_blank"
+                rel="noreferrer"
+                className={lc}
+              >
+                Google Analytics
+              </a>
+              ,{" "}
+              <a
+                href="https://www.zoominfo.com/about-zoominfo/privacy-policy"
+                target="_blank"
+                rel="noreferrer"
+                className={lc}
+              >
+                ZoomInfo
+              </a>
+              , and{" "}
+              <a
+                href="https://www.dealfront.com/privacy-policy/"
+                target="_blank"
+                rel="noreferrer"
+                className={lc}
+              >
+                Leadfeeder
+              </a>
+              . Please carefully review the linked information associated with
+              each tool, which is also set forth below.
             </strong>
           </p>
           <p>
@@ -49,7 +93,15 @@ const Page = () => {
             for essential cookies, all cookies and pixels will expire after the
             associated period identified in the Cookie Chart. If you have any
             questions or concerns about our use of cookies, please send us an
-            email at www.nouveltechnologies.com
+            email at{" "}
+            <a
+              href="https://www.nouveltechnologies.com"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              www.nouveltechnologies.com
+            </a>
           </p>
 
           <h3>I. What kinds of technologies are used?</h3>
@@ -235,12 +287,34 @@ const Page = () => {
             prevent any data about you and your behavior to be transmitted to
             Google, you must log out of Google and delete all Google cookies
             before visiting our Website or using the reCAPTCHA software. Please
-            visit the following page to obtain more information about reCAPTCHA:
-            https://developers.google.com/recaptcha/. Additional information on
-            Google reCAPTCHA can be found here,
-            https://www.google.com/recaptcha/intro/android.html, and Google's
-            privacy policy can be found here:
-            https://www.google.com/intl/de/policies/privacy/.
+            visit the following page to obtain more information about reCAPTCHA:{" "}
+            <a
+              href="https://developers.google.com/recaptcha/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://developers.google.com/recaptcha/
+            </a>
+            . Additional information on Google reCAPTCHA can be found here,{" "}
+            <a
+              href="https://www.google.com/recaptcha/intro/android.html"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.google.com/recaptcha/intro/android.html
+            </a>
+            , and Google's privacy policy can be found here:{" "}
+            <a
+              href="https://www.google.com/intl/de/policies/privacy/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.google.com/intl/de/policies/privacy/
+            </a>
+            .
           </p>
 
           <h4>Google Analytics.</h4>
@@ -257,11 +331,27 @@ const Page = () => {
           <p>
             If you would like to prevent Google Analytics from collecting your
             data, you can prevent this collection by utilizing the opt-out tool
-            that Google makes available at the following site:
-            http://tools.google.com/dlpage/gaoptout. If you use this tool, an
-            opt-out cookie will be placed to prevent Google Analytics from
-            collecting your information. Google's Terms of Use and privacy
-            policy can be found on this page: https://policies.google.com.
+            that Google makes available at the following site:{" "}
+            <a
+              href="http://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              http://tools.google.com/dlpage/gaoptout
+            </a>
+            . If you use this tool, an opt-out cookie will be placed to prevent
+            Google Analytics from collecting your information. Google's Terms of
+            Use and privacy policy can be found on this page:{" "}
+            <a
+              href="https://policies.google.com"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://policies.google.com
+            </a>
+            .
           </p>
 
           <h4>ZoomInfo.</h4>
@@ -273,8 +363,16 @@ const Page = () => {
             between human visitors and automated bots, and support rate limiting
             to ensure reliable service. The _cfuvid cookie is a session cookie
             that expires when you close your browser. For more information about
-            ZoomInfo's privacy practices, please visit:
-            https://www.zoominfo.com/about-zoominfo/privacy-policy.
+            ZoomInfo's privacy practices, please visit:{" "}
+            <a
+              href="https://www.zoominfo.com/about-zoominfo/privacy-policy"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.zoominfo.com/about-zoominfo/privacy-policy
+            </a>
+            .
           </p>
 
           <h4>Leadfeeder.</h4>
@@ -285,8 +383,16 @@ const Page = () => {
             attribute website visits to specific organizations. This information
             helps us understand which businesses are interested in our services.
             The _lfa cookie expires after approximately one year. For more
-            information about Leadfeeder's privacy practices, please visit:
-            https://www.dealfront.com/privacy-policy/.
+            information about Leadfeeder's privacy practices, please visit:{" "}
+            <a
+              href="https://www.dealfront.com/privacy-policy/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.dealfront.com/privacy-policy/
+            </a>
+            .
           </p>
 
           <h3>IV. Cookie Chart</h3>

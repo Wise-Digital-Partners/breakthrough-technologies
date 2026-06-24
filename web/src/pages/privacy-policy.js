@@ -2,6 +2,8 @@ import React from "react";
 
 import Layout from "../components/Layout";
 
+const lc = "font-semibold underline !text-[#1858fd]";
+
 const Page = () => {
   return (
     <Layout>
@@ -10,11 +12,27 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://www.nouveltechnologies.com/, and
-            Nouvel Technologies and governs data collection and usage. For the
-            purposes of this Privacy Policy, unless otherwise noted, all
-            references to Nouvel Technologies include
-            https://www.nouveltechnologies.com/. The Nouvel Technologies website
+            of Privacy applies to{" "}
+            <a
+              href="https://www.nouveltechnologies.com/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.nouveltechnologies.com/
+            </a>
+            , and Nouvel Technologies and governs data collection and usage. For
+            the purposes of this Privacy Policy, unless otherwise noted, all
+            references to Nouvel Technologies include{" "}
+            <a
+              href="https://www.nouveltechnologies.com/"
+              target="_blank"
+              rel="noreferrer"
+              className={lc}
+            >
+              https://www.nouveltechnologies.com/
+            </a>
+            . The Nouvel Technologies website
             is a general informational site. By using the Nouvel Technologies
             website, you consent to the data practices described in this
             statement.
@@ -57,7 +75,7 @@ const Page = () => {
             from Nouvel Technologies and its affiliates.
           </p>{" "}
           <p>
-            <a href="/cookie-policy" className="underline !text-[#1858fd]">
+            <a href="/cookie-policy" className={lc}>
               Learn more about how we use cookies.
             </a>
           </p>
@@ -257,7 +275,9 @@ const Page = () => {
           <p>
             Email Address: 
             <br />
-            info@nouveltechnologies.com
+            <a href="mailto:info@nouveltechnologies.com" className={lc}>
+              info@nouveltechnologies.com
+            </a>
           </p>
           <p>Last updated: October 2024  </p>
         </div>
