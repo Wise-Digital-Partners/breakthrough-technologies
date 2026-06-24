@@ -55,6 +55,9 @@ const Page = () => {
             Nouvel Technologies may also use your personally identifiable
             information to inform you of other products or services available
             from Nouvel Technologies and its affiliates.
+          </p>{" "}
+          <p>
+            <a href="/cookie-policy">Learn more about how we use cookies.</a>
           </p>
           <h3>Sharing Information with Third Parties</h3>
           <p>
@@ -77,9 +80,6 @@ const Page = () => {
             (b) protect and defend the rights or property of Nouvel
             Technologies; and/or (c) act under exigent circumstances to protect
             the personal safety of users of Nouvel Technologies, or the public.
-          </p>
-          <p>
-            <a href="/cookie-policy">Learn more about how we use cookies.</a>
           </p>
           <h3>Automatically Collected Information</h3>
           <p>
